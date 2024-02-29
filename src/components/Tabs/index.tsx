@@ -11,9 +11,10 @@ interface TabProps {
     title: string;
     content: React.ReactNode;
   }>;
+  className?: any;
 }
 
-const Tab: React.FC<TabProps> = ({ tabsData }) => {
+const Tab: React.FC<TabProps> = ({ tabsData ,className}) => {
   const [activeTab, setActiveTab] = useState<string>('1');
 
   const onButtonClick = (key: string) => {
@@ -22,9 +23,9 @@ const Tab: React.FC<TabProps> = ({ tabsData }) => {
 
   return (
     <>
-      <div className="flex gap-3 mt-1 mb-1 flex-wrap">
+      <div className={`flex gap-3 mt-1 mb-1 flex-wrap ${className}`}>
         {tabsData.map(tab => (
-          <Button key={tab.key} title={tab.title} onClick={() => onButtonClick(tab.key)} />
+          <Button className="text-white" key={tab.key} title={tab.title} onClick={() => onButtonClick(tab.key)} />
         ))}
       </div>
 

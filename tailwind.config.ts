@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   darkMode: ["class"],
   content: [
@@ -8,6 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
     container: {
       center: true,
       padding: "2rem",
@@ -56,19 +56,30 @@ const config: Config = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        'banner1': "url('/assets/images/banner1.jpeg')",
+        'abouthead': "url('/assets/images/abouthead.jpg')",
+        'ceohead': "url('/assets/images/ceohead.jpg')",
+        'ceo': "url('/assets/images/ceo.jpg')",
+        'contacthead': "url('/assets/images/contacthead.jpg')",
+        'servicehead': "url('/assets/images/servicehead.jpg')",
+
+
+     
+      },
       colors: {
-          primary:{
-            orange:{
-              500:"#ea580c",
-              400:"#f97316",
-              300:"#fb923c",
-              200:"#fdba74",
-              100:"#fed7aa",
-            },
-          }
-         
-        },
-    },
+        
+        primary: {
+          orange: {
+            500: "#ea580c",
+            400: "#f97316",
+            300: "#fb923c",
+            200: "#fdba74",
+            100: "#fed7aa",
+          },
+        }
+      }
+    }
   },
   plugins: [],
 };

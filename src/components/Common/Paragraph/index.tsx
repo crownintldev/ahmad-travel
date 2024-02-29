@@ -1,8 +1,9 @@
 import React from 'react';
 
 type ParaProps = {
-  title: string;
+  title: any;
   icon?: React.ReactNode; // icon is optional, can be any react element or component
+  endicon?: React.ReactNode;
   className?: string; // className is optional
 };
 
@@ -36,11 +37,11 @@ export const Para12: React.FC<ParaProps> = ({ title, icon, className }) => {
   );
 };
 
-export const Para18: React.FC<ParaProps> = ({ title, icon, className }) => {
+export const Para18: React.FC<ParaProps> = ({ title, icon, className,endicon }) => {
   return (
    
       <p className={`text-18 gap-2 ${className}`}>
-        {icon}{title}
+        {icon}{title}{endicon}
       </p>
     
   );

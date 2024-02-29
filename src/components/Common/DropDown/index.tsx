@@ -53,7 +53,7 @@ const DropDown: React.FC<DropDownProps> = ({
               <HeadingH5 className="mb-3" title={arrayItem.Category} />
               {arrayItem.items.map((item, itemIndex) => (
                 <div onClick={onLinkClick} key={itemIndex}>
-                  <Link href={item.href} key={itemIndex}>
+                  <Link href={item.href} key={itemIndex} >
                     <div className="flex gap-3 md:gap-5 justify-between items-center rounded-md hover:bg-primary-orange-300 hover:text-white px-2 py-2">
                       {item.title}
                       <div className="bg-white shadow text-[10px] font-bold text-primary-orange-300 py-1 px-2 rounded-full">

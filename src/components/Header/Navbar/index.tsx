@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="flex gap-2">
             <div className="flex items-center gap-2 md:gap-5">
-              <Button className="bg-transparent"  onClick={() => setOpen(true)} title={<IoSearchSharp size={25} /> }/>
+              <Button className="bg-transparent text-black group hover:text-white"  onClick={() => setOpen(true)} title={<IoSearchSharp className="text-black group-hover:text-white" size={25} /> }/>
               <Modal
                 open={open}
                 onOk={() => setOpen(false)}
@@ -72,9 +72,9 @@ const Navbar: React.FC = () => {
               >
                 <SearchData />
               </Modal>
-              <Link className="font-medium lg:block hidden " href="/">
+              {/* <Link className="font-medium lg:block hidden " href="/">
                 Login
-              </Link>
+              </Link> */}
             </div>
             <div className="lg:hidden mt-[9px]">
               <button
@@ -95,11 +95,11 @@ const Navbar: React.FC = () => {
                   <div className="space-y-4  flex-col flex z-50">
                     <Navlink onClose={() => setMobileMenuOpen(false)} />
                   </div>
-                  <div className="flex flex-row  xs:items-center gap-4 pt-3">
+                  {/* <div className="flex flex-row  xs:items-center gap-4 pt-3">
                     <Link className="font-medium" href="/">
                       Login
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>

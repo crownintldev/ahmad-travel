@@ -2,7 +2,7 @@ import React from 'react'
 
 interface HeadingProps {
   icon?: React.ReactNode;
-  title: string;
+  title: any;
   title1?: string;
   className?: string;
   spanclass?: string;
@@ -61,10 +61,10 @@ export const HeadingH5: React.FC<HeadingProps> = ({ icon, title, className }) =>
   );
 };
 
-export const HeadingH6: React.FC<HeadingProps> = ({ icon, title, className }) => {
+export const HeadingH6: React.FC<HeadingProps> = ({ icon, title, className="font-semibold" }) => {
   return (
     
-      <p className={`xl:text-xl-h6 lg:text-lg-h6 text-md-h6 font-semibold gap-3 ${className}`}>
+      <p className={`xl:text-xl-h6 lg:text-lg-h6 text-md-h6  gap-3 ${className}`}>
         {icon}{title}
       </p>
     

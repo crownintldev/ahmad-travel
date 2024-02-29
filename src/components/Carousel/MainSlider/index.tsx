@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { HeadingH5 } from "@/components/Common/Heading";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -27,18 +27,20 @@ const MainSlider = () => {
       title: "Germany",
       description: "Lorem ipsum dolor sit amet...",
     },
-
     // Add more slides as needed
   ];
+
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % slides.length);
+    }, 10000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const nextSlide = () => setActiveSlide((prev) => (prev + 1) % slides.length);
   const prevSlide = () =>
     setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
-
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 10000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <>
@@ -53,7 +55,6 @@ const MainSlider = () => {
                 src={slide.src}
                 alt={`Slide ${slide.id}`}
                 layout="fill"
-                
               />
               <div className="content pt-20 md:pt-10">
                 <HeadingH5 className={"text-yellow100"} title={"TRAVELS"} />
@@ -78,7 +79,6 @@ const MainSlider = () => {
                 className="rounded-md"
                 src={slide.src}
                 alt={`Slide ${slide.id}`}
-                
               />
             </div>
           ))}

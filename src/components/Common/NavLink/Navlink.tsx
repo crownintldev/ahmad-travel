@@ -49,7 +49,7 @@ const Navlink = ({ onClose }) => {
           array={[
             {
               items: [
-                { id: "1",  title: "About Ceo", subtitle:"CEO",href: "/ceo" },
+                { id: "1",  title: "About Ceo", subtitle:"CEO",href: "/chairman" },
                 { id: "2", title: "About Company", subtitle:"CROWN",href: "/about" },
                 { id: "3", title: "Our Team", subtitle:"CROWN TEAM",href: "/team" },
                 { id: "4", title: "Company Profile", subtitle:"PDF PROFILE",href: "/" },
@@ -67,7 +67,7 @@ const Navlink = ({ onClose }) => {
           className={"  h-fit "}
           alignment="md:overflow-y-hidden z-50 overflow-y-scroll w-full gap-3 
            sm:text-start   "
-          text="Service"
+          text="Visa"
           icon={
             <MdOutlineKeyboardArrowDown
               className="mt-1"

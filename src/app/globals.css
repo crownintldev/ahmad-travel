@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
  
-
+::placeholder {
+  color: black !important;
+  opacity: 1; /* Firefox */
+}
+::selection {
+  color: white;
+  background: #fb923c;
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: black !important;
+}
 
 ::-webkit-scrollbar {
   background: white; 
@@ -113,37 +123,7 @@
   background-color: #eee;
   color: black;
 }
-/* .thumbnail{
-  position: absolute;
-  bottom: 50px;
-  z-index: 11;
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  height: 100px;
-  padding: 0 50px;
-  box-sizing: border-box;
-  overflow: auto;
-  justify-content: center;
-}
-.thumbnail::-webkit-scrollbar{
-  width: 0;
-}
-.thumbnail .item{
-  width: 100px;
-  height: 100px;
-  filter: brightness(.8);
-  transition: .5s;
-  flex-shrink: 0;
-}
 
-.thumbnail .item.active{
-  filter: brightness(1);
-}
-.thumbnail .item .content{
-  position: absolute;
-  inset: auto 10px 10px 10px;
-} */
 @media screen and (max-width: 678px) {
   .thumbnail{
       justify-content: start;
@@ -221,3 +201,85 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
+.font-fam{
+  font-family: cursive;
+    letter-spacing: 5px;
+}
+.from-gradient-purple {
+  --gradient-from-color: #833ab4;
+}
+
+.to-gradient-pink {
+  --gradient-to-color: #fd1d1d;
+}
+
+/* Create gradient */
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, var(--gradient-from-color), var(--gradient-to-color));
+}
+.ant-picker-suffix{
+  color: black !important;
+}
+
+
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  position: relative;
+  transition: background 0.8s;
+  background-position: top;
+
+}
+.card0 {
+  background: url("/assets/images/ceo.jpg") center center no-repeat;
+  background-size: 300px;
+  background-position: top;
+
+}
+.card0:hover {
+  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background-size: 600px;
+  background-position: left top;
+
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background-size: 600px;
+  background-size: 600px;
+  background-position: left top;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background-size: 600px;
+  background-size: 600px;
+  background-position: left top;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+
+
+
+

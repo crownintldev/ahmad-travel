@@ -9,7 +9,7 @@ const Booking = () => {
   return (
     <>
       <div className="container w-full shadow-md z-10 border rounded-lg p-2 sm:p-4 md:p-6 space-y-10">
-      <Tab
+      <Tab 
         tabsData = {[
           {
             key: '1',
@@ -19,7 +19,7 @@ const Booking = () => {
           {
             key: '2',
             title: 'Tours',
-            content: 'Content of Tab Pane 2',
+            content: <Flights/>,
           },
         
         ]}

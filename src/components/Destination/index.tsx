@@ -9,8 +9,8 @@ const Destination = () => {
 
   return (
     <>
-    <div className="container p-2 md:p-4 lg:p-6">
-    <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 items-center space-y-4 gap-4  mt-32 mb-20">
+    <div className="container p-2 md:p-4 lg:p-6 mt-32 mb-32">
+    <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 items-center space-y-4 gap-4  ">
         <div className="space-y-3">
           <HeadingH2
             className="leading-tight"
