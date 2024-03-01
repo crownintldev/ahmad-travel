@@ -63,9 +63,8 @@ const config: Config = {
         'ceo': "url('/assets/images/ceo.jpg')",
         'contacthead': "url('/assets/images/contacthead.jpg')",
         'servicehead': "url('/assets/images/servicehead.jpg')",
-
-
-     
+        'privacyhead': "url('/assets/images/privacyhead.jpg')",
+        'termshead': "url('/assets/images/termshead.jpg')",
       },
       colors: {
         
