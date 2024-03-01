@@ -40,7 +40,7 @@ const VisaInfo:React.FC<Visaprops> = ({heading,visaprocess}) => {
             <div className='container mt-10 '>
             <HeadingH3 title={heading}/>
             <hr className='w-16 border-2 border-primary-orange-300'/>
-            <div ref={ref} className="keen-slider flex overflow-hidden mt-10">
+            <div ref={ref} className="keen-slider flex overflow-hidden mt-10 gap-3">
                 {
                  visaprocess.length > 0 && visaprocess.map((array,index)=>(
                         <Link href={array.link} className="grid keen-slider__slide" key={index} >

@@ -1,6 +1,6 @@
   import React, { useState } from 'react';
   import { Button, Popover } from 'antd';
-  import { Para14, Para16 } from '@/components/Common/Paragraph';
+  import { Para12, Para14, Para16 } from '@/components/Common/Paragraph';
   import type { RadioChangeEvent } from 'antd';
 import { Input, Radio, Space } from 'antd';
 
@@ -39,8 +39,8 @@ import { Input, Radio, Space } from 'antd';
         {userAgent.map((passenger, index) => (
           <div className='flex justify-between' key={index}>
             <div>
-              <Para16 className='font-medium' title={passenger.title} />
-              <Para14 className='font-medium' title={passenger.age} />
+              <Para14 className='font-medium' title={passenger.title} />
+              <Para12 className='font-medium' title={passenger.age} />
             </div>
             <div className="counter">
               <button className='bg-primary-orange-200 hover:bg-primary-orange-300' onClick={() => decrement(index)}>-</button>

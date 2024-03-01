@@ -10,7 +10,6 @@ import MegaMenu from '../MegaManu';
 
 
 const Navlink = ({ onClose }) => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
@@ -24,20 +23,21 @@ const Navlink = ({ onClose }) => {
     if (isDropDownOpen) setIsDropDownOpen(false);
   };
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleClose = () => {
+    setIsDropDownOpen(false);
+    setIsMegaMenuOpen(false);
   };
 
   return (
     <>
-      <Link className='font-semibold' href="/" onClick={onClose}>
+      <Link className='font-semibold' href="/" onClick={handleClose}>
         Home
       </Link>
       <div>
       <DropDown
-          onLinkClick={onClose}
-          toggleMenu={toggleDropDown}
-          isOpen={isDropDownOpen}
+         onLinkClick={handleClose}
+         toggleMenu={toggleDropDown}
+         isOpen={isDropDownOpen}
           alignment="sm:text-start p-3 "
           text="About"
           icon={
@@ -62,8 +62,8 @@ const Navlink = ({ onClose }) => {
 
       <div>
       <MegaMenu
-           toggleMenu={toggleMegaMenu}
-           isOpen={isMegaMenuOpen}
+            toggleMenu={toggleMegaMenu}
+            isOpen={isMegaMenuOpen}
           className={"  h-fit "}
           alignment="md:overflow-y-hidden z-50 overflow-y-scroll w-full gap-3 
            sm:text-start   "

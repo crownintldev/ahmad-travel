@@ -1,6 +1,6 @@
 //@ts-nocheck
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { ImCross } from "react-icons/im";
 import { HeadingH6 } from "../Heading";
 import MegaData from "../MegaData";
@@ -19,19 +19,34 @@ const MegaMenu = ({
   ...otherProps
 }) => {
   const dropdownRef = useRef(null);
+  const [activeTab, setActiveTab] = useState<number>(0);
 
-  const dropdata = [
-    { id: "1", title: "Visa Drop Box", content: <MegaData /> },
-    { id: "2", title: "Visa", content: <MegaData /> },
-    { id: "3", title: "File Processing", content: <MegaData /> },
-  ];
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        toggleMenu();
+      }
+    };
 
-  const [activeTab, setActiveTab] = useState(0);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef, toggleMenu]);
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
+  const handleLinkClick = () => {
+    toggleMenu();
+    if (onLinkClick) {
+      onLinkClick();
+    }
   };
-  console.log(activeTab.content);
+
+  
+  const dropdata = [
+    { id: "1", title: "Visa Drop Box", content: <MegaData onLinkClick={handleLinkClick} /> },
+    { id: "2", title: "Visa", content: <MegaData onLinkClick={handleLinkClick} /> },
+    { id: "3", title: "File Processing", content: <MegaData onLinkClick={handleLinkClick} /> },
+  ];
 
   return (
     <div className={`inline-block  ${textSize}`}>

@@ -11,7 +11,7 @@ import tra3 from '../../public/assets/images/tra3.jpg'
 import ChooseUs from "@/components/ChooseUs";
 import Faq from "@/components/Home/Faq";
 import VisaInfo from "@/components/Home/VisaInfo";
-import OurService from "@/components/Home/OurService";
+import { OurService } from "@/components/Home/OurService";
 
 
 

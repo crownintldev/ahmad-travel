@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { HeadingH5 } from '../Heading';
 
@@ -34,6 +34,18 @@ const DropDown: React.FC<DropDownProps> = ({
   ...otherProps
 }) => {
   const dropdownRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        toggleMenu();
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef, toggleMenu]);
 
   return (
     <div className={`inline-block ${textSize}`}>
