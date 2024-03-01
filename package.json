@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "git":"git add . && git commit -m ahmad && git push"
   },
   "dependencies": {
     "@motionone/utils": "^10.17.0",
