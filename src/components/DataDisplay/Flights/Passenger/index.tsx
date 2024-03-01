@@ -50,15 +50,19 @@ import { Input, Radio, Space } from 'antd';
           </div>
         ))}
         <hr/>
-        <div className='mt-5'>
-        <Radio.Group onChange={onChange} value={value} className='w-full'>
-      <Space className='w-full' direction="vertical">
-        <Radio.Button className='w-full'  value={1}>Business</Radio.Button>
-        <Radio.Button className='w-full'  value={2}>Economy</Radio.Button>
-        <Radio.Button className='w-full'  value={3}>First Class</Radio.Button>
-        
-      </Space>
-    </Radio.Group>
+        <div className='mt-5 space-y-3'>
+        <div className="flex">
+        <input type="checkbox" value={'Business'} id="Business" className="peer hidden" />
+        <label htmlFor="Business" className="select-none cursor-pointer rounded-lg border-2 border-primary-orange-200 py-3 px-6 font-bold text-primary-orange-300 transition-colors duration-200 ease-in-out w-full peer-checked:bg-primary-orange-200 peer-checked:text-white peer-checked:border-primary-orange-200 "> Business </label>
+        </div>
+        <div className="flex">
+        <input type="checkbox" value={'Economy'} id="Economy" className="peer hidden" />
+        <label htmlFor="Economy" className="select-none cursor-pointer rounded-lg border-2 border-primary-orange-200 py-3 px-6 font-bold text-primary-orange-300 transition-colors duration-200 ease-in-out w-full peer-checked:bg-primary-orange-200 peer-checked:text-white peer-checked:border-primary-orange-200 "> Economy </label>
+        </div>
+        <div className="flex">
+        <input type="checkbox" value={'First Class'} id="First Class" className="peer hidden" />
+        <label htmlFor="First Class" className="select-none cursor-pointer rounded-lg border-2 border-primary-orange-200 py-3 px-6 font-bold text-primary-orange-300 transition-colors duration-200 ease-in-out w-full peer-checked:bg-primary-orange-200 peer-checked:text-white peer-checked:border-primary-orange-200 "> First Class </label>
+        </div>
         </div>
       </div>
     );
