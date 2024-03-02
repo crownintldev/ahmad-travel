@@ -21,6 +21,7 @@ const VisaInfo:React.FC<Visaprops> = ({heading,visaprocess}) => {
     };
     
       const [ref] = useKeenSlider<HTMLDivElement>({
+     
         breakpoints: {
           "(min-width: 400px)": {
             slides: { perView: 2, spacing: 5 },

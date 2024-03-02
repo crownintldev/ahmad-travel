@@ -24,12 +24,10 @@ const MegaMenu = ({
     setActiveTab(index); // Update the active tab
   };
  
-
   const handleLinkClick = () => {
       onLinkClick(false);
   };
 
-  
   const dropdata = [
     { id: "1", title: "Visa Drop Box", content: <MegaData onLinkClick={handleLinkClick} /> },
     { id: "2", title: "Visa", content: <MegaData onLinkClick={handleLinkClick} /> },

@@ -7,6 +7,7 @@ import { DatePicker } from 'antd';
 import Passenger from "./Passenger";
 import { CiCalendarDate } from "react-icons/ci";
 import { FaPerson } from "react-icons/fa6";
+import Button from "@/components/Common/Button";
 
    
 const onChange: DatePickerProps['onChange'] = (date, dateString) => {
@@ -66,6 +67,9 @@ const Flights:React.FC = () => {
             </>
           }
         />
+      </div>
+      <div className="text-center mt-5">
+      <Button className=" text-white w-[100px] " title="Search"/>
       </div>
     </>
   );

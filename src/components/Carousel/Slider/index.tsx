@@ -38,10 +38,9 @@ const Slider: React.FC<SliderProps> = ({ destinations }) => {
   })
   return (
   <>
-     <div ref={ref} className="keen-slider flex overflow-hidden">
-      
+     <div ref={ref} className="keen-slider flex overflow-hidden mt-10 gap-3">
       { 
-     destinations.map((array,index)=>(
+     destinations.map((array,index) => (
       
   <Link href={"/"} className="grid keen-slider__slide" key={index}>
         <Image className='"w-full h-96 object-cover object-center rounded-md shadow-md' src={array.image} height={600} width={600} alt='Image' ></Image>

@@ -12,6 +12,7 @@ import ChooseUs from "@/components/ChooseUs";
 import Faq from "@/components/Home/Faq";
 import VisaInfo from "@/components/Home/VisaInfo";
 import { OurService } from "@/components/Home/OurService";
+import Testimonial from "@/components/Carousel/Testimonial";
 
 
 
@@ -45,7 +46,9 @@ export default function Home()
         {title:"Kantua hotel, Thailand",link:"/", image:tra2,  location:" New beach, Thailand", para:"Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd dolor sit amet. Lorem ipsum dolor sit amet."},
       ]}
     />
+    <Testimonial/>
     <Faq/>
+
 
     </>
   );
