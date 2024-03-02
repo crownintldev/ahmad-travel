@@ -61,10 +61,13 @@ const DropDown: React.FC<DropDownProps> = ({
           className={`fixed ${alignment} z-20 rounded-md shadow bg-white`}
         >
           {array.map((arrayItem, index) => (
-            <div key={index} ref={dropdownRef}>
+            <div key={index} 
+            // ref={dropdownRef}
+            onClick={onLinkClick}
+            >
               <HeadingH5 className="mb-3" title={arrayItem.Category} />
               {arrayItem.items.map((item, itemIndex) => (
-                <div onClick={onLinkClick} key={itemIndex}>
+                <div  key={itemIndex}>
                   <Link href={item.href} key={itemIndex} >
                     <div className="flex gap-3 md:gap-5 justify-between items-center rounded-md hover:bg-primary-orange-300 hover:text-white px-2 py-2">
                       {item.title}

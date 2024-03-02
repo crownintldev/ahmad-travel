@@ -12,12 +12,16 @@ import { Modal } from "antd";
 import Button from "@/components/Common/Button";
 
 const Navbar: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollingUp, setScrollingUp] = useState(true);
   const [open, setOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
   };
 
   const handleScroll = () => {
@@ -58,7 +62,7 @@ const Navbar: React.FC = () => {
             <Logo />
           </div>
           <div className="lg:flex  lg:gap-10 items-center hidden ">
-            <Navlink onClose={() => setMobileMenuOpen(false)} />
+            <Navlink onDropdownClose={closeMobileMenu} />
           </div>
           <div className="flex gap-2">
             <div className="flex items-center gap-2 md:gap-5">
@@ -87,13 +91,13 @@ const Navbar: React.FC = () => {
                   <TbMenu2 size={25} className="text-2xl mt-[5px]" />
                 )}
               </button>
-              {mobileMenuOpen && (
+              {mobileMenuOpen  && (
                 <div
                   className={`absolute -z-10 inset-x-0  h-screen origin-top rounded-b-2xl px-6 pb-6 pt-10 bg-white
                     `}
                 >
                   <div className="space-y-4  flex-col flex z-50">
-                    <Navlink onClose={() => setMobileMenuOpen(false)} />
+                    <Navlink onDropdownClose={closeMobileMenu} />
                   </div>
                   {/* <div className="flex flex-row  xs:items-center gap-4 pt-3">
                     <Link className="font-medium" href="/">

@@ -9,7 +9,8 @@ import MegaMenu from '../MegaManu';
 
 
 
-const Navlink = ({ onClose }) => {
+const Navlink = ({ onDropdownClose }) => {
+
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
@@ -24,9 +25,11 @@ const Navlink = ({ onClose }) => {
   };
 
   const handleClose = () => {
-    setIsDropDownOpen(false);
-    setIsMegaMenuOpen(false);
+    if (isDropDownOpen) setIsDropDownOpen(false);
+    if (isMegaMenuOpen) setIsMegaMenuOpen(false);
+    if (onDropdownClose) onDropdownClose(); // Call the prop function to close the mobile menu if provided
   };
+
 
   return (
     <>
@@ -62,6 +65,7 @@ const Navlink = ({ onClose }) => {
 
       <div>
       <MegaMenu
+            onLinkClick={handleClose}
             toggleMenu={toggleMegaMenu}
             isOpen={isMegaMenuOpen}
           className={"  h-fit "}
@@ -78,7 +82,7 @@ const Navlink = ({ onClose }) => {
         />
       </div>
       
-      <Link className='font-semibold' href="/contact" onClick={onClose}>
+      <Link className='font-semibold' href="/contact" onClick={handleClose} >
         Contact
       </Link>
     </>

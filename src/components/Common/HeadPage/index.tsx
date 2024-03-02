@@ -13,7 +13,7 @@ const HeadPage = ({title, text,className}:{
       <div className="absolute inset-0 bg-gradient-to-r from-primary-orange-200/65 via-primary-orange-200 to-primary-orange-200/5 opacity-75"></div>
 
       <HeadingH2 className='tracking-widest font-fam text-white z-10' title={title}/>
-      <HeadingH3 className='text-white z-10' title={text} />
+      <HeadingH3 className='text-white z-10 text-center' title={text} />
     </div>
     </>
   )
