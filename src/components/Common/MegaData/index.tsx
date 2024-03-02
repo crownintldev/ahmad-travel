@@ -13,8 +13,8 @@ const MegaData: FC<MegaDataProps> = ({ onLinkClick }) => {
     <>
       {
         Aboutcore.service.map((array ,index)=>(
-          <div key={index} >
-          <Link className='' href={`${array.ref}`} >
+          <div key={index}>
+          <Link className='' href={`${array.ref}`} onClick={onLinkClick} >
             <div className="flex flex-col sm:flex-row border md:border-none mt-2 md:mt-0 mb-3 md:mb-0   duration-300 transition gap-3  rounded-md hover:bg-primary-orange-300 hover:text-white px-2 py-2">
               <div>
               <HeadingH6 title={array.title}/>

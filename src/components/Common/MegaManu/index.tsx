@@ -20,25 +20,13 @@ const MegaMenu = ({
 }) => {
   const dropdownRef = useRef(null);
   const [activeTab, setActiveTab] = useState<number>(0);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        toggleMenu();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [dropdownRef, toggleMenu]);
+  const handleTabClick = (index: number) => {
+    setActiveTab(index); // Update the active tab
+  };
+ 
 
   const handleLinkClick = () => {
-    toggleMenu();
-    if (onLinkClick) {
-      onLinkClick();
-    }
+      onLinkClick(false);
   };
 
   
@@ -75,7 +63,7 @@ const MegaMenu = ({
             style={{ width: "100%", maxHeight: "calc(100vh - 65px)" }}
           >
             <div
-              className={` ${className}  p-1 overflow-y-scroll lg:max-h-[330px] xl:max-h-[420px] xxl:xl:max-h-max pt-5 w-5/12 md:w-3/12  `}
+              className={` ${className}  p-1 overflow-y-scroll lg:max-h-[330px] xl:max-h-[420px] xxl:xl:max-h-max pt-5 w-7/12 sm:w-3/12  `}
             >
               {dropdata.map((array, index) => (
                 <div
@@ -85,12 +73,12 @@ const MegaMenu = ({
                     activeTab === index ? "active  bg-primary-orange-300 text-white" : ""
                   } p-2 rounded-md mt-2 mb-2 hover:bg-primary-orange-300 hover:text-white transition duration-100`}
                 >
-                  <HeadingH6 title={array.title} />
+                  <HeadingH6 className="text-[10px]" title={array.title} />
                 </div>
               ))}
             </div>
             <div
-              className={`${className} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-9/12 pb-[30vh] p-2 z-30`}
+              className={`${className} grid grid-cols-1 sm:grid-cols-2 gap-2 lg:grid-cols-3 md:w-9/12 pb-[30vh] p-2 z-30`}
             >
               {dropdata[activeTab].content}
             </div>

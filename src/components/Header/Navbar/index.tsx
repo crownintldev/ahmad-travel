@@ -19,10 +19,10 @@ const Navbar: React.FC = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
   };
+
 
   const handleScroll = () => {
     if (window.scrollY < 5) {
@@ -50,6 +50,8 @@ const Navbar: React.FC = () => {
       return [...p];
     });
   };
+
+  
   return (
     <>
       <nav

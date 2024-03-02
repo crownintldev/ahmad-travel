@@ -25,10 +25,11 @@ const Navlink = ({ onDropdownClose }) => {
   };
 
   const handleClose = () => {
-    if (isDropDownOpen) setIsDropDownOpen(false);
-    if (isMegaMenuOpen) setIsMegaMenuOpen(false);
-    if (onDropdownClose) onDropdownClose(); // Call the prop function to close the mobile menu if provided
+    setIsDropDownOpen(false);
+    setIsMegaMenuOpen(false);
+    if (onDropdownClose) onDropdownClose(); // Close mobile menu
   };
+
 
 
   return (
