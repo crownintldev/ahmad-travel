@@ -213,6 +213,31 @@
 .ant-picker-outlined:hover{
   border-color: transparent !important;
 }
+.ant-picker-presets {
+  min-height: 25rem !important;
+}
+
+
+@media (max-width: 800px) {
+  .ant-picker-panel-layout {
+      flex-direction: column !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .ant-picker-panel-layout .ant-picker-presets {
+      max-width: 100% !important;
+      min-height: 10rem !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .ant-picker-panel-layout .ant-picker-panels,
+  .ant-picker-panel-layout .ant-picker-datetime-panel {
+      flex-direction: column !important;
+  }
+}
+
 .counter {
   display: flex;
   align-items: center;
