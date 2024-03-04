@@ -1,20 +1,15 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../ui/tracing-beam";
 import MultiImage from "../Carousel/MultiImage";
 import ServiceInfo from "./ServiceInfo";
 import ServiecForm from "./serviceForm";
 import { HeadingH4 } from "../Common/Heading";
-import Link from "next/link";
 
 export function Service() {
   return (
    <>
     <TracingBeam className="p-2  mt-10 ">
-   
-
       <div className="mt-10">
         <HeadingH4 title={"Malaysia Visa"}/>
         <hr className='w-16 border-2 border-primary-orange-300'/>
