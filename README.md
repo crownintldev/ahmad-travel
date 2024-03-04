@@ -97,3 +97,28 @@ const TravelTeam = () => {
 }
 
 export default TravelTeam -->
+
+
+
+<!-- // import React from 'react'
+// import MultiImage from '../Carousel/MultiImage'
+// import ServiecForm from './serviceForm'
+// import ServiceInfo from './ServiceInfo'
+
+// const Service:React.FC = () => {
+//   return (
+//     <>
+//     <div className='container grid grid-cols-1 md:grid-cols-5  mt-10 lg:mt-32 gap-5'>
+//         <div className='col-span-4'>
+//         <MultiImage/>
+//         <ServiceInfo/>
+//         </div>
+//         <div className='col-span-1 '>
+//         <ServiecForm/>
+//         </div>
+//     </div>
+//     </>
+//   )
+// }
+
+// export default Service -->

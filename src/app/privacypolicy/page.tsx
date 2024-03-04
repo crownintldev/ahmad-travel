@@ -9,6 +9,7 @@ const privacyPolicy:React.FC = () => {
         className='bg-privacyhead'
         title='Privacy Policy'
         text='We Are The World Best Travel Agency Company'
+        bredcrumb='Privacy Policy'
         />
         <Condition
           info={[

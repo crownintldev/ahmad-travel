@@ -10,6 +10,7 @@ const Chairman:React.FC = () => {
      className='bg-ceohead'
      title='Chairman & CEO'
      text='We Are The World Best Travel Agency Company'
+     bredcrumb='Chairman & CEO'
      />   
      <Ceosection/>
      <CeoMessage/>

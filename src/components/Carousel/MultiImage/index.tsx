@@ -64,7 +64,7 @@ const MultiImage:React.FC = () => {
             {
                 serviceimages.map((array, index)=>(
                     <div className="keen-slider__slide w-full h-auto lg:h-[500px] rounded-lg shadow-md "key={index}>
-                        <Image className='w-full object-contain bg-contain bg-bottom ' src={array.image} width={1280} height={768} alt='images'/>
+                        <Image className='w-full object-contain bg-contain bg-bottom ' src={array.image} width={1440} height={768} alt='images'/>
                     </div>
                 ))}
       </div>

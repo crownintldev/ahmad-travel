@@ -199,6 +199,20 @@
   border: none !important;
 }
 
+.ant-picker-outlined:focus, .ant-picker-outlined:focus-within{
+  border-color: transparent !important;
+  box-shadow:none !important;
+
+}
+.ant-picker-range .ant-picker-active-bar{
+  background: none !important;
+}
+.ant-picker .ant-picker-suffix{
+  display: none !important;
+}
+.ant-picker-outlined:hover{
+  border-color: transparent !important;
+}
 .counter {
   display: flex;
   align-items: center;

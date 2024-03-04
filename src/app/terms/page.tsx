@@ -9,6 +9,7 @@ const Terms = () => {
         className='bg-termshead'
         title='Terms & Conditions'
         text='We Are The World Best Travel Agency Company'
+        bredcrumb='Terms & Conditions'
         />
         <Condition
           info={[

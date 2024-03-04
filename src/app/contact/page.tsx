@@ -11,6 +11,7 @@ const Contact:React.FC = () => {
         className='bg-contacthead'
         title='Contact'
         text='We Are The World Best Travel Agency Company'
+        bredcrumb='Contact'
     />
     <Address/>
     <ContactForm/>

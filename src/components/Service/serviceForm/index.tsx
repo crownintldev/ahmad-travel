@@ -11,7 +11,7 @@ const ServiecForm = () => {
 
       <form className='mt-5'>
         <div className="grid gap-4 lg:gap-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 space-y-3 ">
             <div>
               <label  className="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Full Name</label>
               <input  type="text" name="FullName" id="FullName" placeholder="Full Name" className="w-full rounded-md border-2 border-primary-orange-100 bg-white py-3 px-6 text-base font-medium  focus:border-dotted focus:border-primary-orange-300 focus:shadow-md"/>

@@ -9,6 +9,7 @@ const Team:React.FC = () => {
       className='bg-contacthead'
       title='Our Team'
       text='We Are The World Best Travel Agency Company'
+      bredcrumb='Team'
     />
     <TravelTeam/>
     </>

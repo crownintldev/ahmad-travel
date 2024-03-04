@@ -1,15 +1,16 @@
 import type { Config } from "tailwindcss";
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
- 
 const config: Config = {
   darkMode: ["class"],
   content: [

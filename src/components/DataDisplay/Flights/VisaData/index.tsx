@@ -18,19 +18,21 @@ const VisaData: React.FC<Visadata> = ({ title, icon, datepick, location,Passenge
   return (
     <div>
      
-        <div className='shadow bg-primary-orange-200 h-28 hover:bg-primary-orange-300 duration-300 transition rounded-md p-3 space-y-5'>
-          <div className='flex justify-between'>
+        <div className='shadow bg-primary-orange-200 h-16 hover:bg-primary-orange-300 duration-300 transition rounded-md p-2 space-y-5'>
+          {/* <div className='flex justify-between'>
             <Para16 className='font-medium' title={title} />
-            {icon}
-          </div>
+          </div> */}
           <div>
           {location.length > 0 &&  (
-            <select className="py-3 px-4 pe-9 block w-full bg-transparent rounded-lg text-sm focus:border-none focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none outline-none" defaultValue="">
+            <div className='flex gap-2 justify-between items-center'>
+             {icon}
+            <select className=" px-4 pe-9 block w-full h-12  bg-transparent rounded-lg text-sm focus:border-none focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none outline-none" defaultValue="">
               <option value="" disabled>Select Location</option>
               {location.length>0 && location.map((item, index) => (
                 <option value={item.option} key={index}>{item.option}</option>
               ))}
             </select>
+            </div>
               )}
             {datepick}
             {Passenger}

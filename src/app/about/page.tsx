@@ -11,6 +11,7 @@ const About = () => {
         className='bg-abouthead'
         title='About'
         text='We Are The World Best Travel Agency Company'
+        bredcrumb='About'
     />
     <AboutInfo/>
     <HappyClient/>
