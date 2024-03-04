@@ -42,7 +42,7 @@ const Faq: React.FC<FaqProps> = ({ faqs }) => {
   return (
     <>
       <div className='bg-banner1 bg-cover bg-center bg-fixed bg-no-repeat mt-32'>
-        <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center container pt-28 pb-28'>
+        <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center container p-2 pt-28 pb-28'>
           <div className="flex justify-center items-center " style={{ transform: `rotate(${rotation}deg)` }}>
             <Image src={adventure} width={200} height={200} alt='adventure'/>
           </div>

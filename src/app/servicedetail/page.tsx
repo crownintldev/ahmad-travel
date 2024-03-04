@@ -1,6 +1,6 @@
-import MultiImage from '@/components/Carousel/MultiImage'
+ 
 import HeadPage from '@/components/Common/HeadPage'
-import { TracingBeamDemo } from '@/components/Service'
+import { Service } from '@/components/Service'
 import React from 'react'
 
 const ServiceDetail = () => {
@@ -12,7 +12,7 @@ const ServiceDetail = () => {
     text='We Are The World Best Travel Agency Company'
     bredcrumb='Service Details'
     />
-    <TracingBeamDemo/>
+    <Service/>
     </>
   )
 }

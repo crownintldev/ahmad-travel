@@ -9,7 +9,7 @@ const words = `Crown International is a renowned name in the Travel industry sin
 const CeoMessage:React.FC = () => {
   return (
     <>
-      <div className=" text-center mt-32 container">
+      <div className=" text-center mt-32 container p-2" >
         <HeadingH1
           className={"whitespace-pre-wrap"}
           title={"Our Mission"}
@@ -23,7 +23,7 @@ const CeoMessage:React.FC = () => {
           
           />
       </div>
-      <div className=" rounded-md  pt-5  bg-primary-orange-300 shadow container mt-10 lg:mt-32">
+      <div className=" rounded-md  pt-5  bg-primary-orange-300 shadow container p-2 mt-10 lg:mt-32">
         <div className=" lg:p-8 md:p-6 sm:p-4 p-2 space-y-3 text-white">
           <HeadingH3  className={'border-b-2 text-white'} title={'CEO Message'}/>
           <FaQuoteLeft size={25} />

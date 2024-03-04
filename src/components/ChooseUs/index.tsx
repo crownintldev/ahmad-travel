@@ -11,7 +11,7 @@ import { BiSupport } from "react-icons/bi";
 const ChooseUs = () => {
   return (
     <>
-      <div className="container mt-10 md:mt-32 mb-10 md:mb-32">
+      <div className="container p-2 mt-10 md:mt-32 mb-10 md:mb-32">
         <div className="text-center space-y-4">
           <HeadingH4
             className="text-primary-orange-300 font-fam uppercase  "

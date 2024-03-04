@@ -31,7 +31,7 @@ const Testimonial:React.FC = () => {
       const stars = Array(5).fill(null).map((_, index) => <StarIcon key={index} />);
   return (
     <>
-<div className='md:container m-2 mt-10 lg:mt-32'>
+<div className='md:container p-2 m-2 mt-10 lg:mt-32'>
     <HeadingH3 title={"Customer Review" }/>
     <hr className='w-16 border-2 border-primary-orange-300'/>
     <div className=' bg-primary-orange-200 rounded-md mt-10 w-full'>

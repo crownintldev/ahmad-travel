@@ -36,7 +36,7 @@ const VisaInfo:React.FC<Visaprops> = ({heading,visaprocess}) => {
     <>
     {
        visaprocess &&  visaprocess.length > 0 && (
-            <div className='container mt-10 '>
+            <div className='container p-2 mt-10 '>
             <HeadingH3 title={heading}/>
             <hr className='w-16 border-2 border-primary-orange-300'/>
             <div ref={ref} className="keen-slider flex overflow-hidden mt-10 gap-3">

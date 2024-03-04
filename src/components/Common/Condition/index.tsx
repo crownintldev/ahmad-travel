@@ -10,7 +10,7 @@ interface ConditionProps {
 const Condition:React.FC<ConditionProps> = ({info}) => {
   return (
     <>
-    <div className='container grid grid-cols-1 md:grid-cols-4 gap-5 mt-10 lg:mt-32'>
+    <div className='container p-2 grid grid-cols-1 md:grid-cols-4 gap-5 mt-10 lg:mt-32'>
         <div className='col-span-3 '>
             {
                info.length > 0 && info.map((item , index)=>(

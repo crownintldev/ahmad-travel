@@ -6,7 +6,7 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <>
- <div className="container mt-10 lg:mt-32">
+ <div className="container p-2 mt-10 lg:mt-32">
   <div className="max-w-xxl mx-auto">
     <div className="text-center space-y-3">
       <HeadingH1  className='font-fam' title={"Contact us"}/>

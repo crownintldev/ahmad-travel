@@ -6,10 +6,10 @@ import React from 'react'
 const ServiecForm = () => {
   return (
     <>
-         <div className="flex flex-col shadow-lg rounded-xl p-4 sm:p-6 lg:p-8 ">
+    
+      <div className=" shadow-lg rounded-xl p-2 sm:p-3 lg:p-4 w-full ">
         <HeadingH6 className='text-primary-orange-300' title={"Fill in the form for any query"}/>
-
-      <form className='mt-5'>
+      <form className='mt-5 w-full'>
         <div className="grid gap-4 lg:gap-6">
           <div className="grid grid-cols-1 space-y-3 ">
             <div>

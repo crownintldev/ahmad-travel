@@ -10,7 +10,7 @@ import Counter from './Counter'
 const HappyClient:React.FC = () => {
   return (
     <>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 container mt-10 lg:mt-32  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 container p-2 mt-10 lg:mt-32  ">
             <div>
               <Image src={count} width={600} height={600} alt='counter Image' />
             </div>

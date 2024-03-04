@@ -49,7 +49,7 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-screen-2xl mx-auto h-full", className)}
+      className={cn("md:relative md:w-full md:max-w-screen-2xl md:mx-auto md:h-full", className)}
     >
       <div className="absolute -left-4 md:-left-20 top-3">
         <motion.div
@@ -63,7 +63,7 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="md:ml-[27px] md:h-4 md:w-4 md:rounded-full md:border md:border-netural-200 md:shadow-sm md:flex md:items-center md:justify-center"
         >
           <motion.div
             transition={{
@@ -76,14 +76,14 @@ export const TracingBeam = ({
               borderColor:
                 scrollYProgress.get() > 0 ? "#fb923c" : "#fb923c",
             }}
-            className="h-2 w-2  rounded-full border border-primary-orange-300 bg-primary-orange-300"
+            className="md:h-2 md:w-2  md:rounded-full md:border md:border-primary-orange-300 md:bg-primary-orange-300"
           />
         </motion.div>
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
           height={svgHeight} // Set the SVG height
-          className=" ml-4 block"
+          className=" md:ml-4 md:block"
           aria-hidden="true"
         >
           <motion.path
