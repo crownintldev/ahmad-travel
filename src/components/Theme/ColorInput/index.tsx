@@ -1,7 +1,7 @@
 // ColorInput.js
 const ColorPicker = ({ color, setColor, label }:any) => {
     return (
-      <div>
+      <>
         <label className="block mb-1">{label}</label>
         <input 
           type="color" 
@@ -9,7 +9,7 @@ const ColorPicker = ({ color, setColor, label }:any) => {
           onChange={(e) => setColor(e.target.value)} 
           className="w-20 h-10 border-2 border-gray-300 rounded"
         />
-      </div>
+      </>
     );
   };
   

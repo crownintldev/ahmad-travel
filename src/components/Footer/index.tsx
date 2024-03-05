@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
 import { FaXTwitter } from 'react-icons/fa6';
+import Theme from '../Theme';
 
 // Define your arrays for the footer
 const FooterAbout: FooterLinkItem[] = [
@@ -28,6 +29,9 @@ const FooterAbout: FooterLinkItem[] = [
 const Footer = () => {
   return (
     <>
+    <p className='h-[0px] overflow-hidden'>
+      <Theme/>
+      </p>
     <footer className="relative bottom-0 bg-primary-orange-100 lg:grid lg:grid-cols-5 border-t shadow-md w-full overflow-hidden mt-32">
     <div className="relative block h-32 lg:col-span-2 lg:h-full overflow-hidden">
   <Image

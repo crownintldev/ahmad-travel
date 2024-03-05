@@ -1,3 +1,4 @@
+import Theme from '@/components/Theme';
 import React, { FC, ReactNode } from 'react';
 
 interface LayoutProviderProps {
@@ -7,6 +8,7 @@ interface LayoutProviderProps {
 const LayoutProvider: FC<LayoutProviderProps> = ({ children }) => {
   return (
     <main className='w-full'>
+      
       {children}
     </main>
   );
