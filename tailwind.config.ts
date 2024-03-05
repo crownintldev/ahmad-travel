@@ -89,11 +89,19 @@ const config: Config = {
         
         primary: {
           orange: {
-            500: "#ea580c",
-            400: "#f97316",
-            300: "#fb923c",
-            200: "#fdba74",
-            100: "#fed7aa",
+            500: 'var(--color-primary5)',
+            400: 'var(--color-primary4)',
+            300: 'var(--color-primary3)',
+            200: 'var(--color-primary2)',
+            100: 'var(--color-primary1)',
+          },
+          text:{
+            color:'var(--color-primary6)',
+          },
+          box:{
+            bgcolor:'var(--color-primary7)',
+            color:'var(--color-primary8)',
+
           },
         }
       }

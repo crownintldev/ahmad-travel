@@ -2,16 +2,33 @@
 @tailwind components;
 @tailwind utilities;
  
+
+:root {
+  /* primary color */
+  --color-primary1: #fed7aa; /* default theme color */
+  --color-primary2: #fdba74; /* default theme color */
+  --color-primary3: #fb923c; /* default theme color */
+  --color-primary4: #f97316; /* default theme color */
+  --color-primary5: #ea580c; /* default theme color */
+  /* Text main */
+  --color-primary6: #000000; /* default theme color */
+  /* box color and text-color */
+  --color-primary7: #fb923c; /* default theme color */
+  --color-primary8: #ffffff; /* default theme color */
+}
+
+
 ::placeholder {
   color: black !important;
   opacity: 1; /* Firefox */
 }
 ::selection {
   color: white;
-  background: #fb923c;
+
+  background: var(--color-primary3);
 }
 ::-ms-input-placeholder { /* Edge 12 -18 */
-  color: black !important;
+  color: rgba(32, 32, 32, 0.712) !important;
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +38,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #f97316; 
+    background-color: var(--color-primary3);; 
   }
   
 
