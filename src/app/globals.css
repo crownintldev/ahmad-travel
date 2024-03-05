@@ -233,8 +233,13 @@
 .ant-picker-presets {
   min-height: 25rem !important;
 }
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-selected:not(.ant-picker-cell-disabled) .ant-picker-cell-inner, .ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-disabled) .ant-picker-cell-inner, .ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-disabled) .ant-picker-cell-inner{
+  background: var(--color-primary3) !important;
+}
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before{
+  border-color: var(--color-primary3) !important;
 
-
+}
 @media (max-width: 800px) {
   .ant-picker-panel-layout {
       flex-direction: column !important;
