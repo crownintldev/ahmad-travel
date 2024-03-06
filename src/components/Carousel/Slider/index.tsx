@@ -1,5 +1,5 @@
 "use client"
-import { HeadingH6 } from '@/components/Common/Heading'
+import { HeadingH5, HeadingH6 } from '@/components/Common/Heading'
 import { Para14 } from '@/components/Common/Paragraph'
 import Link from 'next/link'
 import React from 'react'
@@ -8,9 +8,10 @@ import { useKeenSlider } from "keen-slider/react"
 
 
 interface Destination {
-  href: string;
-  image: any;
-  title: string;
+  href?: string;
+  image?: any;
+  title?: string;
+  visatype?: string;
   description: string;
 }
 
@@ -42,8 +43,11 @@ const Slider: React.FC<SliderProps> = ({ destinations }) => {
       { 
      destinations.map((array,index) => (
       
-  <Link href={"/"} className="grid keen-slider__slide" key={index}>
+  <Link href={`${array.href}`} className="grid keen-slider__slide relative" key={index}>
         <Image className='"w-full h-96 object-cover object-center rounded-md shadow-md' src={array.image} height={600} width={600} alt='Image' ></Image>
+        <div className='border p-2 rounded-md bg-white absolute left-2 top-2'>
+          <Para14 title={array.visatype}/>
+        </div>
         <div className="relative px-4 -mt-16  ">
           <div className="bg-white p-3 rounded-md shadow-md border-b">
             <HeadingH6 className='font-semibold uppercase leading-tight truncate' title={array.title}/>

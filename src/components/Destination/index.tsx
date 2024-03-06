@@ -3,7 +3,10 @@ import React from "react";
 import { HeadingH2 } from "../Common/Heading";
 import { Para16 } from "../Common/Paragraph";
 import Slider from "../Carousel/Slider";
-import tra1 from '../../../public/assets/images/tra1.jpg'
+import malaysia from '../../../public/assets/images/malaysia.jpg'
+import vitenam from '../../../public/assets/images/vitenam.jpg'
+import indonesia from '../../../public/assets/images/indonesia.jpg'
+
 
 const Destination = () => {
 
@@ -17,26 +20,20 @@ const Destination = () => {
             title="Go beyond your imagination"
           />
           <div className="border-b-2 border w-72 border-b-primary-orange-200" />
-          <Para16 title="Discover your ideal experience with us" />
+          <Para16 title="We Have Authorized Embassy Visa Application Centre & Dropbox" />
         </div>
         <div className="col-span-2">
         <Slider 
            
            destinations={[
             {
-               href:"/" , image:tra1 , title:"Air Tickets", description:"We are a leading online ticketing agency that specializes in both domestic and international flights."
+               href:"/servicedetail/malaysia" , image:malaysia ,visatype:"Visa Application Centre", title:"Malaysia Visa", description:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."
             },
             {
-              href:"/" , image:tra1 , title:"Air Tickets", description:"We are a leading online ticketing agency that specializes in both domestic and international flights."
+              href:"/servicedetail/vitenam" , image:vitenam ,visatype:"Official Drop Box Centre", title:"Vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
            },
            {
-            href:"/" , image:tra1 , title:"Air Tickets", description:"We are a leading online ticketing agency that specializes in both domestic and international flights."
-          },
-          {
-          href:"/" , image:tra1 , title:"Air Tickets", description:"We are a leading online ticketing agency that specializes in both domestic and international flights."
-          },
-          {
-          href:"/" , image:tra1 , title:"Air Tickets", description:"We are a leading online ticketing agency that specializes in both domestic and international flights."
+            href:"/" , image:indonesia ,visatype:"Official Drop Box Centre", title:"Indonesia Visa", description:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."
           },
           ]}
         />

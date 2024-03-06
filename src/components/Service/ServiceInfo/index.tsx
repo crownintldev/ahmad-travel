@@ -2,11 +2,8 @@ import { HeadingH3 } from '@/components/Common/Heading'
 import { Para14 } from '@/components/Common/Paragraph'
 import { overviewDetail } from '@/components/Constant'
 import React from 'react'
-import ServiceTab from '../Servicedetail'
 import Tab from '@/components/Tabs'
-import Flights from '@/components/DataDisplay/Flights'
 import Servicedetail from '../Servicedetail'
-import Faq from '@/components/Home/Faq'
 import Itinerary from '../Itinerary'
 
 

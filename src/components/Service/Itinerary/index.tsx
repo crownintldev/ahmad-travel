@@ -2,6 +2,7 @@
 import { HeadingH3, HeadingH6 } from '@/components/Common/Heading';
 import { Para14 } from '@/components/Common/Paragraph';
 import React, { useState } from 'react'
+import { GoDotFill } from 'react-icons/go';
 import { IoIosArrowDropdownCircle } from 'react-icons/io';
 interface Iter {
     title: string;
@@ -34,8 +35,14 @@ const Itinerary:React.FC<IterProps> = ({Itinerayloop}) => {
                   <HeadingH6 className='font-medium' title={faq.title}/>
                   <IoIosArrowDropdownCircle className={`h-6 w-6 text-black transform transition-transform ${openIndex === index ? 'rotate-180' : ''}`}/>
                 </button>
-                <div className={`p-5 border-t border-gray-200 transition duration-500 ease ${openIndex !== index && 'hidden'}`}>
-                  <Para14 title={faq.content}/>
+                <div className={`p-5 border-t  border-gray-200 transition duration-500 ease ${openIndex !== index && 'hidden'}`}>
+                {faq.content.split('\n').map((point, index) => (
+                    <div className="flex flex-row gap-2" key={index}>
+                        <GoDotFill className='mt-[3px]' />
+                        <Para14 title={point} />
+                    </div>
+                ))}
+                  
                 </div>
               </div>
             ))}

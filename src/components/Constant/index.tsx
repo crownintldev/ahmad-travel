@@ -13,10 +13,6 @@ import tra4 from "../../../public/assets/images/abouthead.jpg"
 import tra5 from "../../../public/assets/images/servicehead.jpg"
 import tra6 from "../../../public/assets/images/ceohead.jpg"
 import tra7 from "../../../public/assets/images/contacthead.jpg"
-
-
-
-
 import { AiOutlineGlobal, AiOutlineProject } from "react-icons/ai"
 import { PiPersonArmsSpreadBold } from "react-icons/pi"
 import { SiSocialblade } from "react-icons/si"
@@ -24,6 +20,19 @@ import { FaBook, FaCcVisa, FaMapMarkedAlt, FaPray } from "react-icons/fa"
 import { FaPlaneDeparture, FaVanShuttle } from "react-icons/fa6"
 import { TbTournament } from "react-icons/tb"
 import { IoCarSport } from "react-icons/io5"
+import malaysia1 from "../../../public/assets/images/static/malaysia1.jpg"
+import malaysia2 from "../../../public/assets/images/static/malaysia2.jpg"
+import malaysia3 from "../../../public/assets/images/static/malaysia3.jpg"
+import malaysia4 from "../../../public/assets/images/static/malaysia4.jpg"
+
+import vietnam1 from "../../../public/assets/images/static/vietnam1.jpg"
+import vietnam2 from "../../../public/assets/images/static/vietnam2.jpg"
+import vietnam3 from "../../../public/assets/images/static/vietnam3.jpg"
+import vietnam4 from "../../../public/assets/images/static/vietnam4.jpg"
+
+
+
+
 
 export const serviceimages=[
   {id:1, image:tra1},
@@ -39,9 +48,36 @@ export const overviewDetail=[
   {text:"The country is also known for its delicious cuisine, which is a fusion of various culinary traditions. Popular dishes include nasi lemak, satay, and laksa. Additionally, Malaysia is a shopper’s paradise, with an abundance of shopping malls and markets offering everything from luxury brands to unique local handicrafts."},
   {text:"In terms of tourism, Malaysia is a popular destination for both leisure and business travelers, with a well-developed tourism industry that offers a range of services and experiences. From exploring the historic sites of Malacca to scuba diving in the waters of Sipadan Island, there is something for everyone in Malaysia."},
   {text:"To make the most of your trip to Malaysia, it is recommended to plan ahead and book accommodation, transportation, and activities in advance. With its friendly locals, stunning scenery, and vibrant culture, Malaysia is truly a destination worth experiencing."},
-
-
 ]
+
+// Static start
+export const malaysiaimg=[
+  {id:1, image:malaysia1},
+  {id:2, image:malaysia2},
+  {id:3, image:malaysia3},
+  {id:4, image:malaysia4},
+ 
+]
+export const vietnamimg=[
+  {id:1, image:vietnam1},
+  {id:2, image:vietnam2},
+  {id:3, image:vietnam3},
+  {id:4, image:vietnam4},
+ 
+]
+export const vietnamDetail=[
+  {text:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east. With a population of over 97 million people, the country is renowned for its rich history, diverse culture, and natural beauty.Vietnam’s history has been shaped by various influences, including Chinese domination, French colonization, and the Vietnam War from 1955 to 1975. The country gained independence from France in 1954 and has since developed into a socialist-oriented market economy."},
+  {text:"Vietnam boasts of many breathtaking natural attractions, such as the UNESCO World Heritage Site Ha Long Bay, with its limestone islands and emerald waters; the Mekong Delta, a vast network of rivers and canals that houses floating markets and traditional villages; and Phong Nha-Ke Bang National Park, which has some of the world’s largest caves and underground rivers.The country’s diverse culture reflects the influence of its various ethnic groups, such as the Kinh, the largest ethnic group, as well as the Tay, Thai, Hmong, and Dao. Vietnamese cuisine is famous for its variety of flavors and ingredients, including fish sauce, rice, noodles, and fresh herbs."},
+  {text:"Vietnam economy has grown rapidly in recent years, propelled by its manufacturing and export sectors. The country is also a significant producer of agricultural products like rice, coffee, and cashew nuts, and its tourism industry is rapidly expanding.Vietnam is a popular destination for travelers worldwide, with numerous attractions and activities like exploring the ancient town of Hoi An, trekking in the Sapa mountains, or cruising the Mekong Delta. Visitors to the country often remark on the warm hospitality and friendliness of its people, making it a popular destination for those seeking cultural experiences and local interactions.Despite its many strengths, Vietnam faces several challenges like environmental degradation, corruption, and inequality. The government is taking steps to address these issues through various initiatives, including promoting sustainable development and enhancing access to education and healthcare.Overall, Vietnam is a captivating and stunning country with a rich history, diverse culture, and considerable potential for growth and development."},
+]
+export const malaysiaDetail=[
+  {text:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities. It is a melting pot of various cultures, including Malay, Chinese, Indian, and indigenous groups. Malaysia is home to numerous attractions, including beautiful beaches, lush rainforests, and impressive architecture, such as the iconic Petronas Twin Towers in Kuala Lumpur."},
+  {text:"The country is also known for its delicious cuisine, which is a fusion of various culinary traditions. Popular dishes include nasi lemak, satay, and laksa. Additionally, Malaysia is a shopper’s paradise, with an abundance of shopping malls and markets offering everything from luxury brands to unique local handicrafts."},
+  {text:"In terms of tourism, Malaysia is a popular destination for both leisure and business travelers, with a well-developed tourism industry that offers a range of services and experiences. From exploring the historic sites of Malacca to scuba diving in the waters of Sipadan Island, there is something for everyone in Malaysia."},
+  {text:"To make the most of your trip to Malaysia, it is recommended to plan ahead and book accommodation, transportation, and activities in advance. With its friendly locals, stunning scenery, and vibrant culture, Malaysia is truly a destination worth experiencing."},
+]
+// static end
+
 export const Aboutcore = {
     Category: [{ cat: "Core Services" }],
     service: [

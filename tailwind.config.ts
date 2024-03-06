@@ -101,8 +101,12 @@ const config: Config = {
           box:{
             bgcolor:'var(--color-primary7)',
             color:'var(--color-primary8)',
-
           },
+          navbar:{
+            bgColor:'var(--color-primary9)',
+            navlink:'var(--color-primary10)',
+
+          }
         }
       }
     }

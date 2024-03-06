@@ -15,6 +15,13 @@
   /* box color and text-color */
   --color-primary7: #fb923c; /* default theme color */
   --color-primary8: #ffffff; /* default theme color */
+  /* Navbar color */
+  --color-primary9: #ffffff; /* default theme color */
+  /* Navbar link color */
+  --color-primary10: #000000; /* default theme color */
+
+
+
 }
 
 

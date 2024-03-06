@@ -1,7 +1,6 @@
 "use client";
 import Logo from "@/components/Common/Logo";
 import Navlink from "@/components/Common/NavLink/Navlink";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { TbMenu2 } from "react-icons/tb";
