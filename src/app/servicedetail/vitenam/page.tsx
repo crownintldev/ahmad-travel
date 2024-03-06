@@ -196,9 +196,7 @@ const Vatinam = () => {
                         "Documents attested by MOFA",
 
                     ]
-                },
-                
-                
+                },  
             ]}
             />,
           },     
