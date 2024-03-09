@@ -18,7 +18,7 @@ const { RangePicker } = DatePicker;
 const Flights: React.FC = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-4">
         <VisaData
           title="From"
           icon={<FaPlaneDeparture size={25} />}
@@ -52,7 +52,7 @@ const Flights: React.FC = () => {
               <div className="flex justify-center items-center gap-2">
                 <MdOutlineDateRange size={25} />
                 <RangePicker
-                  className="w-full text-black h-12 bg-transparent hover:bg-transparent outline-none focus:outline-none"
+                  className="w-full text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
                   picker="date"
                   id={{
                     start: "startInput",
@@ -70,7 +70,7 @@ const Flights: React.FC = () => {
           location={[]}
           Passenger={
             <>
-            <div className="flex justify-center items-center gap-2">
+            <div className="flex justify-center items-center h-8">
                 <IoMdPerson  size={25} />
               <Passenger
                 userAgent={[
@@ -83,9 +83,9 @@ const Flights: React.FC = () => {
             </>
           }
         />
+        <div className="text-center ">
+        <Button className=" text-white w-full h-12" title="Search" />
       </div>
-      <div className="text-center mt-5">
-        <Button className=" text-white w-[100px] " title="Search" />
       </div>
     </>
   );

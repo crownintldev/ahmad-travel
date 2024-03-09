@@ -30,12 +30,12 @@ const Itinerary:React.FC<IterProps> = ({Itinerayloop}) => {
             {Itinerayloop.length>0 &&Itinerayloop.map((faq, index) => (
               <div key={index} className="bg-primary-orange-200 text-black rounded-md duration-500 transition">
                 <button
-                  className="flex justify-between items-center w-full p-5 text-left duration-500 transition"
+                  className="flex justify-between items-center w-full p-3 text-left duration-500 transition"
                   onClick={() => toggleAccordion(index)}>
                   <HeadingH6 className='font-medium' title={faq.title}/>
-                  <IoIosArrowDropdownCircle className={`h-6 w-6 text-black transform transition-transform ${openIndex === index ? 'rotate-180' : ''}`}/>
+                  <IoIosArrowDropdownCircle className={`h-6 w-6 text-white transform transition-transform ${openIndex === index ? 'rotate-180' : ''}`}/>
                 </button>
-                <div className={`p-5 border-t  border-gray-200 transition duration-500 ease ${openIndex !== index && 'hidden'}`}>
+                <div className={`p-5 border-t  border-gray-200 bg-white shadow-lg transition duration-500 ease ${openIndex !== index && 'hidden'}`}>
                 {faq.content.split('\n').map((point, index) => (
                     <div className="flex flex-row gap-2" key={index}>
                         <GoDotFill className='mt-[3px]' />

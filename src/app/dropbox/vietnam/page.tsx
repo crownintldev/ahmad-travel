@@ -33,14 +33,14 @@ const Vietnam= () => {
   {dropvietnam.length > 0 && dropvietnam.map((faq, outerIndex) => (
     <div key={faq.id || outerIndex} className="bg-primary-orange-200 text-black rounded-md duration-500 transition">
       <button
-        className="flex justify-between items-center w-full p-5 text-left duration-500 transition"
+        className="flex justify-between items-center w-full p-3 text-left duration-500 transition"
         onClick={() => toggleAccordion(outerIndex)}
         aria-expanded={openIndex === outerIndex}
       >
         <HeadingH6 className='font-medium' title={faq.title} />
-        <IoIosArrowDropdownCircle className={`h-6 w-6 text-black transform transition-transform ${openIndex === outerIndex ? 'rotate-180' : ''}`} />
+        <IoIosArrowDropdownCircle className={`h-6 w-6 text-white transform transition-transform ${openIndex === outerIndex ? 'rotate-180' : ''}`} />
       </button>
-      <div className={`p-5 border-t border-gray-200 transition duration-500 space-y-3 ease ${openIndex !== outerIndex ? 'hidden' : ''}`}>
+      <div className={`p-5 border-t border-gray-200 transition bg-white shadow-lg duration-500 space-y-3 ease ${openIndex !== outerIndex ? 'hidden' : ''}`}>
         {faq.content.map((item, innerIndex) => (
           <React.Fragment key={outerIndex + '-' + innerIndex}>
             <HeadingH6 title={item.Heading} />

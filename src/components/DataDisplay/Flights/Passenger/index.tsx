@@ -1,8 +1,9 @@
   import React, { useState } from 'react';
-  import { Button, Popover } from 'antd';
+  import { Popover } from 'antd';
   import { Para12, Para14, Para16 } from '@/components/Common/Paragraph';
   import type { RadioChangeEvent } from 'antd';
 import { Input, Radio, Space } from 'antd';
+import Button from '@/components/Common/Button';
 
   interface PassengerProps {
     userAgent: Array<{
@@ -69,7 +70,7 @@ import { Input, Radio, Space } from 'antd';
 
     return (
       <Popover className='w-full' placement="bottom" trigger="click" content={content} >
-        <Button className='w-full bg-transparent' type="text">Passenger</Button>
+        <Button  title={"Passenger"} className=' bg-transparent hover:bg-transparent text-start'/>
       </Popover>
     );
   }

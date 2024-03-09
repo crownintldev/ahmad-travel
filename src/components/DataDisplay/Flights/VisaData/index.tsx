@@ -18,7 +18,7 @@ const VisaData: React.FC<Visadata> = ({ title, icon, datepick, location,Passenge
   return (
     <div>
      
-        <div className='shadow bg-primary-orange-200 h-16 hover:bg-primary-orange-300 duration-300 transition rounded-md p-2 space-y-5'>
+        <div className='shadow bg-primary-orange-200 h-12 hover:bg-primary-orange-300 duration-300 transition rounded-md p-2 space-y-5'>
           {/* <div className='flex justify-between'>
             <Para16 className='font-medium' title={title} />
           </div> */}
@@ -26,7 +26,7 @@ const VisaData: React.FC<Visadata> = ({ title, icon, datepick, location,Passenge
           {location.length > 0 &&  (
             <div className='flex gap-2 justify-between items-center'>
              {icon}
-            <select className=" px-4 pe-9 block w-full h-12  bg-transparent rounded-lg text-sm focus:border-none focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none outline-none" defaultValue="">
+            <select className=" px-4 pe-9 block w-full h-8  bg-transparent rounded-lg text-sm focus:border-none focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none outline-none" defaultValue="">
               <option value="" disabled>Select Location</option>
               {location.length>0 && location.map((item, index) => (
                 <option value={item.option} key={index}>{item.option}</option>

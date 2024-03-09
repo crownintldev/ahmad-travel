@@ -8,7 +8,7 @@ const Booking = () => {
   
   return (
     <>
-      <div className="container w-full shadow-md z-10 border rounded-lg p-2 sm:p-4 md:p-6 space-y-10">
+      <div className="container w-full shadow z-10  rounded-lg p-2 sm:p-4 md:p-6 space-y-4">
       <Tab 
         tabsData = {[
           {

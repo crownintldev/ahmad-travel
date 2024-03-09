@@ -31,18 +31,18 @@ const Malaysia= () => {
      
         <div className=' grid grid-cols-1 md:grid-cols-5 mt-10  md:gap-5'>
          <div className='col-span-4'>
-         <div className='w-full space-y-3 mt-10'>
+         <div className='w-full space-y-2 mt-10'>
   {dropmalasia.length > 0 && dropmalasia.map((faq, outerIndex) => (
     <div key={faq.id || outerIndex} className="bg-primary-orange-200 text-black rounded-md duration-500 transition">
       <button
-        className="flex justify-between items-center w-full p-5 text-left duration-500 transition"
+        className="flex justify-between items-center w-full p-3 text-left duration-500 transition"
         onClick={() => toggleAccordion(outerIndex)}
         aria-expanded={openIndex === outerIndex}
       >
         <HeadingH6 className='font-medium' title={faq.title} />
-        <IoIosArrowDropdownCircle className={`h-6 w-6 text-black transform transition-transform ${openIndex === outerIndex ? 'rotate-180' : ''}`} />
+        <IoIosArrowDropdownCircle className={`h-6 w-6 text-white duration-300  transform transition-transform ${openIndex === outerIndex ? 'rotate-180' : ''}`} />
       </button>
-      <div className={`p-5 border-t border-gray-200 transition duration-500 space-y-3 ease ${openIndex !== outerIndex ? 'hidden' : ''}`}>
+      <div className={`p-5 border-t border-gray-200 bg-white shadow-lg transition duration-500 space-y-3 ease ${openIndex !== outerIndex ? 'hidden' : ''}`}>
         {faq.content.map((item, innerIndex) => (
           <React.Fragment key={outerIndex + '-' + innerIndex}>
             <HeadingH6 title={item.Heading} />
