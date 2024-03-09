@@ -94,8 +94,8 @@ const Malaysia = () => {
       <div ref={thumbnailRef} className="keen-slider thumbnail mt-2 rounded-lg">
       {
           malaysiaimg.map((array, index)=>(
-                    <div className="keen-slider__slide "key={index}>
-                        <Image className='w-full object-cover' src={array.image} width={150} height={150} alt='images'/>      
+                    <div className="keen-slider__slide  "key={index}>
+                        <Image className='w-full h-[200px] object-cover' src={array.image} width={150} height={150} alt='images'/>      
                     </div>
                 )) }
       </div>
