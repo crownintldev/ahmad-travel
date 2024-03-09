@@ -1,7 +1,7 @@
 //@ts-nocheck
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { HeadingH4 } from "../Heading";
 import { Para12, Para14, Para16 } from "../Paragraph";

@@ -27,18 +27,16 @@ const Destination = () => {
            
            destinations={[
             {
-               href:"/servicedetail/malaysia" , image:malaysia ,visatype:"Visa Application Centre", title:"Malaysia Visa", description:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."
+               href:"/dropbox/malaysia" , image:malaysia ,visatype:"Official Drop Box Centre", title:"Malaysia Visa", description:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."
             },
             {
-              href:"/servicedetail/vitenam" , image:vitenam ,visatype:"Official Drop Box Centre", title:"Vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
+              href:"/dropbox/vietnam" , image:vitenam ,visatype:"Official Drop Box Centre", title:"Vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
            },
            {
-            href:"/" , image:indonesia ,visatype:"Official Drop Box Centre", title:"Indonesia Visa", description:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."
+            href:"/dropbox/indonesia" , image:indonesia ,visatype:"Official Drop Box Centre", title:"Indonesia Visa", description:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."
           },
           ]}
-        />
-
-          
+        />   
         </div>
       </div>
     </div>

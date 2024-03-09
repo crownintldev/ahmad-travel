@@ -122,3 +122,20 @@ export default TravelTeam -->
 // }
 
 // export default Service -->
+
+
+
+
+  <!-- {
+                    title: "Thailand Sticker Visa Required Documents",
+                    points:[
+                      "Cover letter / Company Working Letter",
+                      "1 Empty Passport Page / 6 Months Validity of Passport",
+                      "Bank Statement Personal & Company (6 Month) with Account maintenance later bank sign stamp",
+                      "4 Photos White background passport size (taken within 6 months)",
+                      "Copies of CNIC",
+                      "NTN",
+                      "Air ticket & hotel booking confirmed",
+                     
+                    ]
+                }, -->

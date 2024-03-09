@@ -11,11 +11,10 @@ import {
     KeenSliderInstance,
   } from "keen-slider/react"
   import "keen-slider/keen-slider.min.css"
-import { malaysiaDetail, malaysiaimg, overviewDetail, vietnamDetail, vietnamimg } from '@/components/Constant'
+import { KenyaDetail,  indonesiaimg, kenyaimg, } from '@/components/Constant'
 import Image from 'next/image'
 import { Para14 } from '@/components/Common/Paragraph'
 import Tab from '@/components/Tabs'
-import Servicedetail from '@/components/Service/Servicedetail'
 import Itinerary from '@/components/Service/Itinerary'
 import ServiceData from '@/components/Service/servicedata'
   
@@ -54,7 +53,7 @@ import ServiceData from '@/components/Service/servicedata'
     }
   }
 
-const Vatinam = () => {
+const Kenya     = () => {
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         initial: 0,
       })
@@ -72,20 +71,20 @@ const Vatinam = () => {
     <>
     <HeadPage
     className='bg-servicehead'
-    title='Vatinam Visa'
+    title='Kenya    Visa'
     text='We Are The World Best Travel Agency Company'
-    bredcrumb='Vatinam Visa'
+    bredcrumb='Kenya    Visa'
     />
      <TracingBeam className="p-2  mt-10 ">
       <div className="mt-10">
-        <HeadingH4 title={"Vatinam Visa"}/>
+        <HeadingH4 title={"Kenya    Visa"}/>
         <hr className='w-16 border-2 border-primary-orange-300'/>
       </div>
         <div className=' grid grid-cols-1 md:grid-cols-5 mt-10  md:gap-5'>
          <div className='col-span-4'>
          <div ref={sliderRef} className="keen-slider">
             {
-                vietnamimg.map((array, index)=>(
+                kenyaimg.map((array, index)=>(
                     <div className="keen-slider__slide w-full h-auto lg:h-[500px] rounded-lg shadow-md "key={index}>
                         <Image className='w-full object-contain bg-contain bg-bottom ' src={array.image} width={1440} height={768} alt='images'/>
                     </div>
@@ -93,7 +92,7 @@ const Vatinam = () => {
       </div>
       <div ref={thumbnailRef} className="keen-slider thumbnail mt-2 rounded-lg">
       {
-          vietnamimg.map((array, index)=>(
+          kenyaimg.map((array, index)=>(
                     <div className="keen-slider__slide "key={index}>
                         <Image className='w-full object-cover' src={array.image} width={150} height={150} alt='images'/>      
                     </div>
@@ -107,7 +106,7 @@ const Vatinam = () => {
             <div className=' p-2 md:p-4 shadow border-t-4 border-t-primary-orange-200 rounded-md space-y-3'>
                 <HeadingH3 title={"Overview"}/>
                 {
-                    vietnamDetail.map((array,index)=>(
+                    KenyaDetail.map((array,index)=>(
                         <Para14 key={index} title={array.text}/>
                     ))
                 }      
@@ -121,34 +120,8 @@ const Vatinam = () => {
             content: <ServiceData
             data={[
                 {
-                    title: "Vietnam Sticker Visa Requirements",
-                    points: [
-                        "02 passport sizes Pictures",
-                        "01 photo of CNIC / ID",
-                        "01 copy of passport",
-                        "Original passport",
-                        "Visa approval from Vietnam",
-                    ]
-                },
-                {
-                    title: "Single Entry Visa",
-                    points: [
-                        "01 Month Validity",
-                        "03 Month Validity",     
-                    ]
-                },
-                {
-                    title: "Multiple Entry Visa",
-                    points: [
-                        "01 Month Multiple",
-                        "03 Month Multiple",  
-                        "06 Month Multiple",     
-                        "01 Year Multiple",     
-                    ]
-                },
-                {
-                    des:"01 Month Validity",
-                    des2:"03 Month Validity",
+                    title: "Kenya Sticker Visa Not Available",
+                   
                 },
             ]}
             />,
@@ -159,65 +132,57 @@ const Vatinam = () => {
             content: <ServiceData
             data={[
                 {
-                    title: "Vietnam E Visa Not Available",
+                    title: "Kenya E – Visa Requirement",
+                    points:[
+                        "Passport Scan Copy",
+                        "1 Picture with White Background",
+                        "CNIC Copy",
+                        "3 – 4 Working Days",
+                        "For Business Visits",
+                    ]          
                 },
+                {
+                    des:"Invitation Letters from company / Invitation letter for business visits Copies of registration of the company Return air ticket",
+                },
+                {
+                    title:"—– For Family visits —–",
+                    des:"Invitation Letters from family. Identity card / Passport / Alien card / Entry permit of the host. Return air ticket"
+                },
+                {
+                    title:"—– For Tourists Travel —–",
+                    des:"itinerary (Details about places to visit if going as a tourist).Hotel bookings. Return air ticket Identity Documents Clear Passport biodata page. A clear photograph."
+                },
+                  
             ]}
             />,
           },  
+          
           {
             key: '3',
-            title: 'Attestation',
-            content: <ServiceData
-            data={[
-               
-                {
-                    title: "For Afghanistan 🇦🇫 Citizens",
-                    des:"All categories same Charges",
-                    des2:"Normal 07 Working Days",
-
-                    points: [
-                        "For Urgent in 02-03 working days",
-                        "For Same Day visa",
-                    ]
-                },
-                {
-                    title: "For Attestation",
-                    points: [
-                        "01 Document Only",
-                        "Overlapping Seal",
-                    ]
-                },
-                {
-                    title: "Below are the requirements for Attestation",
-                    points: [
-                        "01 photo of CNIC / ID",
-                        "Complete Application form",
-                        "Photo of documents",
-                        "Documents attested by MOFA",
-
-                    ]
-                },  
-            ]}
-            />,
-          },     
-          {
-            key: '5',
             title: 'Embassy Details',
             content: <ServiceData
             data={[
-               
+                
                 {
-                    title: "Address:",
-                    points: [
-                        "F-8-1, F-8, Islamabad, ICT",
+                    title: "Address Details",
+                    points:[
+                        "10, St 6, F-10-3, F-10, Islamabad, ICT",
                     ]
                 },
                 {
-                    title: "Telephone:",
-                    points: [
-                        "(051) 2655785",
+                    title: "Hours",
+                    points:[
+                        "Open ⋅ Closes 5 pm",
                     ]
                 },
+                {
+                    title: "Phone",
+                    points:[
+                        "(051) 2601504",
+                        "(051) 2601506",
+
+                    ]
+                },   
             ]}
             />,
           }, 
@@ -226,28 +191,25 @@ const Vatinam = () => {
       <Itinerary
       Itinerayloop={
         [
-            { 
-                title: "Day 1 Explore the historic city of Hanoi",
+            {
+                title: "Day 1: Nairobi",
                 content: 
-                    "Explore the historic city of Hanoi, Vietnam’s capital, and visit popular attractions such as Hoan Kiem Lake, the Temple of Literature, and the Ho Chi Minh Mausoleum.\nWander through the Old Quarter and sample some of Hanoi’s famous street food, such as pho and banh mi."
-                
+                    "Arrive in Nairobi, the capital city of Kenya.\nVisit the Nairobi National Museum to learn about the country’s history and culture.\nExplore the bustling downtown area and visit the colorful local markets.\nEnd the day with dinner at a traditional Kenyan restaurant, trying local specialties like nyama choma and ugali."
             },
-            { 
-                title: "Day 2: Take a day trip to the UNESCO",
+            {
+                title: "Day 2: Masai Mara National Reserve",
                 content: 
-                    "Take a day trip to the UNESCO World Heritage Site of Ha Long Bay, where you can enjoy a scenic cruise, explore the limestone caves and grottos, and swim in the turquoise waters."
-                
+                    "Take an early morning flight to the Masai Mara National Reserve.\nSpend the day on a game drive, spotting wildlife such as elephants, lions, zebras, and giraffes.\nIn the evening, enjoy a traditional Maasai dance performance."
             },
-            { 
-                title: "Day 3: Head to Hoi An, a charming ancient town",
+            {
+                title: "Day 3: Lake Nakuru National Park",
                 content: 
-                    "Head to Hoi An, a charming ancient town that is also a UNESCO World Heritage Site. Visit the Japanese Covered Bridge, stroll through the Old Town, and shop for handmade silk and tailor-made clothing.\nTake a cooking class and learn how to make traditional Vietnamese dishes."
-                
+                    "Head to Lake Nakuru National Park, known for its flamingos and bird species.\nTake a game drive around the park, spotting rhinos, lions, and other wildlife.\nVisit a local village to learn about traditional Kenyan life and customs."
             },
-            { 
-                title: "Day 4: Experience the hustle and bustle",
+            {
+                title: "Day 4: Mombasa",
                 content: 
-                    "Experience the hustle and bustle of Ho Chi Minh City (formerly known as Saigon), Vietnam’s largest city. Visit the War Remnants Museum, the Independence Palace, and the Notre Dame Cathedral.\n Explore the famous Ben Thanh Market, where you can shop for souvenirs and taste local street food."        
+                    "Take a morning flight to Mombasa, a coastal city with beautiful beaches.\nSpend the day relaxing on the beach and swimming.\nIn the evening, visit the Old Town and enjoy dinner at a local seafood restaurant."        
             }
         ]
       }
@@ -262,4 +224,4 @@ const Vatinam = () => {
   )
 }
 
-export default Vatinam
+export default Kenya   

@@ -44,7 +44,7 @@ const VisaInfo:React.FC<Visaprops> = ({heading,visaprocess}) => {
                  visaprocess.length > 0 && visaprocess.map((array,index)=>(
                         <Link href={array.link} className="grid keen-slider__slide mt-3 mb-3" key={index} >
                         <div className="bg-white relative shadow transition duration-500 rounded-lg">
-                          <Image className="rounded-t-lg w-full" width={300} height={300} src={array.image} alt="img" />
+                          <Image className="rounded-t-lg w-full h-[250px] bg-contain" width={300} height={300} src={array.image} alt="img" />
                           <div className="md:py-4 py-2 md:px-6 px-2  rounded-lg bg-white">
                             <HeadingH6 className=" font-bold text-2xl mb-3  hover:cursor-pointer" title={array.title} />
                             <Para14 className=" tracking-wide" title={truncateText(array.para,80)}/>
