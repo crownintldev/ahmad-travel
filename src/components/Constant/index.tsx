@@ -105,9 +105,22 @@ import turkey1 from "../../../public/assets/images/static/turkey1.jpg"
 import turkey2 from "../../../public/assets/images/static/turkey2.jpg"
 import turkey3 from "../../../public/assets/images/static/turkey3.jpg"
 import turkey4 from "../../../public/assets/images/static/turkey4.jpg"
+import mora from '../../../public/assets/images/mora.jpg'
+import mora1 from '../../../public/assets/images/mora1.jpg'
+import pato from '../../../public/assets/images/pato.jpg'
+import fbr from '../../../public/assets/images/fbr.jpg'
+import iata from '../../../public/assets/images/iata.jpg'
 
 
 
+export const reg=[
+  {id:"1", image:mora , text:"DTS# LHR-4198"},
+  {id:"2", image:pato , text:"PATO Reg# 196"},
+  {id:"3", image:mora1 , text:"HAJJ Reg# 13027"},
+  {id:"4", image:fbr , text:"NTN# 3258973-5"},
+  {id:"5", image:iata , text:"IATA# 27339944"},
+
+]
 
 export const serviceimages=[
   {id:1, image:tra1},

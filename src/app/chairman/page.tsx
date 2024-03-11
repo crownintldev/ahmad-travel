@@ -1,3 +1,4 @@
+import Register from '@/components/About/Register'
 import CeoMessage from '@/components/Chairman/Ceomessage'
 import Ceosection from '@/components/Chairman/Ceosection'
 import HeadPage from '@/components/Common/HeadPage'
@@ -14,6 +15,7 @@ const Chairman:React.FC = () => {
      />   
      <Ceosection/>
      <CeoMessage/>
+     <Register/>
     </>
   )
 }
