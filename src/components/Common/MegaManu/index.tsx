@@ -62,7 +62,7 @@ const MegaMenu = ({
        { id: "5",title: "Nepal Visa", para: "Nepal is a country located in South Asia, bordered by China to the north and India",ref: "/servicedetail/nepal",},
        { id: "6",title: "Sri Lanka Visa", para: "Sri Lanka is a tropical island nation located in the Indian Ocean, southeast",ref: "/servicedetail/srilanka",},
        { id: "7",title: "Singapore Visa", para: "Singapore, a small island city-state located in Southeast Asia, is known for its modern",ref: "/servicedetail/singapore",},
-       { id: "8",title: "Combodia Visa", para: "Cambodia is a Southeast Asian country located on the southern portion of the Indochine",ref: "/servicedetail/combodia",},
+       { id: "8",title: "Cambodia Visa", para: "Cambodia is a Southeast Asian country located on the southern portion of the Indochine",ref: "/servicedetail/cambodia",},
        { id: "9",title: "Egypt Visa", para: "Egypt is a country located in North Africa and the Middle East, renowned for its rich history,",ref: "/servicedetail/egypt",},
        { id: "10",title: "Azerbaijan Visa", para: "Azerbaijan is a country located in the South Caucasus region of Eurasia, bordered",ref: "/servicedetail/azerbaijan",},
        { id: "11",title: "Tajikistan Visa", para: "Tajikistan is a Central Asian landlocked country that shares borders with Afghanistan",ref: "/servicedetail/tajikistan",},
@@ -73,7 +73,6 @@ const MegaMenu = ({
        { id: "16",title: "Turkey Visa", para: "Turkey is a transcontinental country that straddles both Europe and Asia, with a rich cultural",ref: "/servicedetail/turkey",},
        { id: "17",title: "Dubai Visa", para: "Dubai is a city and emirate in the United Arab Emirates (UAE) located on the southeastern",ref: "/servicedetail/dubai",},
     ]} /> },
-
     // 3
     { id: "3", title: "File Processing", content: <MegaData onLinkClick={handleLinkClick} service={[
       {
