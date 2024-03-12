@@ -101,6 +101,33 @@ const MegaMenu = ({
     },
   
   ]} /> },
+  { id: "4", title: "Other Service", content: <MegaData onLinkClick={handleLinkClick} service={[
+    {
+    id: "1",
+    title: "Hajj & Umrah",
+    para: "Crown International Travels (Pvt) Ltd offers the best Umrah packages for this year and beyond, tailored to satisfy all your needs and requirements for a memorable pilgrimage. ",
+    ref: "/servicedetail/hajj_umrah",
+  },
+  {
+    id: "2",
+    title: "Air Ticket",
+    para: "We are an online travel agency that provides a direct connection to hundreds of airlines worldwide, allowing you to effortlessly find the most affordable flights",
+    ref: "/servicedetail/airticket",
+  },
+  {
+    id: "3",
+    title: "Travel insurance",
+    para: "Travel insurance is an important aspect of any travel planning process. At Crown International Travels, we understand that unexpected events can occur while traveling, such as flight cancellations,",
+    ref: "/servicedetail/insurance",
+  },
+  {
+    id: "4",
+    title: "Rent a Car",
+    para: "Crown International Travels (Pvt) Ltd Rent a Car is a 100% nationally owned car rental company that seeks to meet the increasing demand for hire vehicles due to the growing business activities.",
+    ref: "/servicedetail/rentcar",
+  },
+
+]} /> },
   ];
 
   return (

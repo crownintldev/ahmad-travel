@@ -141,6 +141,13 @@ export const overviewDetail=[
 ]
 
 // Static start
+
+export const RentCarDetail=[
+  {text:"Crown International Travels (Pvt) Ltd Rent a Car is a 100% nationally owned car rental company that seeks to meet the increasing demand for hire vehicles due to the growing business activities. We are committed to providing our customers with quality service, which includes offering high-quality vehicles and efficient branch operations to achieve our goals."},
+  {text:"At Crown International Travels (Pvt) Ltd, we ensure the maintenance of our fleet by subjecting all our vehicles to authorized repair and service stations after every use. This means that regardless of whether it is a day, week, or month hire, our fleets undergo regular servicing and checks to identify and fix any mechanical faults."},
+
+  
+]
 export const turkeyimg=[
   {id:1, image:turkey1},
   {id:2, image:turkey2},
@@ -276,7 +283,27 @@ export const indonesiaimg=[
 //   {text:""},
   
 // ]
+export const AirTicketDetail=[
+  {text:"We Are Officially Authorized With IATA Ticketing System and Our License No. is IATA# 27339944"},
+  {text:"We are an online travel agency that provides a direct connection to hundreds of airlines worldwide, allowing you to effortlessly find the most affordable flights. Our service is completely free and much simpler to navigate than other travel sites. With us, you can avoid the hassle of hours-long searches for flights and extra booking fees."},
 
+  
+]
+export const HajjUmrahDetail=[
+  {text:"Hajj & Umrah and Our License No. HAJJ Reg# 13027 "},
+  {text:"Crown International Travels (Pvt) Ltd offers the best Umrah packages for this year and beyond, tailored to satisfy all your needs and requirements for a memorable pilgrimage. Choose from our Ultimate Umrah Packages on single, double, triple, quad, or sharing basis."},
+]
+
+export const dropTravelInsurance = [
+  {
+    id:1,
+    title:"Travel Insurance",
+    content:[
+      {Heading:"Crown International Travel is officially Authorized with Big Insurance Company", des:"with Big Insurance Company Travel insurance is an important aspect of any travel planning process. At  Crown International Travels, we understand that unexpected events can occur while traveling, such as flight cancellations, medical emergencies, and lost luggage. To ensure that our clients are protected and prepared for any unforeseen circumstances, we offer comprehensive travel insurance options. Our travel insurance policies provide coverage for a wide range of situations, including trip cancellations or interruptions, medical emergencies, lost or stolen luggage, and personal liability. Our policies can also include coverage for pre-existing medical conditions, adventure sports, and other specialized activities. We work with leading travel insurance providers to offer our clients the best coverage options at competitive prices. Our travel insurance policies are customizable, so our clients can choose the coverage level that best suits their needs and budget. We also offer 24/7 emergency assistance to our clients, so they can have peace of mind knowing that help is always just a phone call away. We believe that travel insurance is an essential part of any travel planning process. It provides our clients with financial protection and peace of mind, and it ensures that they are prepared for any unexpected events that may occur while traveling. With our comprehensive travel insurance options, our clients can focus on enjoying their travel experiences without worrying about the what-ifs. At Crown International Travels, we are committed to providing our clients with personalized, high-quality travel services that exceed their expectations. Whether our clients are planning a family vacation, a romantic getaway, or a business trip, we are here to help them travel with confidence and peace of mind. Contact us today to learn more about our travel insurance options and to start planning your next adventure."},
+    ]
+  },
+
+]
 export const dropIndonesia = [
   {
     id:1,

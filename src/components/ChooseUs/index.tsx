@@ -30,14 +30,14 @@ const ChooseUs = () => {
               <MdDateRange className="text-primary-orange-200 group-hover:text-white" size={30} />
               </div>
               <HeadingH6 title="Set Travel Plan"/>
-              <Para14 title="Distinctively impact client-centered ideas via future-proof paradigms."/>
+              <Para14 title="Crown International Aviation, in partnership with its affiliates, offers air ambulance and small plane services."/>
             </div>
             <div className=" group  p-2 sm:p-4 lg:p-6 space-y-1">
               <div className="border flex justify-center items-center border-primary-orange-200 rounded-full w-20 h-20 group-hover:bg-primary-orange-200 duration-200 transition">
               <FaBuilding className="text-primary-orange-200 group-hover:text-white" size={30} />
               </div>
               <HeadingH6 title="Luxary Hotel"/>
-              <Para14 title="Distinctively impact client-centered ideas via future-proof paradigms."/>
+              <Para14 title="We offer competitive airfares for worldwide destinations, empowering travel agents to increase profitability."/>
             </div>
           </div>
           <div className="col-span-2">
@@ -49,14 +49,14 @@ const ChooseUs = () => {
               <IoMdCompass  className="text-primary-orange-200 group-hover:text-white" size={30} />
               </div>
               <HeadingH6 title="Explore Around"/>
-              <Para14 title="Distinctively impact client-centered ideas via future-proof paradigms."/>
+              <Para14 title="At Crown International, we specialize in designing holiday and tour packages tailored to our clients’ needs and preferences."/>
             </div>
             <div className=" group  p-2 sm:p-4 lg:p-6 space-y-1">
               <div className="border flex justify-center items-center border-primary-orange-200 rounded-full w-20 h-20 group-hover:bg-primary-orange-200 duration-200 transition">
               <BiSupport  className="text-primary-orange-200 group-hover:text-white" size={30} />
               </div>
               <HeadingH6 title="Support 24/7"/>
-              <Para14 title="Distinctively impact client-centered ideas via future-proof paradigms."/>
+              <Para14 title="We are available to serve our clients 24/7 for any emergency travel needs, accessible via mobile."/>
             </div>
           </div>
         </div>
