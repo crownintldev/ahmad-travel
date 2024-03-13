@@ -12,7 +12,7 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 import Image from "next/image";
-import { Brandimg } from "@/components/Constant";
+import { flagimg } from "@/components/Constant";
 
 // Function to duplicate the array for a seamless loop
 const createLoopedArray = (arr, count) => {
@@ -23,7 +23,7 @@ const createLoopedArray = (arr, count) => {
   return loopedArray;
 };
 
-const loopedBrandimg = createLoopedArray(Brandimg, 5); // Adjust the count based on your needs
+const loopedflagimg = createLoopedArray(flagimg, 5); // Adjust the count based on your needs
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -57,17 +57,17 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
-        {loopedBrandimg.map((array, index) => (
+        {loopedflagimg.map((array, index) => (
           <motion.div
             key={index}
             className="grid place-items-center md:w-[32%] max-w-[30%] ">
-            <div className={`p-2 md:p-0 w-20 h-20 md:w-36 md:h-32 ml-2 mr-2 items-center flex shadow border border-primary-orange-200 rounded-lg `}>
+            <div className={`p-2 md:p-0 w-20 h-20 md:w-32 md:h-32 ml-2 mr-2 items-center flex shadow border-2 border-primary-orange-200 rounded-full `}>
               <Image
-                className="py-2 w-14 h-16 md:w-16 md:h-16 lg:w-20 lg:h-20 mx-auto"
+                className="rounded-full"
                 src={array.image}
                 alt={array.image}
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
             </div>
           </motion.div>
@@ -77,10 +77,9 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   );
 }
 
-export default function Brand() {
+export default function Flag() {
   return (
     <div className={"mt-16 md:mt-32  space-y-3 container "}>
-      <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
       <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
     </div>
   );

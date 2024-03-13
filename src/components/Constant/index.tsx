@@ -112,7 +112,23 @@ import pato from '../../../public/assets/images/pato.jpg'
 import fbr from '../../../public/assets/images/fbr.jpg'
 import iata from '../../../public/assets/images/iata.jpg'
 
-
+import azerbaijanflag from '../../../public/assets/images/flag/azerbaijanflag.webp'
+import cambodiaflag from '../../../public/assets/images/flag/cambodiaflag.webp'
+import dubaiflag from '../../../public/assets/images/flag/dubaiflag.webp'
+import egyptflag from '../../../public/assets/images/flag/egyptflag.webp'
+import indonesiaflag from '../../../public/assets/images/flag/indonesiaflag.webp'
+import jordanflag from '../../../public/assets/images/flag/jordanflag.webp'
+import kenyaflag from '../../../public/assets/images/flag/kenyaflag.webp'
+import malaysiaflag from '../../../public/assets/images/flag/malaysiaflag.webp'
+import nepalflag from '../../../public/assets/images/flag/nepalflag.webp'
+import philippineflag from '../../../public/assets/images/flag/philippineflag.webp'
+import singaporeflag from '../../../public/assets/images/flag/singaporeflag.webp'
+import srilankaflag from '../../../public/assets/images/flag/srilankaflag.webp'
+import tajikistanflag from '../../../public/assets/images/flag/tajikistanflag.webp'
+import thailandflag from '../../../public/assets/images/flag/thailandflag.webp'
+import turkeyflag from '../../../public/assets/images/flag/turkeyflag.webp'
+import uzbekistanflag from '../../../public/assets/images/flag/uzbekistanflag.webp'
+import vietnamflag from '../../../public/assets/images/flag/vietnamflag.webp'
 
 
 export const reg=[
@@ -606,6 +622,27 @@ export const Brandimg =[
   {id:5 , image:brand5},
   {id:6 , image:brand6},
   {id:6 , image:brand7},
+]
+
+export const flagimg =[
+  {id:1 , image:azerbaijanflag},
+  {id:2 , image:cambodiaflag},
+  {id:3 , image:dubaiflag},
+  {id:4 , image:egyptflag},
+  {id:5 , image:indonesiaflag},
+  {id:6 , image:jordanflag},
+  {id:7 , image:kenyaflag},
+  {id:8 , image:malaysiaflag},
+  {id:9 , image:nepalflag},
+  {id:10 , image:philippineflag},
+  {id:11 , image:singaporeflag},
+  {id:12, image:srilankaflag},
+  {id:13 , image:tajikistanflag},
+  {id:14 , image:thailandflag},
+  {id:15 , image:turkeyflag},
+  {id:16 , image:uzbekistanflag},
+  {id:17 , image:vietnamflag},
+
 ]
 
 export const Aboutchallenge = [

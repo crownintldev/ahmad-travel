@@ -31,6 +31,7 @@ import dubai1 from '../../public/assets/images/static/dubai1.jpg'
 import uk from '../../public/assets/images/static/uk.jpg'
 import usa from '../../public/assets/images/static/usa.jpg'
 import canada from '../../public/assets/images/static/canada.jpg'
+import Flag from "@/components/Carousel/Flag";
 
 export default function Home()
  {
@@ -40,6 +41,7 @@ export default function Home()
     <Booking/>
     <Brand/>
     <Destination/>
+    <Flag/>
     <VisaInfo
       heading="Visa"
       visaprocess={[
