@@ -79,7 +79,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Flag() {
   return (
-    <div className={"mt-16 md:mt-32  space-y-3 container "}>
+    <div className={"mt-16 md:mt-32  space-y-3 "}>
       <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
     </div>
   );
