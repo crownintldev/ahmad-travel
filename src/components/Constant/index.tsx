@@ -320,6 +320,36 @@ export const dropTravelInsurance = [
   },
 
 ]
+export const track = [
+  {
+    id:1,
+    title:"Crown Tracking",
+    content:[
+      {Heading:"", des:"Welcome to Crown Intl Travels' Tracking service, where efficiency meets convenience. Say goodbye to uncertainties with our seamless tracking solution, empowering you to effortlessly monitor the status of your shipments and parcels. With just a simple click, gain instant access to real-time updates on your items' whereabouts. Our intuitive system ensures swift, straightforward, and hassle-free tracking from any device, anytime, anywhere. Enjoy round-the-clock availability and a user-friendly interface designed for your convenience. Experience the ultimate peace of mind with Crown Intl Travels' Tracking. Unlock easy access to our comprehensive tracking system by entering your 9-digit tracking number. Track your parcel's journey effortlessly, from transit points to final delivery, and stay informed every step of the way."},
+    
+    ]
+  },
+  {
+    id:3,
+    title:"Tracking eFulfillment Shipments with Tracking Number",
+    content:[
+      {Heading:"", des:"Firstly customers can use the tracking to track the status of their customer’s parcels once they have been picked and packed. Give your business a competitive edge with Crowns and monitor your parcel by Crown online tracking. Give visibility into all your standard freight shipments. Secondly it can take up a few hours for status to appear in the tracking system. Give it a bit of time then try again. The status will stay in our system for approximately 90 days."},
+      {Heading:"", des:"Lay your International exporting fear to rest. Our shipping expert will help you to get better at the challenges of international shipping without breaking the bank. Just tell us where and when we will do the rest. A Crown tracking number will be provided to easily track the parcel end to end. Crown has developed the most affordable shipping solution to fit any need. Our reliable and cost-efficient overland service can deliver all of your heavy-weighted parcels across Pakistan."},
+    
+    ]
+  },
+  {
+    id:4,
+    title:"Quality Tracking with Crowns",
+    content:[
+      {Heading:"", des:"In Crowns Courier Service, we pride ourselves on providing customer satisfaction and quality service. So get your documents attested by the Ministry of Foreign affairs at the agreed time. To monitor, track your documents by online tracking."},
+      {Heading:"Crowns Tracking Pakistan", des:"So you are authorized to use this tracking system solely to track shipments tendered by Crown courier by, for, or to you. Crown tracking is designed to track all of your domestic and international shipments easily at one platform to facilitate and simplify our customer’s life."},
+      {Heading:"", des:"Our complete dedication to the excellence has remained constant ensuring that our customer service is there for you 24/7. "},  
+    ]
+  },
+ 
+];
+
 export const dropIndonesia = [
   {
     id:1,
@@ -533,7 +563,7 @@ export const SingaporeDetail=[
   {text:"Food culture is also an essential aspect of Singaporean life, and the city-state is often referred to as a “food paradise” with a variety of cuisines from different cultures, including Chinese, Malay, Indian, and Western. Hawker centers are popular spots for locals and tourists alike to enjoy affordable and delicious food.Overall, Singapore is a unique and vibrant city-state with much to offer visitors, from its rich cultural heritage to its modern attractions and excellent food scene."},
 ]
 export const SrilankaDetail=[
-  {text:"Sri Lanka is a tropical island nation located in the Indian Ocean, southeast of the Indian subcontinent. It is known for its diverse culture, beautiful landscapes, and rich history. The country has a long history dating back to ancient times, and has been ruled by various kingdoms and colonial powers.The capital of Sri Lanka is Colombo, a bustling city with a mix of modern and colonial architecture. Other major cities include Kandy, Galle, and Jaffna.Sri Lanka is known for its beautiful beaches, lush green forests, and stunning natural scenery. The country is home to several national parks, including Yala National Park and Udawalawe National Park, which offer the chance to see elephants, leopards, and other wildlife in their natural habitats."},
+  {text:"Sri Lanka is a tropical island nation located in the Indian Ocean, southeast of the Indian subcontinent. It is known for its diverse culture, beautiful landscapes, and rich history. The country has a long history dating back to ancient times, and has been ruled by various kingdoms and colonial powers.The capital of Sri Lanka is Colombo, a bustling city with a mix of modern and colonial architecture. Other major cities include Kandy, Galle, and Jaffna.Sri Lanka is known for its beautiful beaches, lush green forests, and stunning natural scenery. The country is home to several national parks, including Yala National Park and Udawalawe National Park, which offer the chance to see elephants, Crowns, and other wildlife in their natural habitats."},
   {text:"Sri Lanka is also famous for its ancient ruins and temples. The ancient city of Anuradhapura is a UNESCO World Heritage Site and is home to several ancient ruins, including the Sri Maha Bodhi tree, which is believed to be the oldest living tree in the world. Other notable historical sites include the Sigiriya rock fortress, the Temple of the Tooth in Kandy, and the Dambulla Cave Temple."},
   {text:"Sri Lanka is a multiethnic, multilingual, and multicultural country, with Sinhalese and Tamil as the two official languages. The country is known for its delicious cuisine, which is a fusion of different culinary traditions, and includes dishes such as curry, hoppers, and roti.Despite facing several challenges, including a long-running civil war and natural disasters, Sri Lanka remains a popular tourist destination for its rich history, culture, and natural beauty."},
 ]
