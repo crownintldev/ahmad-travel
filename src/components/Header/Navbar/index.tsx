@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
                     <Navlink onDropdownClose={closeMobileMenu} />
                   </div>
                   <div className="flex flex-row  xs:items-center gap-4 pt-3">
-                    <Link className="font-medium" href="/tracking">
+                    <Link className="font-medium" href="/tracking" onClick={toggleMobileMenu}>
                       Tracking
                     </Link>
                   </div>
