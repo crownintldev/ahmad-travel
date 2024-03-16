@@ -12,20 +12,20 @@ const MainSlider = () => {
     {
       id: 1,
       src: tra1,
-      title: "UAE",
-      description: "Lorem ipsum dolor sit amet...",
+      title: "Malaysia",
+      description: "We Are The World Best Travel Agency Company...",
     },
     {
       id: 2,
       src: tra2,
       title: "Canada",
-      description: "Lorem ipsum dolor sit amet...",
+      description: "We Are The World Best Travel Agency Company...",
     },
     {
       id: 3,
       src: tra3,
-      title: "Germany",
-      description: "Lorem ipsum dolor sit amet...",
+      title: "Indonesia",
+      description: "We Are The World Best Travel Agency Company...",
     },
     // Add more slides as needed
   ];

@@ -85,6 +85,9 @@ const Navlink = ({ onDropdownClose }) => {
       <Link className='font-semibold' href="/gallery" onClick={handleClose} >
         Gallery
       </Link>
+      <Link className='font-semibold' href="/appointment" onClick={handleClose} >
+        Appointment
+      </Link>
       <Link className='font-semibold' href="/contact" onClick={handleClose} >
         Contact
       </Link>
