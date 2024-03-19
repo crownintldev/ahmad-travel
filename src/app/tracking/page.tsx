@@ -8,18 +8,18 @@ import HeadPage from '@/components/Common/HeadPage';
 
 const Tracking = () => {
   const [referenceId, setReferenceId] = useState('');
-  const [trackingId, setTrackingId] = useState('');
+  const [PassportId, setPassportId] = useState('');
   const [alertType, setAlertType] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
 
   const handleSearch = () => {
-    if (referenceId.trim() === '' && trackingId.trim() === '') {
+    if (referenceId.trim() === '' && PassportId.trim() === '') {
       setAlertType('warning');
       setAlertMessage('Both Reference ID and Tracking ID are empty!');
     } else if (referenceId.trim() === '') {
       setAlertType('warning');
       setAlertMessage('Reference ID is empty!');
-    } else if (trackingId.trim() === '') {
+    } else if (PassportId.trim() === '') {
       setAlertType('warning');
       setAlertMessage('Tracking ID is empty!');
     } else {
@@ -58,7 +58,7 @@ const Tracking = () => {
               type="text"
               placeholder="Enter Passport ID"
               value={PassportId}
-              onChange={(e) => setTrackingId(e.target.value)}
+              onChange={(e) => setPassportId(e.target.value)}
             />
           </div>
           <Button
