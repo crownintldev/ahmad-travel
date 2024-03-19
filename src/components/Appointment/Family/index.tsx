@@ -73,6 +73,7 @@ const Family = () => {
             <Form.Item
               name="phone"
               label="Phone Number"
+              className="font-medium"
               rules={[
                 { required: true, message: "Please input your phone number!" },
               ]}
@@ -86,6 +87,7 @@ const Family = () => {
             <Form.Item
               name="email"
               label="Register Email Address"
+              className="font-medium"
               rules={[
                 { required: true, message: "Please input your email!" },
               ]}
@@ -102,6 +104,7 @@ const Family = () => {
           <Form.Item
               name="code"
               label="Verification Code"
+              className="font-medium"
               rules={[
                 { required: true, message: "Please input your Verification Code!" },
               ]}

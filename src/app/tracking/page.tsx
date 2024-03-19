@@ -56,8 +56,8 @@ const Tracking = () => {
             <input
               className="bg-gray-100 outline-none flex-grow"
               type="text"
-              placeholder="Enter Tracking ID"
-              value={trackingId}
+              placeholder="Enter Passport ID"
+              value={PassportId}
               onChange={(e) => setTrackingId(e.target.value)}
             />
           </div>
