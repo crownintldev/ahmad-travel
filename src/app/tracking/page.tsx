@@ -15,13 +15,13 @@ const Tracking = () => {
   const handleSearch = () => {
     if (referenceId.trim() === '' && PassportId.trim() === '') {
       setAlertType('warning');
-      setAlertMessage('Both Reference ID and Tracking ID are empty!');
+      setAlertMessage('Both Reference ID and Passport ID are empty!');
     } else if (referenceId.trim() === '') {
       setAlertType('warning');
       setAlertMessage('Reference ID is empty!');
     } else if (PassportId.trim() === '') {
       setAlertType('warning');
-      setAlertMessage('Tracking ID is empty!');
+      setAlertMessage('Passport ID is empty!');
     } else {
       // Perform search functionality here
       setAlertType('info'); // Change to 'info' or 'warning' as per your requirement
