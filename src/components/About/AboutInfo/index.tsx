@@ -27,8 +27,8 @@ const AboutInfo = ({
 }: any) => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 container mt-10 lg:mt-32 justify-items-center">
-        <div className="space-y-4 mb-10 md:mb-0 flex flex-col justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 container mt-10 lg:mt-32 justify-items-center items-center">
+        <div className="space-y-4 mb-10 md:mb-0 flex flex-col justify-center items-center">
           <Para18
             className="font-fam text-primary-orange-300 font-bold  "
             title={title}

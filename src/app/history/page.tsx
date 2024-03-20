@@ -3,7 +3,7 @@ import HappyClient from '@/components/About/HappyClient'
 import ChooseUs from '@/components/ChooseUs'
 import HeadPage from '@/components/Common/HeadPage'
 import React from 'react'
-import aboutimage from '../../../public/assets/images/about.png'
+import Picture1 from '../../../public/assets/images/Picture1.png'
 
 const History = () => {
   return (
@@ -16,7 +16,7 @@ const History = () => {
     />
     <AboutInfo
     title={"Company History"}
-    image={aboutimage}
+    image={Picture1}
     para1={"We are a family-owned business, established in 1990 by Mr. Nazir Ahmed (Late), We have been offering a range of travel and tourism services for over 32 years. The journey started with just four people and now we have grown to and now we have grown to More Mature and lot number of staff in counts. In 2007 we expanded our business to a corporate level and registered with many local and international organizations."}
     para2={"In 2010 we were awarded the Sustainable Tourism Award sponsored by the Travel Port. This award recognizes our work in promoting sustainable tourism through an eco-friendly approach."}
     mid={"You may be interested to know about the next generation!!"}
