@@ -39,7 +39,7 @@ const Testimonial:React.FC = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2  pt-20 pb-20 w-full  flex-col items-center'>
             <div className='text-white text-center md:px-10 md:mx-10 '> 
                 <HeadingH2 title={'Dont just take our word for it...'}/>
-                <Para14 title={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas veritatis illo placeat harum porro optio fugit a culpa sunt id!'}/>
+                <Para14 title={', Crown International Travels was become private limited company'}/>
             </div>
 
             <div ref={ref} className="keen-slider flex overflow-hidden mt-10 gap-3 m-2">

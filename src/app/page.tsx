@@ -42,6 +42,7 @@ export default function Home()
     <Brand/>
     <Destination/>
     <Flag/>
+    
     <VisaInfo
       heading="Visa"
       visaprocess={[

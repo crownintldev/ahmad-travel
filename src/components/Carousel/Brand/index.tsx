@@ -63,11 +63,11 @@ function ParallaxText({ children, baseVelocity = 100 }) {
             className="grid place-items-center md:w-[32%] max-w-[30%] ">
             <div className={`p-2 md:p-0 w-20 h-20 md:w-36 md:h-32 ml-2 mr-2 items-center flex shadow border border-primary-orange-200 rounded-lg `}>
               <Image
-                className="py-2 w-14 h-16 md:w-16 md:h-16 lg:w-20 lg:h-20 mx-auto"
+                className="py-2 w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-2w-28 mx-auto"
                 src={array.image}
                 alt={array.image}
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
               />
             </div>
           </motion.div>

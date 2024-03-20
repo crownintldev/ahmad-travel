@@ -4,7 +4,7 @@ import Logo from '../Common/Logo'
 import FooterLink from '../Common/FooterLink'
 import footer from '../../../public/assets/images/footer.jpg'
 import Image from 'next/image';
-import { Para14 } from '../Common/Paragraph';
+import { Para14, Para16 } from '../Common/Paragraph';
 import { HeadingH6 } from '../Common/Heading';
 import Link from 'next/link';
 import { BiLogoFacebook } from 'react-icons/bi';
@@ -47,17 +47,50 @@ const Footer = () => {
       <div className='space-y-3'>
         <div>
             <HeadingH6 className='uppercase tracking-wide font-bold' title='Address'/>
+            <Para14 className='uppercase font-bold' title={"Rawalpindi Head Office"}/>
             <Para14 title="Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi,Punjab, Pakistan"/>
         </div>
         <div>
+            <Para14 className='uppercase font-bold' title={"Islamabad Branch Office"}/>
+            <Para14 title="Office # 02, G-6 Block D, ground floor, potohar plaza, blue area, fazal e Haq road, Islamabad"/>
+        </div>
+        <div>
+            <Para14 className='uppercase font-bold' title={"Karachi Branch Office"}/>
+            <Para14 title="Plot # 38-C, Office No 01, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"/>
+        </div>
+        <div>
             <HeadingH6 className='uppercase tracking-wide font-bold ' title='Call'/>
-            <Para14 title="+92 328 0143786"/>
-            <Para14 title="+92 051 5511155"/>
+            <Para14 title=" +92 334 5000 666 ( CEO ) "/>
+            <Para14 title=" +92 51 5511 155 / 56-57"/>
+            <Para14 title=" 111 143 111 ( UAN )"/>
+
         </div>
         <ul className="mt-8 space-y-1 text-sm ">
           <li>Monday to Saturday: 10am - 8pm</li>
         </ul>
-        <ul className="mt-8 flex gap-6">
+        
+      </div>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <FooterLink title={"We offer"} array={WeOffer} />
+      <FooterLink title={"About us"} array={FooterAbout} />   
+      </div>
+    </div>
+    <div className="mt-12 border-t border-gray-100 pt-12">
+      <div className="sm:flex sm:items-center sm:justify-between">
+        <ul className="flex flex-wrap gap-4 text-xs">
+          <li>
+            <Link href="/terms" className=" transition hover:opacity-75"> Terms & Conditions </Link>
+          </li>
+
+          <li>
+            <Link href="/privacypolicy" className=" transition hover:opacity-75"> Privacy Policy </Link>
+          </li>
+        </ul>
+
+        <p className=" text-xs font-bold sm:mt-0">
+          &copy; 2022. Crown Travels. All rights reserved.
+        </p>
+        <ul className="flex gap-4">
           <li>
           <div className="bg-white group hover:bg-blue-800  shadow-lg rounded-full p-1">
                 <Link href="#">
@@ -99,27 +132,6 @@ const Footer = () => {
               </div>
           </li>
         </ul>
-      </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <FooterLink title={"We offer"} array={WeOffer} />
-      <FooterLink title={"About us"} array={FooterAbout} />   
-      </div>
-    </div>
-    <div className="mt-12 border-t border-gray-100 pt-12">
-      <div className="sm:flex sm:items-center sm:justify-between">
-        <ul className="flex flex-wrap gap-4 text-xs">
-          <li>
-            <Link href="/terms" className=" transition hover:opacity-75"> Terms & Conditions </Link>
-          </li>
-
-          <li>
-            <Link href="/privacypolicy" className=" transition hover:opacity-75"> Privacy Policy </Link>
-          </li>
-        </ul>
-
-        <p className="mt-8 text-xs  sm:mt-0">
-          &copy; 2022. Crown Travels. All rights reserved.
-        </p>
       </div>
     </div>
   </div>

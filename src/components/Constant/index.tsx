@@ -1,11 +1,5 @@
 import { FcConferenceCall } from "react-icons/fc"
-import brand1 from "../../../public/assets/images/brand1.svg"
-import brand2 from "../../../public/assets/images/brand2.svg"
-import brand3 from "../../../public/assets/images/brand3.svg"
-import brand4 from "../../../public/assets/images/brand4.svg"
-import brand5 from "../../../public/assets/images/brand5.svg"
-import brand6 from "../../../public/assets/images/brand6.svg"
-import brand7 from "../../../public/assets/images/brand7.svg"
+
 import tra1 from "../../../public/assets/images/tra1.jpg"
 import tra2 from "../../../public/assets/images/tra1.jpg"
 import tra3 from "../../../public/assets/images/tra1.jpg"
@@ -130,6 +124,44 @@ import turkeyflag from '../../../public/assets/images/flag/turkeyflag.webp'
 import uzbekistanflag from '../../../public/assets/images/flag/uzbekistanflag.webp'
 import vietnamflag from '../../../public/assets/images/flag/vietnamflag.webp'
 
+import brand1 from "../../../public/assets/images/airline/airblue.svg"
+import brand2 from "../../../public/assets/images/airline/arbic.svg"
+import brand3 from "../../../public/assets/images/airline/dubai.svg"
+import brand4 from "../../../public/assets/images/airline/emirates.svg"
+import brand5 from "../../../public/assets/images/airline/kuwait.svg"
+import brand6 from "../../../public/assets/images/airline/oman.svg"
+import brand7 from "../../../public/assets/images/airline/qatar.svg"
+import brand8 from "../../../public/assets/images/airline/saudia.svg"
+import brand9 from "../../../public/assets/images/airline/pia.png"
+import brand10 from "../../../public/assets/images/airline/turkish.svg"
+import brand11 from "../../../public/assets/images/airline/flynas.svg"
+import brand12 from "../../../public/assets/images/airline/british.svg"
+import brand13 from "../../../public/assets/images/airline/pegasus.svg"
+
+
+
+
+
+export const Brandimg =[
+  {id:1 , image:brand1},
+  {id:2 , image:brand2},
+  {id:3 , image:brand3},
+  {id:4 , image:brand4},
+  {id:5 , image:brand5},
+  {id:6 , image:brand6},
+  {id:7 , image:brand7},
+  {id:8 , image:brand8},
+  {id:9 , image:brand9},
+  {id:10 , image:brand10},
+  {id:11 , image:brand11},
+  {id:12 , image:brand12},
+  {id:13 , image:brand13},
+
+
+
+
+
+]
 
 export const reg=[
   {id:"1", image:mora , text:"DTS# LHR-4198"},
@@ -644,15 +676,7 @@ export const Aboutcore = {
     ],
   };
 
-export const Brandimg =[
-  {id:1 , image:brand1},
-  {id:2 , image:brand2},
-  {id:3 , image:brand3},
-  {id:4 , image:brand4},
-  {id:5 , image:brand5},
-  {id:6 , image:brand6},
-  {id:6 , image:brand7},
-]
+
 
 export const flagimg =[
   {id:1 , image:azerbaijanflag},
