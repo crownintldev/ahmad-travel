@@ -23,9 +23,9 @@ const Malaysia= () => {
     <>
     <HeadPage
     className='bg-servicehead'
-    title='Malaysia    Visa'
-    text='We Are The World Best Travel Agency Company'
-    bredcrumb='Malaysia    Visa'
+    title='Malaysia Visa'
+    text='We Are Officially Authorized Malaysia Dropbox'
+    bredcrumb='Malaysia Visa'
     />
      <TracingBeam className="p-2  mt-10 ">
      

@@ -24,7 +24,7 @@ const Indonesia= () => {
     <HeadPage
     className='bg-servicehead'
     title='Indonesia Visa'
-    text='We Are The World Best Travel Agency Company'
+    text='We Are Officially Authorized Indonesia Dropbox'
     bredcrumb='Indonesia Visa'
     />
      <TracingBeam className="p-2  mt-10 ">
