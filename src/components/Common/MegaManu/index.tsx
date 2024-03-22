@@ -29,7 +29,7 @@ const MegaMenu = ({
   };
 
   const dropdata = [
-    { id: "1", title: "Visa Drop Box", content: <MegaData 
+    { id: "1", title: "Drop Box", content: <MegaData 
     service={[
       {
         id: "1",
@@ -49,6 +49,13 @@ const MegaMenu = ({
         para:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands,",
 
         ref: "/dropbox/indonesia",
+      },
+      {
+        id: "3",
+        title: "Thailand Visa",
+        para:"Thailand is a stunning country located in Southeast Asia, renowned for its rich,",
+
+        ref: "/servicedetail/malaysia",
       },
     ]}
     onLinkClick={handleLinkClick} /> },

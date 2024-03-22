@@ -36,6 +36,23 @@ const addressinfo = [
   },
 ];
 
+const karachiaddress=[
+  {
+    id: 2,
+    icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+    title: "Phone Number",
+    heading2:"Karachi Office ",
+    des3:"+92 21 3524 4461",
+    des4:"+92 21 3524 4462",
+  },
+  {
+    id: 3,
+    icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+    title: "Address",
+    heading2:"Karachi Main Office ",
+    des3:"Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"
+  },
+]
 const Address = () => {
   return (
     <>
@@ -44,9 +61,9 @@ const Address = () => {
           return (
             <div
               key={index}
-              className=" rounded-md shadow  bg-primary-orange-300 hover:bg-primary-orange-400 duration-300 transition text-white  p-4 pb-10  space-y-4 relative mt-5 mb-5 w-full "
+              className=" rounded-md shadow hover:scale-95  bg-primary-orange-300 hover:bg-primary-orange-400 duration-300 transition text-white  p-4 pb-10  space-y-4 relative mt-5 w-full "
             >
-              <div className="border flex items-center justify-center shadow rounded-full w-14 h-14 absolute -top-6 -left-4 backdrop-blur-md ">
+              <div className="border flex  items-center justify-center shadow rounded-full w-14 h-14 absolute -top-6 -left-4 backdrop-blur-md ">
                 {item.icon}
               </div>
               <HeadingH6 title={item.title} />
@@ -55,10 +72,26 @@ const Address = () => {
                 <Para14 title={item.des1} />
                 <Para14 title={item.des2} />
               </div>
+          
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  container gap-2 md:gap-8 justify-items-center p-5 ">
+        {karachiaddress.map((array, index) => {
+          return (
+            <div
+              key={index}
+              className=" rounded-md shadow  bg-primary-orange-300 hover:scale-95 hover:bg-primary-orange-400 duration-300 transition text-white  p-4 pb-10  space-y-4 relative mt-5 mb-5 w-full "
+            >
+              <div className="border flex items-center justify-center shadow rounded-full w-14 h-14 absolute -top-6 -left-4 backdrop-blur-md ">
+                {array.icon}
+              </div>
+              <HeadingH6 title={array.title} />
               <div>
-                <Para14 className="font-bold" title={item.heading2} />
-                <Para14 title={item.des3} />
-                <Para14 title={item.des4} />
+                <Para14 className=" font-bold" title={array.heading2} />
+                <Para14 title={array.des3} />
               </div>
             </div>
           );
