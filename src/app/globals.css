@@ -190,7 +190,7 @@
   display: none !important;
 }
 .ant-picker-outlined{
-  /* background: none !important; */
+  background: none !important;
   border-width: 0 !important;
   border-style: none !important;
   border-color: none !important;
@@ -210,7 +210,7 @@
   z-index: 10 !important;
   /* width: 23% !important; */
 }
-:where(.css-1k979oh).ant-tabs >.ant-tabs-nav, :where(.css-1k979oh).ant-tabs >div>.ant-tabs-nav{
+.ant-tabs >.ant-tabs-nav, .ant-tabs >div>.ant-tabs-nav{
   display: none!important;
 }
 .ant-popover-placement-top, .ant-popover-placement-topLeft, .ant-popover-placement-topRight{
@@ -219,9 +219,9 @@
 
 }
 
-:where(.css-1k979oh).ant-picker-outlined{
+/* .ant-picker-outlined{
   border: none !important;
-}
+} */
 
 .ant-picker-outlined:focus, .ant-picker-outlined:focus-within{
   border-color: transparent !important;

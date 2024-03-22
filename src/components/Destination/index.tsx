@@ -20,7 +20,7 @@ const Destination = () => {
             title="Go beyond your imagination"
           />
           <div className="border-b-2 border w-72 border-b-primary-orange-200" />
-          <Para16 title="We Have Authorized Embassy Visa Application Centre & Dropbox" />
+          <Para16 title="We Have Authorized Embassy Visa Application Centre" />
         </div>
         <div className="col-span-2">
         <Slider 

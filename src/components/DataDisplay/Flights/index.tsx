@@ -52,7 +52,8 @@ const Flights: React.FC = () => {
               <div className="flex justify-center items-center gap-2">
                 <MdOutlineDateRange size={25} />
                 <RangePicker
-                  className="w-full text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
+                style={{border:"none !important" ,borderColor:"none !important", borderWidth:"0 !important"}}
+                  className="w-full text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none tabbooking"
                   picker="date"
                   id={{
                     start: "startInput",

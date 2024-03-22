@@ -71,38 +71,23 @@ const Dubai     = () => {
     <>
     <HeadPage
     className='bg-servicehead'
-    title='Dubai    Visa'
+    title='Dubai Visa'
     text='We Are The World Best Travel Agency Company'
-    bredcrumb='Dubai    Visa'
+    bredcrumb='Dubai Visa'
     />
      <TracingBeam className="p-2  mt-10 ">
       <div className="mt-10">
-        <HeadingH4 title={"Dubai    Visa"}/>
+        <HeadingH4 title={"Dubai Visa"}/>
         <hr className='w-16 border-2 border-primary-orange-300'/>
       </div>
-        <div className=' grid grid-cols-1 md:grid-cols-5 mt-10  md:gap-5'>
+        <div className=' grid grid-cols-1 md:grid-cols-5   md:gap-5'>
          <div className='col-span-4'>
-         <div ref={sliderRef} className="keen-slider">
-            {
-                dubaiimg.map((array, index)=>(
-                    <div className="keen-slider__slide w-full h-auto lg:h-[500px] rounded-lg shadow-md "key={index}>
-                        <Image className='w-full object-contain bg-contain bg-bottom ' src={array.image} width={1440} height={768} alt='images'/>
-                    </div>
-                ))}
-      </div>
-      <div ref={thumbnailRef} className="keen-slider thumbnail mt-2 rounded-lg">
-      {
-          dubaiimg.map((array, index)=>(
-                    <div className="keen-slider__slide "key={index}>
-                        <Image className='w-full h-[200px] object-cover' src={array.image} width={150} height={150} alt='images'/>      
-                    </div>
-                )) }
-      </div>
+    
 
 
 
 
-             <div className=' mt-10 lg:mt-32'>
+             <div className=' mt-10 '>
             <div className=' p-2 md:p-4 shadow border-t-4 border-t-primary-orange-200 rounded-md space-y-3'>
                 <HeadingH3 title={"Overview"}/>
                 {
@@ -204,6 +189,22 @@ const Dubai     = () => {
           }, 
         ]}
       />
+           <div ref={sliderRef} className="keen-slider mt-10">
+            {
+                dubaiimg.map((array, index)=>(
+                    <div className="keen-slider__slide w-full h-auto lg:h-[500px] rounded-lg shadow-md "key={index}>
+                        <Image className='w-full object-contain bg-contain bg-bottom ' src={array.image} width={1440} height={768} alt='images'/>
+                    </div>
+                ))}
+      </div>
+      <div ref={thumbnailRef} className="keen-slider thumbnail mt-2 rounded-lg">
+      {
+          dubaiimg.map((array, index)=>(
+                    <div className="keen-slider__slide "key={index}>
+                        <Image className='w-full h-[200px] object-cover' src={array.image} width={150} height={150} alt='images'/>      
+                    </div>
+                )) }
+      </div>
       <Itinerary
       Itinerayloop={
         [

@@ -46,11 +46,14 @@ const BookingForm = () => {
               className="font-medium"
               rules={[{ required: true, message: "Please Enter Date!" }]}
             >
+              <div className="border rounded-md">
               <DatePicker
                 onChange={onChange}
-                style={{ backgroundColor: "white", height: "48px" }}
-                className="w-full h-13 bg-white text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
+                style={{ backgroundColor: "white", height: "48px", }}
+                className="w-full h-13 bg-white  text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
               />
+              </div>
+              
             </Form.Item>
           </Col>
           <Col xxl={12} xl={12} lg={12} md={12} sm={24} xs={24}>
@@ -113,11 +116,14 @@ const BookingForm = () => {
                 { required: true, message: "Please Enter Date of Birth!" },
               ]}
             >
+              <div className="border rounded-md">
+                
               <DatePicker
                 onChange={onChange}
                 style={{ backgroundColor: "white", height: "48px" }}
                 className="w-full h-13 bg-white text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
-              />
+                />
+                </div>
             </Form.Item>
           </Col>
           <Col xxl={12} xl={12} lg={12} md={12} sm={24} xs={24}>
@@ -216,11 +222,14 @@ const BookingForm = () => {
                 },
               ]}
             >
+              <div className="border rounded-md">
+
               <DatePicker
                 onChange={onChange}
                 style={{ backgroundColor: "white", height: "48px" }}
                 className="w-full h-13 bg-white text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
-              />
+                />
+                </div>
             </Form.Item>
           </Col>
 
@@ -236,11 +245,14 @@ const BookingForm = () => {
                 },
               ]}
             >
+              <div className="border rounded-md">
+
               <DatePicker
                 onChange={onChange}
                 style={{ backgroundColor: "white", height: "48px" }}
                 className="w-full h-13 bg-white text-black h-8 bg-transparent hover:bg-transparent outline-none focus:outline-none"
-              />
+                />
+                </div>
             </Form.Item>
           </Col>
 

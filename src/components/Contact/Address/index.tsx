@@ -1,13 +1,10 @@
 "use client"
-import Individual from "@/components/Appointment/Individual";
-import { HeadingH3, HeadingH6 } from "@/components/Common/Heading";
+import { HeadingH6 } from "@/components/Common/Heading";
 import { Para14 } from "@/components/Common/Paragraph";
 import { addressinfo, isbinfo, karachiinfo } from "@/components/Constant";
 import Tab from "@/components/Tabs";
 import React from "react";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaAddressCard } from "react-icons/fa6";
-import { MdMail } from "react-icons/md";
+
 
 
 const Address = () => {

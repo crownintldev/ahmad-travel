@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div>
             <HeadingH6 className='uppercase tracking-wide font-bold ' title='Call'/>
-            <Para14 title=" +92 334 5000 666 ( CEO ) "/>
+            <Para14 title=" +92 313 5000 666"/>
             <Para14 title=" +92 51 5511 155 / 56-57"/>
             <Para14 title=" 111 143 111 ( UAN )"/>
 
