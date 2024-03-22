@@ -32,9 +32,9 @@ const onCheckboxChange: (checkedValues: CheckboxValueType[]) => void = (
 };
 const BookingForm = () => {
   return (
-    <div className="mt-20 max-w-screen-md mx-auto border p-2 md:p-4 bg-primary-orange-300 rounded-md space-y-5">
+    <div className="mt-20 max-w-screen-md mx-auto border p-2 md:p-4 bg-white shadow-md rounded-md space-y-5">
       <HeadingH3
-        className="text-center text-white"
+        className="text-center "
         title={"Appointment Booking Form"}
       />
       <Form layout="vertical">

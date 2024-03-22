@@ -12,7 +12,7 @@ const VisaForm = () => {
     <div className='mt-20 p-2 space-y-5'>
       <HeadingH3 className='text-center' title={"Appointment for the Visa Application Center"}/>
 
-      <div className='container border rounded-md bg-primary-orange-300 p-2 md:p-4 max-w-screen-md'>
+      <div className='container border shadow-md rounded-md bg-wihte p-2 md:p-4 max-w-screen-md'>
       <Tab 
         tabsData = {[
           {
