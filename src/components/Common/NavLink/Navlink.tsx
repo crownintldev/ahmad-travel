@@ -73,7 +73,7 @@ const Navlink = ({ onDropdownClose }) => {
           className={"  h-fit "}
           alignment="md:overflow-y-hidden z-50 overflow-y-scroll w-full gap-3 
            sm:text-start   "
-          text="Visa"
+          text="Service"
           icon={
             <MdOutlineKeyboardArrowDown
               className="mt-1"

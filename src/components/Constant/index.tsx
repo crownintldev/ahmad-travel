@@ -11,7 +11,7 @@ import { AiOutlineGlobal, AiOutlineProject } from "react-icons/ai"
 import { PiPersonArmsSpreadBold } from "react-icons/pi"
 import { SiSocialblade } from "react-icons/si"
 import { FaBook, FaCcVisa, FaMapMarkedAlt, FaPray } from "react-icons/fa"
-import { FaPlaneDeparture, FaVanShuttle } from "react-icons/fa6"
+import { FaAddressCard, FaPlaneDeparture, FaVanShuttle } from "react-icons/fa6"
 import { TbTournament } from "react-icons/tb"
 import { IoCarSport } from "react-icons/io5"
 
@@ -137,6 +137,8 @@ import brand10 from "../../../public/assets/images/airline/turkish.svg"
 import brand11 from "../../../public/assets/images/airline/flynas.svg"
 import brand12 from "../../../public/assets/images/airline/british.svg"
 import brand13 from "../../../public/assets/images/airline/pegasus.svg"
+import { MdMail } from "react-icons/md"
+import { BsFillTelephoneFill } from "react-icons/bs"
 
 
 
@@ -766,3 +768,130 @@ export const review=[
 ]
 
 
+
+// export const addressinfo = [
+//   {
+//     title: "Rawalpindi Head Office",
+//     items: [
+//       {
+//         icon: <MdMail className="text-primary-orange-300" size={25} />,
+//         title: "Email",
+//         des1: "Crownintltravels@gmail.com ",
+//         des2: "info@crownintltravels.com",
+//       },
+//       {
+//         icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+//         title: "Phone Number",
+//         des1: "+92 313 5000 666",
+//         des2: "+92 51 5511 155 / 56-57   ",
+//       },
+//       {
+//         icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+//         title: "Address",
+//         des1: "Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi, Punjab, Pakistan",
+//       },
+//     ]
+//   },
+//   // {
+//   //   title: "Islamabad Branch Office",
+//   //   items: [
+//   //     {
+//   //       icon: <MdMail className="text-primary-orange-300" size={25} />,
+//   //       title: "Email",
+//   //       des1: "Crownintltravels@gmail.com ",
+//   //       des2: "info@crownintltravels.com",
+//   //     },
+//   //     {
+//   //       icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+//   //       title: "Phone Number",
+//   //       des1: "111 143 111 ( UAN )",
+//   //     },
+//   //     {
+//   //       icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+//   //       title: "Address",
+//   //       des1: "Office # 02, G-6 Block D, ground floor, potohar plaza, blue area, fazal e Haq road, Islamabad",
+//   //     },
+//   //   ]
+//   // },
+//   // {
+//   //   title: "Karachi Main Office ",
+//   //   items: [
+//   //     {
+//   //       icon: <MdMail className="text-primary-orange-300" size={25} />,
+//   //       title: "Email",
+//   //       des1: "Crownintltravels@gmail.com ",
+//   //       des2: "info@crownintltravels.com",
+//   //     },
+//   //     {
+//   //       icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+//   //       title: "Phone Number",
+//   //       des1: "+92 21 3524 4461",
+//   //       des2: "+92 21 3524 4462",
+//   //     },
+//   //     {
+//   //       icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+//   //       title: "Address",
+//   //       des1: "Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan",
+//   //     },
+//   //   ]
+//   // },
+
+// ]
+
+export const addressinfo = [
+          {
+            icon: <MdMail className="text-primary-orange-300" size={25} />,
+            title: "Email",
+            des1: "Crownintltravels@gmail.com ",
+            des2: "info@crownintltravels.com",
+          },
+          {
+            icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+            title: "Phone Number",
+            des1: "+92 313 5000 666",
+            des2: "+92 51 5511 155 / 56-57   ",
+          },
+          {
+            icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+            title: "Address",
+            des1: "Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi, Punjab, Pakistan",
+          },
+]
+export const isbinfo = [
+  {
+         icon: <MdMail className="text-primary-orange-300" size={25} />,
+         title: "Email",
+         des1: "Crownintltravels@gmail.com ",
+         des2: "info@crownintltravels.com",
+       },
+       {
+         icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+         title: "Phone Number",
+         des1: "111 143 111 ( UAN )",
+       },
+       {
+         icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+         title: "Address",
+         des1: "Office # 02, G-6 Block D, ground floor, potohar plaza, blue area, fazal e Haq road, Islamabad",
+       },
+]
+
+export const karachiinfo = [
+  {
+      icon: <MdMail className="text-primary-orange-300" size={25} />,
+      title: "Email",
+      des1: "Crownintltravels@gmail.com ",
+      des2: "info@crownintltravels.com",
+    },
+    {
+      icon: <BsFillTelephoneFill className="text-primary-orange-300" size={25} />,
+      title: "Phone Number",
+      des1: "+92 21 3524 4461",
+      des2: "+92 21 3524 4462",
+    },
+    {
+      icon: <FaAddressCard className="text-primary-orange-300" size={25} />,
+      title: "Address",
+      des1: "Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan",
+    },
+]

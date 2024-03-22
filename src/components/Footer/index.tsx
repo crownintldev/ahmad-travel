@@ -48,11 +48,7 @@ const Footer = () => {
         <div>
             <HeadingH6 className='uppercase tracking-wide font-bold' title='Address'/>
             <Para14 className='uppercase font-bold' title={"Rawalpindi Head Office"}/>
-            <Para14 title="Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi,Punjab, Pakistan"/>
-        </div>
-        <div>
-            <Para14 className='uppercase font-bold' title={"Islamabad Branch Office"}/>
-            <Para14 title="Office # 02, G-6 Block D, ground floor, potohar plaza, blue area, fazal e Haq road, Islamabad"/>
+            <Para14 title="Office No. 406/7/8 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi,Punjab, Pakistan"/>
         </div>
         <div>
             <Para14 className='uppercase font-bold' title={"Karachi Branch Office"}/>
@@ -66,7 +62,7 @@ const Footer = () => {
 
         </div>
         <ul className="mt-8 space-y-1 text-sm ">
-          <li>Monday to Saturday: 10am - 8pm</li>
+          <li>Monday to Saturday: 09am - 8pm</li>
         </ul>
         
       </div>

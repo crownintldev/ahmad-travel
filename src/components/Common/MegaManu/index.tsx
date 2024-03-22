@@ -60,7 +60,7 @@ const MegaMenu = ({
     ]}
     onLinkClick={handleLinkClick} /> },
     // 2
-    { id: "2", title: "Visa", content: <MegaData onLinkClick={handleLinkClick} service={[
+    { id: "2", title: "Visa Services", content: <MegaData onLinkClick={handleLinkClick} service={[
       
       { id: "1",title: "Malaysia Visa", para: "Malaysia is a vibrant and diverse country located in Southeast Asia,",ref: "/servicedetail/malaysia",},
        { id: "2",title: "Thailand Visa", para: "Thailand is a stunning country located in Southeast Asia, renowned for its rich",ref: "/servicedetail/thailand",},
@@ -108,7 +108,22 @@ const MegaMenu = ({
     },
   
   ]} /> },
-  { id: "4", title: "Other Service", content: <MegaData onLinkClick={handleLinkClick} service={[
+  { id: "4", title: "Document Attestation", content: <MegaData onLinkClick={handleLinkClick} service={[
+    {
+    id: "1",
+    title: "Schengen File Processing",
+    para: "The Schengen Area is a zone consisting of 26 European countries that have",
+    ref: "/servicedetail/schengen",
+  },
+  {
+    id: "4",
+    title: "UK File Processing",
+    para: "The United Kingdom, or UK as it is more frequently known, is an intriguing location",
+    ref: "/servicedetail/uk",
+  },
+
+]} /> },
+  { id: "5", title: "Other Service", content: <MegaData onLinkClick={handleLinkClick} service={[
     {
     id: "1",
     title: "Hajj & Umrah",
