@@ -19,7 +19,7 @@ const Address = () => {
         tabsData = {[
           {
             key: '1',
-            title: 'Rawalpindi Office',
+            title: 'Rawalpindi Head Office',
             content: <div className="mt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 justify-items-center p-5">
             {addressinfo.map((array, index) => (
@@ -42,7 +42,7 @@ const Address = () => {
           },
           {
             key: '2',
-            title: 'Islamabad Office',
+            title: 'Islamabad Branch Office',
             content: <div className="mt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 justify-items-center p-5">
             {isbinfo.map((array, index) => (
@@ -65,7 +65,7 @@ const Address = () => {
           },
           {
             key: '3',
-            title: 'Karachi Office',
+            title: 'Karachi Head Office',
             content: <div className="mt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-5 justify-items-center p-5">
             {karachiinfo.map((array, index) => (
