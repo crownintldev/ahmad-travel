@@ -1,3 +1,4 @@
+
 import { FcConferenceCall } from "react-icons/fc"
 
 import tra1 from "../../../public/assets/images/tra1.jpg"
@@ -123,7 +124,7 @@ import thailandflag from '../../../public/assets/images/flag/thailandflag.webp'
 import turkeyflag from '../../../public/assets/images/flag/turkeyflag.webp'
 import uzbekistanflag from '../../../public/assets/images/flag/uzbekistanflag.webp'
 import vietnamflag from '../../../public/assets/images/flag/vietnamflag.webp'
-import luxemburgflag from '../../../public/assets/images/flag/luxemburgflag.webp'
+import luxemburgflag from '../../../public/assets/images/flag/Luxemburgflag.webp'
 import usaflag from '../../../public/assets/images/flag/usaflag.webp'
 import ukflag from '../../../public/assets/images/flag/ukflag.webp'
 import canadaflag from '../../../public/assets/images/flag/canadaflag.webp'

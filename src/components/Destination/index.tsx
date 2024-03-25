@@ -1,3 +1,4 @@
+//@ts-nocheck
 
 import React from "react";
 import { HeadingH2 } from "../Common/Heading";

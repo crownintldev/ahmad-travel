@@ -5,13 +5,11 @@ import Booking from "@/components/DataDisplay/Booking";
 import Destination from "@/components/Destination";
 import Brand from "@/components/Carousel/Brand"
 import React from "react";
-
 import ChooseUs from "@/components/ChooseUs";
 import Faq from "@/components/Home/Faq";
 import VisaInfo from "@/components/Home/VisaInfo";
 import { OurService } from "@/components/Home/OurService";
 import Testimonial from "@/components/Carousel/Testimonial";
-import Flag from "@/components/Carousel/Flag";
 import { fileprocess, visacard } from "@/components/Constant";
 
 export default function Home()
@@ -22,7 +20,6 @@ export default function Home()
     <Booking/>
     <Brand/>
     <Destination/>
-    {/* <Flag/> */}
     <VisaInfo
       heading="Visa Consultancy"
       visaprocess={visacard}
