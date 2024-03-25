@@ -1,11 +1,28 @@
+//@ts-nocheck
 "use client"
 import { HeadingH1, HeadingH2, HeadingH3, HeadingH6 } from '@/components/Common/Heading'
 import { Para14 } from '@/components/Common/Paragraph'
 import { review } from '@/components/Constant'
 import { useKeenSlider } from 'keen-slider/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Testimonial:React.FC = () => {
+  useEffect(() => {
+    // Dynamically load the Trustmary script
+    const existingScript = document.getElementById('trustmary-embed');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.id = 'trustmary-embed';
+      script.src = 'https://embed.trustmary.com/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+      script.onload = () => {
+        if (window.tmary) {
+          window.tmary('app', 'kB5UIHGc8X');
+        }
+      };
+    }
+  }, []);
     const [ref] = useKeenSlider<HTMLDivElement>({
         breakpoints: {
           "(min-width: 400px)": {
@@ -31,32 +48,18 @@ const Testimonial:React.FC = () => {
       const stars = Array(5).fill(null).map((_, index) => <StarIcon key={index} />);
   return (
     <>
-<div className='md:container p-2 m-2 mt-10 lg:mt-32'>
+<div className='container p-2 mt-10 lg:mt-32'>
     <HeadingH3 title={"Customer Review" }/>
     <hr className='w-16 border-2 border-primary-orange-300'/>
     <div className=' bg-primary-orange-200 rounded-md mt-10 w-full'>
   
-        <div className='grid grid-cols-1 sm:grid-cols-2  pt-20 pb-20 w-full  flex-col items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2  pt-10 pb-10 w-full  flex-col items-center'>
             <div className='text-white text-center md:px-10 md:mx-10 '> 
                 <HeadingH2 title={'Dont just take our word for it...'}/>
-                <Para14 title={', Crown International Travels was become private limited company'}/>
+                <Para14 title={'Crown International Travels was become private limited company'}/>
             </div>
-
-            <div ref={ref} className="keen-slider flex overflow-hidden mt-10 gap-3 m-2">
-            {
-                review.map((item , index)=> (
-                    <div className='p-4 rounded-md shadow bg-white space-y-4  keen-slider__slide' key={index}>
-                    <div className="flex gap-3">
-                    {stars}
-                    </div>
-                    <HeadingH6 title={item.name}/>
-                    <Para14 className='' title={truncateText(item.description, 300)}/>
-                </div>
-                ))
-            }
-           
-            </div>
-            
+            <div data-trustmary-widget="rNwW-bg-h"></div>
+   
         </div>
     </div>
 </div>
