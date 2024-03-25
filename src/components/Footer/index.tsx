@@ -48,18 +48,23 @@ const Footer = () => {
         <div>
             <HeadingH6 className='uppercase tracking-wide font-bold' title='Address'/>
             <Para14 className='uppercase font-bold' title={"Rawalpindi Head Office"}/>
-            <Para14 title="Office No. 406/7/8 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi,Punjab, Pakistan"/>
+            <Link href={"https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7"}>Office No. 406/7/8 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi,Punjab, Pakistan</Link>
         </div>
         <div>
             <Para14 className='uppercase font-bold' title={"Karachi Branch Office"}/>
-            <Para14 title="Plot # 38-C, Office No 01, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"/>
+            <Link href={"https://maps.app.goo.gl/QNEMH2XEyovoJEg1A"}>Plot # 38-C, Office No 01, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan</Link>
         </div>
         <div>
             <HeadingH6 className='uppercase tracking-wide font-bold ' title='Call'/>
-            <Para14 title=" +92 313 5000 666"/>
-            <Para14 title=" +92 51 5511 155 / 56-57"/>
-            <Para14 title=" 111 143 111 ( UAN )"/>
-
+            <div>
+              <Link href={"tel:+92 313 5000 666"}>+92 313 5000 666</Link>
+            </div>
+            <div>
+              <Link href={"tel:+92 51 5511 155 / 56-57"}>+92 51 5511 155 / 56-57</Link>
+            </div>
+            <div>
+              <Link href={"tel:111 143 111"}>111 143 111 ( UAN )</Link>
+            </div>
         </div>
         <ul className="mt-8 space-y-1 text-sm ">
           <li>Monday to Saturday: 09am - 8pm</li>
