@@ -67,7 +67,8 @@ const Navbar: React.FC = () => {
             <Navlink onDropdownClose={closeMobileMenu} />
           </div>
           <div className="flex gap-2">
-            <div className="flex items-center gap-2 md:gap-5">
+            <div className="flex items-center justify-center gap-2 md:gap-5">
+          
               <Button className="bg-transparent text-black group hover:text-white"  onClick={() => setOpen(true)} title={<IoSearchSharp className="text-black group-hover:text-white" size={25} /> }/>
               <Modal
                 open={open}
@@ -78,7 +79,7 @@ const Navbar: React.FC = () => {
               >
                 <SearchData />
               </Modal>
-              <Link className="font-medium lg:block hidden " href="/tracking">
+              <Link className="font-semibold bg-primary-orange-400 hover:bg-primary-orange-300 duration-300 transition text-white py-1 px-2 rounded-md" href="/tracking">
                 Tracking
               </Link>
             </div>
@@ -101,11 +102,11 @@ const Navbar: React.FC = () => {
                   <div className="space-y-4  flex-col flex z-50">
                     <Navlink onDropdownClose={closeMobileMenu} />
                   </div>
-                  <div className="flex flex-row  xs:items-center gap-4 pt-3">
+                  {/* <div className="flex flex-row  xs:items-center gap-4 pt-3">
                     <Link className="font-medium" href="/tracking" onClick={toggleMobileMenu}>
                       Tracking
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>
