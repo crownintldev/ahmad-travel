@@ -84,21 +84,7 @@ const Egypt = () => {
         <div className=' grid grid-cols-1 md:grid-cols-5  md:gap-5'>
          <div className='col-span-4'>
        
-
-
-
-
-             <div className=' mt-10'>
-            <div className=' p-2 md:p-4 shadow border-t-4 border-t-primary-orange-200 rounded-md space-y-3'>
-                <HeadingH3 title={"Overview"}/>
-                {
-                    EgyptDetail.map((array,index)=>(
-                        <Para14 key={index} title={array.text}/>
-                    ))
-                }      
-            </div>
-        </div>
-        <Tab  className={"mt-10 lg:mt-32"}
+         <Tab  className={"mt-10 "}
         tabsData = {[
           {
             key: '1',
@@ -179,6 +165,20 @@ const Egypt = () => {
           }, 
         ]}
       />
+
+
+
+             <div className=' mt-10 lg:mt-32'>
+            <div className=' p-2 md:p-4 shadow border-t-4 border-t-primary-orange-200 rounded-md space-y-3'>
+                <HeadingH3 title={"Overview"}/>
+                {
+                    EgyptDetail.map((array,index)=>(
+                        <Para14 key={index} title={array.text}/>
+                    ))
+                }      
+            </div>
+        </div>
+   
 
 <div ref={sliderRef} className="keen-slider mt-10">
             {
