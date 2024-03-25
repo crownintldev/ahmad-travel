@@ -50,7 +50,7 @@ const Slider: React.FC<SliderProps> = ({ destinations }) => {
           <Para14 title={array.visatype}/>
         </div>
         <div className=' rounded-full  h-16 w-16 absolute right-2 top-2'>
-          <Image className='rounded-full' src={array.flag} alt='flag'/>
+          <Image className='rounded-full' width={200} height={200} src={array.flag} alt='flag'/>
         </div>
         <div className="relative px-4 -mt-16  ">
           <div className="bg-white p-3 rounded-md shadow-md border-b">

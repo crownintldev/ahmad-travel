@@ -81,7 +81,7 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
                             </span>
                           </div>
                           <div className="absolute bottom-4 right-4 w-16 h-16  bg-white rounded-full">
-                            <Image className="rounded-full" src={array.flag} alt="flag"/>
+                            <Image height={200} width={200} className="rounded-full" src={array.flag} alt="flag"/>
                           </div>
                         </div>
                       </CardItem>
