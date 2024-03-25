@@ -88,10 +88,10 @@ const Footer = () => {
           </li>
         </ul>
 
-        <p className=" text-xs font-bold sm:mt-0">
+        <p className=" text-xs font-bold sm:mt-0 text-center">
           &copy; 2022. Crown Travels. All rights reserved.
         </p>
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 justify-center mt-3 sm:mt-0">
           <li>
           <div className="bg-white group hover:bg-blue-800  shadow-lg rounded-full p-1">
                 <Link href="#">
