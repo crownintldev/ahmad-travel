@@ -15,15 +15,13 @@ const Theme = () => {
   const [color9, setColor9] = useState('');
   const [color10, setColor10] = useState('');
 
-
-
   // Define default colors
   const defaultColors = {
-    color1: '#fed7aa', // Example default color for color1
-    color2: '#fdba74', // Example default color for color2
-    color3: '#fb923c', // Example default color for color3
-    color4: '#f97316', // Example default color for color4
-    color5: '#ea580c', // Example default color for color5
+    color1: '#FFE063', // Example default color for color1
+    color2: '#FFD735', // Example default color for color2
+    color3: '#FFD012', // Example default color for color3
+    color4: '#FACC14', // Example default color for color4
+    color5: '#F0C310', // Example default color for color5
     // Text color main
     color6: '#000000', // Example default color for color5
     // Box bg- color

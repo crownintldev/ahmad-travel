@@ -5,11 +5,11 @@
 
 :root {
   /* primary color */
-  --color-primary1: #fed7aa; /* default theme color */
-  --color-primary2: #fdba74; /* default theme color */
-  --color-primary3: #fb923c; /* default theme color */
-  --color-primary4: #f97316; /* default theme color */
-  --color-primary5: #ea580c; /* default theme color */
+  --color-primary1: #FFE063; /* default theme color */
+  --color-primary2: #FFD735; /* default theme color */
+  --color-primary3: #FFD012; /* default theme color */
+  --color-primary4: #FACC14; /* default theme color */
+  --color-primary5: #F0C310; /* default theme color */
   /* Text main */
   --color-primary6: #000000; /* default theme color */
   /* box color and text-color */
