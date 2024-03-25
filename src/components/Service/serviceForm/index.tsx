@@ -1,13 +1,25 @@
 import Button from '@/components/Common/Button'
 import { HeadingH6 } from '@/components/Common/Heading'
 import { Para14 } from '@/components/Common/Paragraph'
+import Link from 'next/link'
 import React from 'react'
 
 const ServiecForm = () => {
   return (
     <>
+
+<div className=" shadow-lg rounded-xl p-2 sm:p-3 lg:p-4 w-full text-center ">
+        <HeadingH6 className='text-primary-orange-300' title={"Make Your Appointment"}/>
+        <div className='text-center mt-5'> 
+        <Link href={"/appointment"} className=' bg-primary-orange-300 hover:bg-primary-orange-400 p-2  rounded-md text-white hover:scale-105 duration-300'>Click Here</Link>
+        </div>
+        <div className="mt-3 text-center">
+          
+          <Para14 title="We'll get back to you in 1-2 business days."/>
+        </div>
+    </div>
     
-      <div className=" shadow-lg rounded-xl p-2 sm:p-3 lg:p-4 w-full ">
+      <div className=" shadow-lg rounded-xl p-2 sm:p-3 lg:p-4 w-full mt-10 ">
         <HeadingH6 className='text-primary-orange-300' title={"Fill in the form for any query"}/>
       <form className='mt-5 w-full'>
         <div className="grid gap-4 lg:gap-6">
@@ -37,10 +49,7 @@ const ServiecForm = () => {
         <div className='text-center'> 
         <Button className='mt-5 text-white hover:scale-95 duration-300' title="Send inquiry"/>
         </div>
-        <div className="mt-3 text-center">
-          
-          <Para14 title="We'll get back to you in 1-2 business days."/>
-        </div>
+   
       </form>
     </div>
     </>
