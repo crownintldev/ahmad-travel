@@ -4,8 +4,8 @@ import Link from "next/link";
 import React from "react";
 import { HeadingH3, HeadingH6 } from "../../Common/Heading";
 import Image from "next/image";
-import { Para14 } from "../../Common/Paragraph";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import flag from '../../../../public/assets/images/flag/azerbaijanflag.webp'
 
 interface Visaprops {
   heading: string;
@@ -15,6 +15,7 @@ interface Visaprops {
     title?: any;
     para?: string;
     location?: string;
+    flag?: any;
   }>;
 }
 
@@ -79,6 +80,9 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
                             {array.location}
                             </span>
                           </div>
+                          <div className="absolute bottom-4 right-4 w-16 h-16  bg-white rounded-full">
+                            <Image className="rounded-full" src={array.flag} alt="flag"/>
+                          </div>
                         </div>
                       </CardItem>
                       <CardItem
@@ -96,18 +100,6 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
                       </CardItem>
                     </CardBody>
                   </CardContainer>
-
-                  {/* 
-                        <div className="bg-white relative shadow transition duration-500 rounded-lg">
-                          <Image className="rounded-t-lg w-full h-[250px] bg-contain" width={300} height={300} src={array.image} alt="img" />
-                          <div className="md:py-4 py-2 md:px-6 px-2  rounded-lg bg-white">
-                            <HeadingH6 className=" font-bold text-2xl mb-3  hover:cursor-pointer" title={array.title} />
-                            <Para14 className=" tracking-wide" title={truncateText(array.para,80)}/>
-                          </div>
-                          <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
-                            <span className="sm:text-md text-[12px]">{array.location}</span>
-                          </div>
-                        </div> */}
                 </Link>
               ))}
           </div>

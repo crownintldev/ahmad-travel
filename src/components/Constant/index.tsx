@@ -123,6 +123,15 @@ import thailandflag from '../../../public/assets/images/flag/thailandflag.webp'
 import turkeyflag from '../../../public/assets/images/flag/turkeyflag.webp'
 import uzbekistanflag from '../../../public/assets/images/flag/uzbekistanflag.webp'
 import vietnamflag from '../../../public/assets/images/flag/vietnamflag.webp'
+import luxemburgflag from '../../../public/assets/images/flag/luxemburgflag.webp'
+import usaflag from '../../../public/assets/images/flag/usaflag.webp'
+import ukflag from '../../../public/assets/images/flag/ukflag.webp'
+import canadaflag from '../../../public/assets/images/flag/canadaflag.webp'
+
+
+import uk from '../../../public/assets/images/static/uk.jpg'
+import usa from '../../../public/assets/images/static/usa.jpg'
+import canada from '../../../public/assets/images/static/canada.jpg'
 
 import brand1 from "../../../public/assets/images/airline/airblue.svg"
 import brand2 from "../../../public/assets/images/airline/arbic.svg"
@@ -140,8 +149,53 @@ import brand13 from "../../../public/assets/images/airline/pegasus.svg"
 import { MdMail } from "react-icons/md"
 import { BsFillTelephoneFill } from "react-icons/bs"
 
+export const flagimg =[
+  {id:1 , image:azerbaijanflag},
+  {id:2 , image:cambodiaflag},
+  {id:3 , image:dubaiflag},
+  {id:4 , image:egyptflag},
+  {id:5 , image:indonesiaflag},
+  {id:6 , image:jordanflag},
+  {id:7 , image:kenyaflag},
+  {id:8 , image:malaysiaflag},
+  {id:9 , image:nepalflag},
+  {id:10 , image:philippineflag},
+  {id:11 , image:singaporeflag},
+  {id:12, image:srilankaflag},
+  {id:13 , image:tajikistanflag},
+  {id:14 , image:thailandflag},
+  {id:15 , image:turkeyflag},
+  {id:16 , image:uzbekistanflag},
+  {id:17 , image:vietnamflag},
 
+]
 
+export const visacard =[
+  {title:"Malaysia Visa",link:"/servicedetail/malaysia", image:malaysia1, flag:malaysiaflag,  location:"Visa Service Center", para:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."},
+  {title:"Thailand Visa",link:"/servicedetail/thailand", image:thailand1,flag:thailandflag,  location:"Visa Service Center", para:"Thailand is a stunning country located in Southeast Asia, renowned for its rich cultural heritage, ancient history, and breathtaking natural beauty."},
+  {title:"Indonesia Visa",link:"/servicedetail/indonesia", image:indonesia1,flag:indonesiaflag,  location:"Visa Service Center", para:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."},
+  {title:"Vietnam Visa",link:"/servicedetail/vietnam", image:vietnam1, flag:vietnamflag,  location:"Visa Service Center", para:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."},
+  {title:"Nepal Visa",link:"/servicedetail/nepal", image:nepal1, flag:nepalflag, location:"Visa Service Center", para:"Nepal is a country located in South Asia, bordered by China to the north and India to the south, east, and west."},
+  {title:"Sri Lanka Visa",link:"/servicedetail/srilanka", image:srilanka1,flag:srilankaflag,  location:"Visa Service Center", para:"Sri Lanka is a tropical island nation located in the Indian Ocean, southeast of the Indian subcontinent."},
+  {title:"Singapore Visa",link:"/servicedetail/singapore", image:singapore1,  flag:singaporeflag, location:"Visa Service Center", para:"Singapore, a small island city-state located in Southeast Asia, is known for its modern infrastructure, diverse culture, and thriving economy."},
+  {title:"Combodia Visa",link:"/servicedetail/cambodia", image:cambodia1,flag:cambodiaflag,  location:"Visa Service Center", para:"Cambodia is a Southeast Asian country located on the southern portion of the Indochinese peninsula."},
+  {title:"Egypt Visa",link:"/servicedetail/egypt", image:egypt1,flag:egyptflag,  location:"Visa Service Center", para:"Egypt is a country located in North Africa and the Middle East, renowned for its rich history, ancient civilization, and fascinating culture."},
+  {title:"Azerbaijan Visa",link:"/servicedetail/azerbaijan", image:azerbaijan1,flag:azerbaijanflag,  location:"Visa Service Center", para:"Azerbaijan is a country located in the South Caucasus region of Eurasia, bordered by Russia to the north, Georgia to the northwest,"},
+  {title:"Tajikistan Visa",link:"/servicedetail/tajikistan", image:tajikistan1,flag:tajikistanflag,  location:"Visa Service Center", para:"Tajikistan is a Central Asian landlocked country that shares borders with Afghanistan to the south, Uzbekistan to the west,"},
+  {title:"Uzbekistan Visa",link:"/servicedetail/uzbekistan", image:uzbekistan1, flag:uzbekistanflag,  location:"Visa Service Center", para:"Uzbekistan is a landlocked country in Central Asia, renowned for its rich history, diverse culture, and stunning architecture."},
+  {title:"Jordan Visa",link:"/servicedetail/jordan", image:jordan1,flag:jordanflag,  location:"Visa Service Center", para:"Jordan is a country in the Middle East, bordered by Syria to the north, Iraq to the northeast, Saudi Arabia to the east and south,"},
+  {title:"Philippine Visa",link:"/servicedetail/philippine", image:philippines1,flag:philippineflag,  location:"Visa Service Center", para:"The Philippines is an archipelagic country located in Southeast Asia. It is composed of more than 7,600 islands,"},
+  {title:"Kenya Visa",link:"/servicedetail/kenya", image:kenya1, flag:kenyaflag, location:"Visa Service Center", para:"Kenya is a country located in East Africa, with a population of over 54 million people. The country is known for its"},
+  {title:"Turkey Visa",link:"/servicedetail/turkey", image:turkey1,flag:turkeyflag,  location:"Visa Service Center", para:"Turkey is a transcontinental country that straddles both Europe and Asia, with a rich cultural heritage and a history that"},
+  {title:"Dubai Visa",link:"/servicedetail/dubai", image:dubai1,flag:dubaiflag,  location:"Visa Service Center", para:"Dubai is a city and emirate in the United Arab Emirates (UAE) located on the southeastern coast of the Persian Gulf."},
+]
+
+export const fileprocess =[
+  {title:"Schengen File Processing",link:"/servicedetail/schengen", image:philippines1,flag:luxemburgflag, location:" File Processing", para:"The Schengen Area is a zone consisting of 26 European countries that have abolished internal border controls and established a common visa policy."},
+  {title:"USA File Processing",link:"/servicedetail/usa", image:usa,flag:usaflag,  location:" File Processing", para:"The United States of America, also known as the USA or just America, is a sizable and diversified nation that provides a wide range"},
+  {title:"Canada File Processing",link:"/servicedetail/canada", image:canada,flag:canadaflag,  location:" File Processing", para:"The second-largest nation in the world, Canada, is a riveting tourist destination renowned for its breathtaking natural scenery,"},
+  {title:"UK File Processing",link:"/servicedetail/uk", image:uk, flag:ukflag,  location:" File Processing", para:"The United Kingdom, or UK as it is more frequently known, is an intriguing location that offers a combination of rich history,"},
+]
 
 
 export const Brandimg =[
@@ -680,26 +734,7 @@ export const Aboutcore = {
 
 
 
-export const flagimg =[
-  {id:1 , image:azerbaijanflag},
-  {id:2 , image:cambodiaflag},
-  {id:3 , image:dubaiflag},
-  {id:4 , image:egyptflag},
-  {id:5 , image:indonesiaflag},
-  {id:6 , image:jordanflag},
-  {id:7 , image:kenyaflag},
-  {id:8 , image:malaysiaflag},
-  {id:9 , image:nepalflag},
-  {id:10 , image:philippineflag},
-  {id:11 , image:singaporeflag},
-  {id:12, image:srilankaflag},
-  {id:13 , image:tajikistanflag},
-  {id:14 , image:thailandflag},
-  {id:15 , image:turkeyflag},
-  {id:16 , image:uzbekistanflag},
-  {id:17 , image:vietnamflag},
 
-]
 
 export const Aboutchallenge = [
   {

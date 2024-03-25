@@ -29,26 +29,26 @@ const MegaMenu = ({
   };
 
   const dropdata = [
-    { id: "1", title: "Drop Box", content: <MegaData 
+    { id: "1", title: "Visa Application Center", content: <MegaData 
     service={[
       {
         id: "1",
         title: "Malaysia Visa",
         para: "Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes,",
-        ref: "/dropbox/malaysia",
+        ref: "/servicedetail/malaysia",
       },
       {
         id: "2",
         title: "Vietnam Visa",
         para:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest,",
-        ref: "/dropbox/vietnam",
+        ref: "/servicedetail/vietnam",
       },
       {
         id: "3",
         title: "Indonesia Visa",
         para:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands,",
 
-        ref: "/dropbox/indonesia",
+        ref: "/servicedetail/indonesia",
       },
       {
         id: "3",
@@ -60,7 +60,7 @@ const MegaMenu = ({
     ]}
     onLinkClick={handleLinkClick} /> },
     // 2
-    { id: "2", title: "Visa Services", content: <MegaData onLinkClick={handleLinkClick} service={[
+    { id: "2", title: "Visa Consultancy", content: <MegaData onLinkClick={handleLinkClick} service={[
       
       { id: "1",title: "Malaysia Visa", para: "Malaysia is a vibrant and diverse country located in Southeast Asia,",ref: "/servicedetail/malaysia",},
        { id: "2",title: "Thailand Visa", para: "Thailand is a stunning country located in Southeast Asia, renowned for its rich",ref: "/servicedetail/thailand",},
@@ -79,51 +79,34 @@ const MegaMenu = ({
        { id: "15",title: "Kenya Visa", para: "Kenya is a country located in East Africa, with a population of over 54 million people.",ref: "/servicedetail/kenya",},
        { id: "16",title: "Turkey Visa", para: "Turkey is a transcontinental country that straddles both Europe and Asia, with a rich cultural",ref: "/servicedetail/turkey",},
        { id: "17",title: "Dubai Visa", para: "Dubai is a city and emirate in the United Arab Emirates (UAE) located on the southeastern",ref: "/servicedetail/dubai",},
-    ]} /> },
-    // 3
-    { id: "3", title: "File Processing", content: <MegaData onLinkClick={handleLinkClick} service={[
+       {
+        id: "18",
+        title: "Schengen File Processing",
+        para: "The Schengen Area is a zone consisting of 26 European countries that have",
+        ref: "/servicedetail/schengen",
+      },
       {
-      id: "1",
-      title: "Schengen File Processing",
-      para: "The Schengen Area is a zone consisting of 26 European countries that have",
-      ref: "/servicedetail/schengen",
-    },
-    {
-      id: "2",
-      title: "USA File Processing",
-      para: "The United States of America, also known as the USA or just America, is a sizable",
-      ref: "/servicedetail/usa",
-    },
-    {
-      id: "3",
-      title: "Canada File Processing",
-      para: "The second-largest nation in the world, Canada, is a riveting tourist",
-      ref: "/servicedetail/canada",
-    },
-    {
-      id: "4",
-      title: "UK File Processing",
-      para: "The United Kingdom, or UK as it is more frequently known, is an intriguing location",
-      ref: "/servicedetail/uk",
-    },
-  
-  ]} /> },
-  { id: "4", title: "Document Attestation", content: <MegaData onLinkClick={handleLinkClick} service={[
-    {
-    id: "1",
-    title: "Schengen File Processing",
-    para: "The Schengen Area is a zone consisting of 26 European countries that have",
-    ref: "/servicedetail/schengen",
-  },
-  {
-    id: "4",
-    title: "UK File Processing",
-    para: "The United Kingdom, or UK as it is more frequently known, is an intriguing location",
-    ref: "/servicedetail/uk",
-  },
+        id: "19",
+        title: "USA File Processing",
+        para: "The United States of America, also known as the USA or just America, is a sizable",
+        ref: "/servicedetail/usa",
+      },
+      {
+        id: "20",
+        title: "Canada File Processing",
+        para: "The second-largest nation in the world, Canada, is a riveting tourist",
+        ref: "/servicedetail/canada",
+      },
+      {
+        id: "21",
+        title: "UK File Processing",
+        para: "The United Kingdom, or UK as it is more frequently known, is an intriguing location",
+        ref: "/servicedetail/uk",
+      },
+    ]} /> },
 
-]} /> },
-  { id: "5", title: "Other Service", content: <MegaData onLinkClick={handleLinkClick} service={[
+ 
+  { id: "3", title: "Other Service", content: <MegaData onLinkClick={handleLinkClick} service={[
     {
     id: "1",
     title: "Hajj & Umrah",

@@ -1,7 +1,7 @@
 
 "use client"
 import React, { useEffect, useState } from 'react'
-import adventure from '../../../../public/assets/images/adventure.svg'
+import adventure from '../../../../public/assets/images/adventure.webp'
 import Image from 'next/image'
 import { IoIosArrowDropdownCircle } from 'react-icons/io';
 import { HeadingH6 } from '../../Common/Heading';
@@ -44,7 +44,7 @@ const Faq: React.FC<FaqProps> = ({ faqs }) => {
       <div className='bg-banner1 bg-cover bg-center bg-fixed bg-no-repeat mt-32'>
         <div className='grid grid-cols-1 md:grid-cols-2 justify-items-center container p-2 pt-28 pb-28'>
           <div className="flex justify-center items-center " style={{ transform: `rotate(${rotation}deg)` }}>
-            <Image src={adventure} width={200} height={200} alt='adventure'/>
+            <Image src={adventure} width={300} height={300} alt='adventure'/>
           </div>
           <div className='w-full space-y-3 mt-10 md:mt-0'>
             {faqs.map((faq, index) => (

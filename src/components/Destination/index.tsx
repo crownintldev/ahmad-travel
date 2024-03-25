@@ -6,6 +6,8 @@ import Slider from "../Carousel/Slider";
 import malaysia from '../../../public/assets/images/malaysia.jpg'
 import vitenam from '../../../public/assets/images/vitenam.jpg'
 import indonesia from '../../../public/assets/images/indonesia.jpg'
+import thailand from '../../../public/assets/images/static/thailand1.jpg'
+
 
 
 const Destination = () => {
@@ -27,13 +29,16 @@ const Destination = () => {
            
            destinations={[
             {
-               href:"/dropbox/malaysia" , image:malaysia ,visatype:"Official Drop Box Centre", title:"Malaysia Visa", description:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."
+               href:"/servicedetail/malaysia" , image:malaysia ,visatype:"Official Drop Box Centre", title:"Malaysia Visa", description:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."
             },
             {
-              href:"/dropbox/vietnam" , image:vitenam ,visatype:"Official Drop Box Centre", title:"Vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
+              href:"/servicedetail/vitenam" , image:vitenam ,visatype:"Official Drop Box Centre", title:"Vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
            },
            {
-            href:"/dropbox/indonesia" , image:indonesia ,visatype:"Official Drop Box Centre", title:"Indonesia Visa", description:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."
+            href:"/servicedetail/indonesia" , image:indonesia ,visatype:"Official Drop Box Centre", title:"Indonesia Visa", description:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."
+          },
+          {
+            href:"/servicedetail/thailand" , image:thailand ,visatype:"Official Drop Box Centre", title:"Thailand Visa", description:"Thailand is a stunning country located in Southeast Asia, renowned for its rich cultural heritage, ancient history, and breathtaking natural beauty."
           },
           ]}
         />   
