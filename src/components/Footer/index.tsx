@@ -5,7 +5,7 @@ import FooterLink from '../Common/FooterLink'
 import footer from '../../../public/assets/images/footer.jpg'
 import Image from 'next/image';
 import { Para14, Para16 } from '../Common/Paragraph';
-import { HeadingH6 } from '../Common/Heading';
+import { HeadingH3, HeadingH5, HeadingH6 } from '../Common/Heading';
 import Link from 'next/link';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
@@ -32,51 +32,67 @@ const Footer = () => {
     <p className='h-[0px] overflow-hidden'>
       <Theme/>
       </p>
-    <footer className="relative bottom-0 bg-primary-orange-100 lg:grid lg:grid-cols-5 border-t shadow-md w-full overflow-hidden mt-32">
-    <div className="relative block h-32 lg:col-span-2 lg:h-full overflow-hidden">
-  <Image
-    src={footer}
-    layout='fill'
-    objectFit="cover"
-    alt="footer-image"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-primary-orange-200 to-primary-orange-200/45 opacity-75"></div>
-</div>
-  <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
-    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-      <div className='space-y-3'>
+    <div className='bg-primary-orange-100 shadow mt-10 md:mt-32 p-2 max-w-screen-md mx-auto rounded-t-lg text-center pb-5 '>
+      <HeadingH5 className='mb-5' title={"For any Query & Complain!"}/>
+      <Link className='p-2 px-5 shadow bg-primary-orange-500 rounded-md' href={"tel:03025000666"}>Call Us</Link>
+    </div>
+    
+<footer className='bg-primary-orange-100 pb-5'>
+  <div className="container p-2 ">
+  <HeadingH6 className='mt-5' title={"Crown International Travels (Pvt) Ltd"}/>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-5 mt-5 gap-0 md:gap-2 justify-start sm:justify-items-center gap-y-3 '>
+
+      <div className='shadow-md rounded-md p-2 md:p-4 bg-primary-orange-200 hover:bg-primary-orange-300 duration-300 transition space-y-3 mb-4 sm:mb-0'>
         <div>
-            <HeadingH6 className='uppercase tracking-wide font-bold' title='Address'/>
-            <Para14 className='uppercase font-bold' title={"Rawalpindi Head Office"}/>
-            <Link href={"https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7"}>Office No. 406/7/8 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi,Punjab, Pakistan</Link>
+        <Para16 className='font-semibold' title={"Rawalpindi Head Office"} />
+        <Para14 title={"Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi, Punjab, Pakistan"}/>
         </div>
+
         <div>
-            <Para14 className='uppercase font-bold' title={"Karachi Branch Office"}/>
-            <Link href={"https://maps.app.goo.gl/QNEMH2XEyovoJEg1A"}>Plot # 38-C, Office No 01, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan</Link>
+        <Para16 className='font-semibold' title={"Phone Number"} />
+          <div>
+          <Link href={"tel:+923135000666"}>+92 313 5000 666 ( UAN )</Link>
+          </div>
+          <div>
+          <Link href={"tel:+92515511155/56-57"}>+92 51 5511 155 / 56-57</Link>
+          </div>
         </div>
+
         <div>
-            <HeadingH6 className='uppercase tracking-wide font-bold ' title='Call'/>
-            <div>
-              <Link href={"tel:+92 313 5000 666"}>+92 313 5000 666</Link>
-            </div>
-            <div>
-              <Link href={"tel:+92 51 5511 155 / 56-57"}>+92 51 5511 155 / 56-57</Link>
-            </div>
-            <div>
-              <Link href={"tel:111 143 111"}>111 143 111 ( UAN )</Link>
-            </div>
+        <HeadingH6 title={"Location"} />
+          <Link className='text-12 sm:text-14' href={"https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7"}>https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7</Link>
         </div>
-        <ul className="mt-8 space-y-1 text-sm ">
-          <li>Monday to Saturday: 09am - 8pm</li>
-        </ul>
-        
-      </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+
+
+    </div>
+    <div className='shadow-md rounded-md p-2 md:p-4 bg-primary-orange-200 hover:bg-primary-orange-300 duration-300 transition space-y-3 mb-4 sm:mb-0'>
+        <div>
+        <Para16 className='font-semibold' title={"Karachi Main Office"} />
+        <Para14 title={"Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"}/>
+        </div>
+
+        <div>
+        <Para16 className='font-semibold' title={"Phone Number"} />
+        <div>
+          <Link href={"tel:111143111"}>111 143 111 ( UAN )</Link>
+          </div>
+        </div>
+
+        <div>
+        <HeadingH6 title={"Location"} />
+          <Link className='text-12 sm:text-14' href={"https://maps.app.goo.gl/csKKhU6c6Qy56hsC8"}>https://maps.app.goo.gl/csKKhU6c6Qy56hsC8</Link>
+        </div>
+
+
+    </div>
+ 
       <FooterLink title={"We offer"} array={WeOffer} />
       <FooterLink title={"About us"} array={FooterAbout} />   
-      </div>
     </div>
-    <div className="mt-12 border-t border-gray-100 pt-12">
+
+  <div class='w-full h-[3px] m-auto bg-gradient-to-r from-transparent via-white to-transparent'></div>
+
+  <div className=" border-gray-100 pt-8">
       <div className="sm:flex sm:items-center sm:justify-between">
         <ul className="flex flex-wrap gap-4 text-xs">
           <li>
@@ -136,7 +152,9 @@ const Footer = () => {
       </div>
     </div>
   </div>
+   
 </footer>
+
     </>
   )
 }

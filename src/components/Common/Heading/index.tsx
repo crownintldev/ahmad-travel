@@ -61,10 +61,10 @@ export const HeadingH5: React.FC<HeadingProps> = ({ icon, title, className }) =>
   );
 };
 
-export const HeadingH6: React.FC<HeadingProps> = ({ icon, title, className="font-semibold" }) => {
+export const HeadingH6: React.FC<HeadingProps> = ({ icon, title, className}) => {
   return (
     
-      <p className={`xl:text-xl-h6 lg:text-lg-h6 text-md-h6  gap-3 ${className}`}>
+      <p className={`xl:text-xl-h6 lg:text-lg-h6 text-md-h6 font-semibold  gap-3 ${className}`}>
         {icon}{title}
       </p>
     
