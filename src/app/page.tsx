@@ -11,7 +11,6 @@ import VisaInfo from "@/components/Home/VisaInfo";
 import { OurService } from "@/components/Home/OurService";
 import Testimonial from "@/components/Carousel/Testimonial";
 import { fileprocess, visacard } from "@/components/Constant";
-import Splidetest from "@/components/Splidetest";
 
 export default function Home()
  {
