@@ -14,6 +14,8 @@ import Link from "next/link";
 import { ImCross } from "react-icons/im";
 import Tab from "@/components/Tabs";
 import ServiceData from "@/components/Service/servicedata";
+import { HeadingH4, HeadingH6 } from "@/components/Common/Heading";
+import { Para14, Para16 } from "@/components/Common/Paragraph";
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -112,13 +114,13 @@ const Navbar: React.FC = () => {
                 <SearchData />
               </Modal>
               <Button
-                className="border-none px-2 py-1 gap-1  bg-gradient-to-r from-primary-btn1 hover:from-primary-btn3 via-primary-btn2 to-primary-btn3 hover:to-primary-btn1 text-primary-black transition duration-400 shadow-md"
+                className="border-none px-2 py-1 gap-1  bg-gradient-to-r from-primary-orange-100 hover:from-primary-orange-300 via-primary-orange-200 to-primary-orange-300 hover:to-primary-orange-100 transition duration-400 shadow-md"
                 onClick={showDrawer}
                 btnicon={<FaCcAmazonPay className="text-white" size={25} />}
                 text="APP"
               />
               <Drawer
-                width={800}
+                width={600}
                 placement={placement}
                 closable={false}
                 open={open}
@@ -145,32 +147,73 @@ const Navbar: React.FC = () => {
                       tabsData={[
                         {
                           key: "1",
-                          title: "Sticker Visa",
+                          title: "Rawalpindi Account",
                           content: (
                             <>
-                            
+                            <div className="bg-white shadow p-2 rounded-md">
+                            <div>
+                              <HeadingH6 title={"Bank Name"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                            <div>
+                              <HeadingH6 title={"Accound Name"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                              <div>
+                              <HeadingH6 title={"Branch Code"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                              <div>
+                              <HeadingH6 title={"Accound Number"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                              
+                            </div>
                             </>
                           ),
                         },
                         {
                           key: "2",
-                          title: "E-Visa",
+                          title: "Karachi Account",
                           content: (
-                            <ServiceData
-                              data={[
-                                {
-                                  title: "Azerbaijan E – Visa Requirement",
-                                  points: [
-                                    "Original Passport { Validity At least 6 Months }",
-                                    "04 Pictures with White Background  { 35mm x 50mm }",
-                                    "CNIC Photo Copy",
-                                    "1 Month Visa Validity",
-                                    "Single Entry Visa",
-                                    "3 – 5 Days Process Time",
-                                  ],
-                                },
-                              ]}
-                            />
+                            <>
+                            <div className="bg-white shadow p-2 rounded-md">
+                            <div>
+                              <HeadingH6 title={"Bank Name"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                            <div>
+                              <HeadingH6 title={"Accound Name"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                              <div>
+                              <HeadingH6 title={"Branch Code"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                              <div>
+                              <HeadingH6 title={"Accound Number"}/>
+                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
+                              </div>
+                              
+                            </div>
+                            </>
+                          ),
+                        },
+                        {
+                          key: "3",
+                          title: "Details",
+                          content: (
+                            <>
+                            <div className="bg-white shadow p-2 rounded-md">
+                            <div>
+                              <HeadingH6 title={"Detail"}/>
+                              <Para16 title="However, the potential of these methods has yet to be fully leveraged. Data augmentation, for instance, is often randomly chosen based on intuition. Yet previous work has shown that it is crucial to jointly optimize the augmentations' complexity and affinity, i.e., how much the augmentation shifts the decision boundary of the clean baseline model. Other studies suggest that not every synthetic example improves the model's generalizability, with some even hurting performance if not reasonably chosen. Similarly, the effect of self-supervised pre-training methods on downstream tasks generally depends on the overlap between the pretext task and the downstream"/>
+                           
+                              </div>
+                           
+                              
+                            </div>
+                            </>
                           ),
                         },
                       ]}
