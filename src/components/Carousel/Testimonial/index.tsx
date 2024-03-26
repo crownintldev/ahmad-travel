@@ -56,7 +56,7 @@ const Testimonial:React.FC = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2  pt-10 pb-10 w-full  flex-col items-center'>
             <div className='text-white text-center md:px-10 md:mx-10 '> 
                 <HeadingH2 title={'Dont just take our word for it...'}/>
-                <Para14 title={'Crown International Travels was become private limited company'}/>
+                <Para14 title={'Crown International Travels became a private limited company'}/>
             </div>
             <div data-trustmary-widget="rNwW-bg-h"></div>
    

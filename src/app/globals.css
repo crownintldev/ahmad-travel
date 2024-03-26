@@ -275,7 +275,9 @@
       flex-direction: column !important;
   }
 }
-
+.ant-drawer-left>.ant-drawer-content-wrapper{
+  box-shadow: none !important;
+}
 .counter {
   display: flex;
   align-items: center;
