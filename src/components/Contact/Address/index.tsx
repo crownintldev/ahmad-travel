@@ -40,7 +40,9 @@ const Address = () => {
           <div>
           <Link href={"tel:+92515511155/56-57"}>+92 51 5511 155 / 56-57</Link>
           </div>
-
+          <div>
+          <Link href={"tel:111143111"}>111 143 111 ( UAN )</Link>
+          </div>
           <HeadingH6 title={"Email"} />
           <div>
           <Link href={"mailto:Crownintltravels@gmail.com"}>Crownintltravels@gmail.com</Link>
@@ -59,7 +61,13 @@ const Address = () => {
           <Para14 title={"Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"}/>
           <HeadingH6 title={"Phone Number"} />
           <div>
-          <Link href={"tel:111143111"}>111 143 111 ( UAN )</Link>
+          <Link href={"tel:031350006000"}>0313 50006000</Link>
+          </div>
+          <div>
+          <Link href={"tel:+922135244461"}>+92 2135244461</Link>
+          </div>
+          <div>
+          <Link href={"tel:+922135244462"}>+92 2135244462</Link>
           </div>
           <HeadingH6 title={"Email"} />
           <div>
