@@ -10,6 +10,7 @@ import { FaPerson } from "react-icons/fa6";
 import Button from "@/components/Common/Button";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
+import ButtonGradient from "@/components/Common/Button/BtnGradient";
 
 const onChange: DatePickerProps["onChange"] = (date, dateString) => {
   console.log(date, dateString);
@@ -85,7 +86,7 @@ const Flights: React.FC = () => {
           }
         />
         <div className="text-center ">
-        <Button className=" text-white w-full h-12" title="Search" />
+        <ButtonGradient className=" text-white w-full h-12" title="Search" />
       </div>
       </div>
     </>

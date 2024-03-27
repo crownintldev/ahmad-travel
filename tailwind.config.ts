@@ -95,6 +95,9 @@ const config: Config = {
             200: 'var(--color-primary2)',
             100: 'var(--color-primary1)',
           },
+          btn:{
+            color:'#FFCE4F',
+          },
           text:{
             color:'var(--color-primary6)',
           },

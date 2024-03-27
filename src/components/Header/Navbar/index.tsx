@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
               </Modal>
             
               <Link
-                className="font-semibold bg-black duration-300 transition text-white py-1 px-2 rounded-md"
+                className="font-semibold bg-black  duration-300 transition text-primary-btn-color py-1 px-2 rounded-md"
                 href="/tracking"
               >
                 Track Your ID

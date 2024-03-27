@@ -22,7 +22,7 @@ export const HoverEffect = ({
     <>
     <div className="container p-2 mt-10 lg:mt-32">
 
-    <HeadingH3 title={"Our Services"}/>
+    <HeadingH3 className="text-white mt-10" title={"Our Services"}/>
         <hr className='w-14 border-2 border-primary-orange-200 '/>
     <div
       className={cn(

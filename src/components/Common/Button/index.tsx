@@ -16,16 +16,9 @@ const Button: React.FC<ButtonProps> = ({
   value,
 }) => {
   return (
-    <button 
-    onClick={onClick} 
-    value={value} 
-    className={`${
-      className ? className + ' ' : ''
-    }bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 p-2 rounded-md`}
-  >
-    {title}
-    {btnicon && btnicon}
-  </button>
+    <button  onClick={onClick} value={value} className={`${className} bg-black text-primary-btn-color  p-2  rounded-md`}>
+      {title}{btnicon}
+    </button>
   );
 };
 

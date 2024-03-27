@@ -32,17 +32,17 @@ const Footer = () => {
     <p className='h-[0px] overflow-hidden'>
       <Theme/>
       </p>
-    <div className='bg-primary-orange-100 shadow mt-10 md:mt-32 p-2 max-w-screen-md mx-auto rounded-t-lg text-center pb-5 '>
+    <div className='bg-black text-primary-orange-300 shadow mt-10 md:mt-32 p-2 max-w-screen-md mx-auto rounded-t-lg text-center pb-5 '>
       <HeadingH5 className='mb-5' title={"For any Query & Complain!"}/>
-      <Link className='p-2 px-5 shadow bg-primary-orange-500 rounded-md' href={"tel:03025000666"}>Call Us</Link>
+      <Link className='p-2 px-5  bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] hover:from-[#D69A00] hover:via-[#EBBD45] hover:to-[#FFEF5E] font-semibold text-[18px] rounded-md text-white' href={"tel:03025000666"}>Call Us</Link>
     </div>
     
-<footer className='bg-primary-orange-100 pb-5'>
+<footer className='bg-black text-primary-orange-300 pb-5'>
   <div className="container p-2 ">
   <HeadingH6 className='mt-5' title={"Crown International Travels (Pvt) Ltd"}/>
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-5 mt-5 gap-0 md:gap-2 justify-start sm:justify-items-center gap-y-3 '>
 
-      <div className='shadow-md rounded-md p-2 md:p-4 bg-primary-orange-200 hover:bg-primary-orange-300 duration-300 transition space-y-3 mb-4 sm:mb-0'>
+      <div className='shadow-md rounded-md p-2 md:p-4 bg-primary-orange-400 hover:bg-primary-orange-300 text-black  text- duration-400 transition space-y-3 mb-4 sm:mb-0'>
         <div>
         <Para16 className='font-semibold' title={"Rawalpindi Head Office"} />
         <Para14 title={"Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi, Punjab, Pakistan"}/>
@@ -68,7 +68,7 @@ const Footer = () => {
 
 
     </div>
-    <div className='shadow-md rounded-md p-2 md:p-4 bg-primary-orange-200 hover:bg-primary-orange-300 duration-300 transition space-y-3 mb-4 sm:mb-0'>
+    <div className='shadow-md rounded-md p-2 md:p-4 bg-primary-orange-400 hover:bg-primary-orange-300 text-black duration-400 transition space-y-3 mb-4 sm:mb-0'>
         <div>
         <Para16 className='font-semibold' title={"Karachi Main Office"} />
         <Para14 title={"Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"}/>
