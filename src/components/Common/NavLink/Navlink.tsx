@@ -57,7 +57,8 @@ const Navlink = ({ onDropdownClose }) => {
                 { id: "2", title: "Company History", subtitle:"History",href: "/history" },
                 { id: "2", title: "About Company", subtitle:"CROWN",href: "/about" },
                 { id: "3", title: "Our Team", subtitle:"CROWN TEAM",href: "/team" },
-                { id: "4", title: "Company Profile", subtitle:"PDF PROFILE",href: "/" },
+                { id: "4", title: "Company Policy", subtitle:"payment",href: "/payment" },
+                { id: "5", title: "Company Profile", subtitle:"PDF PROFILE",href: "/" },
               ],
             },
           ]}

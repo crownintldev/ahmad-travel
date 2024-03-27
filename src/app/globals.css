@@ -330,15 +330,15 @@
 
 }
 .card0 {
-  background: url("/assets/images/ceo.jpg") center center no-repeat;
+  background: url("/assets/images/team/dastgeer.jpg") center center no-repeat;
   background-size: 300px;
-  background-position: top;
+  background-position: top left;
 
 }
 .card0:hover {
-  background: url("/assets/images/ceo.jpg") left center no-repeat;
-  background-size: 600px;
-  background-position: left top;
+  background: url("/assets/images/team/dastgeer.jpg") top center no-repeat;
+  background-size: 350px;
+  background-position: left;
 
 }
 .card0:hover h2 {
@@ -346,30 +346,67 @@
 }
 
 .card1 {
-  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background: url("/assets/images/team/adnan.jpg") left center no-repeat;
   background-size: 300px;
 }
 .card1:hover {
-  background: url("/assets/images/ceo.jpg") left center no-repeat;
-  background-size: 600px;
-  background-size: 600px;
-  background-position: left top;
+  background: url("/assets/images/team/adnan.jpg") left center no-repeat;
+  background-size: 350px;
+  background-position: left;
 }
 .card1:hover h2 {
   opacity: 1;
 }
 
 .card2 {
-  background: url("/assets/images/ceo.jpg") left center no-repeat;
+  background: url("/assets/images/team/momin.jpg") left center no-repeat;
   background-size: 300px;
 }
 .card2:hover {
-  background: url("/assets/images/ceo.jpg") left center no-repeat;
-  background-size: 600px;
-  background-size: 600px;
-  background-position: left top;
+  background: url("/assets/images/team/momin.jpg") left center no-repeat;
+  background-size: 350px;
+  background-position: left;
 }
 .card2:hover h2 {
+  opacity: 1;
+}
+
+.card3 {
+  background: url("/assets/images/team/ahmed.jpg") left center no-repeat;
+  background-size: 300px;
+}
+.card3:hover {
+  background: url("/assets/images/team/ahmed.jpg") left center no-repeat;
+  background-size: 350px;
+  background-position: left;
+}
+.card3:hover h2 {
+  opacity: 1;
+}
+
+.card4 {
+  background: url("/assets/images/team/rehman.jpg") left center no-repeat;
+  background-size: 300px;
+}
+.card4:hover {
+  background: url("/assets/images/team/rehman.jpg") left center no-repeat;
+  background-size: 350px;
+  background-position: left;
+}
+.card4:hover h2 {
+  opacity: 1;
+}
+
+.card5 {
+  background: url("/assets/images/team/jawad.jpg") left center no-repeat;
+  background-size: 300px;
+}
+.card5:hover {
+  background: url("/assets/images/team/jawad.jpg") left center no-repeat;
+  background-size: 350px;
+  background-position: left;
+}
+.card5:hover h2 {
   opacity: 1;
 }
 

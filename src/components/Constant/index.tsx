@@ -150,6 +150,22 @@ import brand13 from "../../../public/assets/images/airline/pegasus.svg"
 import { MdMail } from "react-icons/md"
 import { BsFillTelephoneFill } from "react-icons/bs"
 
+import dastgeer from "../../../public/assets/images/team/dastgeer.jpg"
+import Ahmed from "../../../public/assets/images/team/ahmed.jpg"
+import Adnan from "../../../public/assets/images/team/adnan.jpg"
+import momin from "../../../public/assets/images/team/momin.jpg"
+import rehman from "../../../public/assets/images/team/rehman.jpg"
+import jawad from "../../../public/assets/images/team/jawad.jpg"
+
+export const teamcard=[
+  {id:"1",image:dastgeer,name:"MUHAMMAD DASTAGEER ULLAH ",title:"ACCOUNTANT",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
+  {id:"2",image:Ahmed,name:"AHMED MIRAJ ",title:"VISA PROCESSING HEAD",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
+  {id:"3",image:Adnan,name:"ADNAN IQBAL ",title:"SALES MANAGER",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
+  {id:"4",image:momin,name:"MOMIN KHALID ",title:" VISA APPOINTMENT& BOOKING HEAD",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
+  {id:"5",image:rehman,name:"ABDDUL REHMAN ",title:"VISA APPOINTMENT AND BOOKING ASSISTANT",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
+  {id:"6",image:jawad,name:"JAWAD ALI ",title:"VISA APPOINTMENT AND BOOKING ASSISTANT ",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
+]
+
 export const flagimg =[
   {id:1 , image:azerbaijanflag},
   {id:2 , image:cambodiaflag},
@@ -170,6 +186,8 @@ export const flagimg =[
   {id:17 , image:vietnamflag},
 
 ]
+
+
 
 export const visacard =[
   {title:"Malaysia Visa",link:"/servicedetail/malaysia", image:malaysia1, flag:malaysiaflag,  location:"Visa Service Center", para:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."},

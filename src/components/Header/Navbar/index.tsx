@@ -21,32 +21,17 @@ const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollingUp, setScrollingUp] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState([false, false]); // Assuming you have multiple modals
-  const [placement, setPlacement] = useState("left"); // Assuming default placement for Drawer
+  const [isModalOpen, setIsModalOpen] = useState([false, false]); // Assuming you have multiple modal
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
-  };
-
-  const showDrawer = () => {
-    setOpen(true);
-  };
+  }; 
   const onClose = () => {
     setOpen(false);
   };
-
-  const onChange = (e) => {
-    setPlacement(e.target.value);
-  };
-
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-
-  const onChangeTab = (key) => {
-    console.log(key);
-  };
-
   const handleCloseDrawer = () => {
     onClose();
   };
@@ -113,115 +98,7 @@ const Navbar: React.FC = () => {
               >
                 <SearchData />
               </Modal>
-              <Button
-                className="border-none px-2 py-1 gap-1  bg-gradient-to-r from-primary-orange-100 hover:from-primary-orange-300 via-primary-orange-200 to-primary-orange-300 hover:to-primary-orange-100 transition duration-400 shadow-md"
-                onClick={showDrawer}
-                btnicon={<FaCcAmazonPay className="text-white" size={25} />}
-                text="APP"
-              />
-              <Drawer
-                width={600}
-                placement={placement}
-                closable={false}
-                open={open}
-                onClose={onClose}
-                key={placement}
-                className="drawerbox"
-                style={{
-                  background: "transparent",
-                  overflow: "hidden !important",
-                }}
-              >
-                <div
-                  className={`rounded-lg shadow-xl  p-3    backdrop-blur-2xl`}
-                >
-                  <div
-                    className={`flex  justify-center border-2 hover:scale-105  shadow-md  hover:shadow-lg duration-100 transition rounded-md p-2 w-10`}
-                    onClick={handleCloseDrawer}
-                  >
-                    <ImCross />
-                  </div>
-                  <div>
-                    <Tab
-                      className={"mt-10"}
-                      tabsData={[
-                        {
-                          key: "1",
-                          title: "Rawalpindi Account",
-                          content: (
-                            <>
-                            <div className="bg-white shadow p-2 rounded-md">
-                            <div>
-                              <HeadingH6 title={"Bank Name"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                            <div>
-                              <HeadingH6 title={"Accound Name"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                              <div>
-                              <HeadingH6 title={"Branch Code"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                              <div>
-                              <HeadingH6 title={"Accound Number"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                              
-                            </div>
-                            </>
-                          ),
-                        },
-                        {
-                          key: "2",
-                          title: "Karachi Account",
-                          content: (
-                            <>
-                            <div className="bg-white shadow p-2 rounded-md">
-                            <div>
-                              <HeadingH6 title={"Bank Name"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                            <div>
-                              <HeadingH6 title={"Accound Name"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                              <div>
-                              <HeadingH6 title={"Branch Code"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                              <div>
-                              <HeadingH6 title={"Accound Number"}/>
-                              <Para16 title="xxxx-xxxx-xxxx-xxxx"/>
-                              </div>
-                              
-                            </div>
-                            </>
-                          ),
-                        },
-                        {
-                          key: "3",
-                          title: "Details",
-                          content: (
-                            <>
-                            <div className="bg-white shadow p-2 rounded-md">
-                            <div>
-                              <HeadingH6 title={"Detail"}/>
-                              <Para16 title="However, the potential of these methods has yet to be fully leveraged. Data augmentation, for instance, is often randomly chosen based on intuition. Yet previous work has shown that it is crucial to jointly optimize the augmentations' complexity and affinity, i.e., how much the augmentation shifts the decision boundary of the clean baseline model. Other studies suggest that not every synthetic example improves the model's generalizability, with some even hurting performance if not reasonably chosen. Similarly, the effect of self-supervised pre-training methods on downstream tasks generally depends on the overlap between the pretext task and the downstream"/>
-                           
-                              </div>
-                           
-                              
-                            </div>
-                            </>
-                          ),
-                        },
-                      ]}
-                    />
-                  </div>
-                </div>
-              </Drawer>
-
+            
               <Link
                 className="font-semibold bg-primary-orange-400 hover:bg-primary-orange-300 duration-300 transition text-white py-1 px-2 rounded-md"
                 href="/tracking"
