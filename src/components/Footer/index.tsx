@@ -102,7 +102,7 @@ const Footer = () => {
       <FooterLink title={"About us"} array={FooterAbout} />   
     </div>
 
-  <div class='w-full h-[3px] m-auto bg-gradient-to-r from-transparent via-white to-transparent'></div>
+  <div className='w-full h-[3px] m-auto bg-gradient-to-r from-transparent via-white to-transparent'></div>
 
   <div className=" border-gray-100 pt-8">
       <div className="sm:flex sm:items-center sm:justify-between">
