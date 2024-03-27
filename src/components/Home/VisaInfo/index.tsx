@@ -65,7 +65,7 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
                   key={index}
                 >
                   <CardContainer>
-                    <CardBody className=" bg-primary-orange-400 relative group/card border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+                    <CardBody className="  bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] relative w-auto h-auto rounded-xl p-6 border  ">
                       <CardItem translateZ="100" className="w-full">
                         <div className="bg-white p-2 rounded-xl relative">
                           <Image

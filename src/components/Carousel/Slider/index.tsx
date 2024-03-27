@@ -53,7 +53,7 @@ const Slider: React.FC<SliderProps> = ({ destinations }) => {
           <Image className='rounded-full' width={200} height={200} src={array.flag} alt='flag'/>
         </div>
         <div className="relative px-4 -mt-16  ">
-          <div className="bg-primary-orange-400 p-3 rounded-md shadow-md border-b text-white">
+          <div className=" bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] p-3 rounded-md shadow-md border-b text-black">
             <HeadingH6 className='font-semibold uppercase leading-tight truncate' title={array.title}/>
             <Para14 title={truncateText(array.description, 80)}/>
           </div>

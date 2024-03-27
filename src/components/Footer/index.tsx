@@ -34,7 +34,7 @@ const Footer = () => {
       </p>
     <div className='bg-black text-primary-orange-300 shadow mt-10 md:mt-32 p-2 max-w-screen-md mx-auto rounded-t-lg text-center pb-5 '>
       <HeadingH5 className='mb-5' title={"For any Query & Complain!"}/>
-      <Link className='p-2 px-5  bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] hover:from-[#D69A00] hover:via-[#EBBD45] hover:to-[#FFEF5E] font-semibold text-[18px] rounded-md text-white' href={"tel:03025000666"}>Call Us</Link>
+      <Link className='p-2 px-10  bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] hover:from-[#D69A00] hover:via-[#EBBD45] hover:to-[#FFEF5E] font-semibold text-[18px] rounded-md text-black' href={"tel:03025000666"}>Call Us</Link>
     </div>
     
 <footer className='bg-black text-primary-orange-300 pb-5'>

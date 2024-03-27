@@ -17,7 +17,7 @@ export default function Home()
   return (
     <>
     <MainSlider/>
-    <Booking/>
+    {/* <Booking/> */}
     <Brand/>
     <Destination/>
     <VisaInfo

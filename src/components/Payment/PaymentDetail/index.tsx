@@ -38,6 +38,7 @@ const accountDetails = [
     niftCode: "060",
     image:bankfaisal
   },
+  
   // Add more accounts as objects here if necessary
 ];
 const PaymentDetail:React.FC = () => {
