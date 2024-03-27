@@ -156,12 +156,17 @@ import Adnan from "../../../public/assets/images/team/adnan.jpg"
 import momin from "../../../public/assets/images/team/momin.jpg"
 import rehman from "../../../public/assets/images/team/rehman.jpg"
 import jawad from "../../../public/assets/images/team/jawad.jpg"
+import naina from "../../../public/assets/images/team/g1.jpg"
+import irum from "../../../public/assets/images/team/g2.jpg"
+
 
 export const teamcard=[
   {id:"1",image:dastgeer,name:"MUHAMMAD DASTAGEER ULLAH ",title:"ACCOUNTANT",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
   {id:"2",image:Ahmed,name:"AHMED MIRAJ ",title:"VISA PROCESSING HEAD",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
   {id:"3",image:Adnan,name:"ADNAN IQBAL ",title:"SALES MANAGER",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
-  {id:"4",image:momin,name:"MOMIN KHALID ",title:" VISA APPOINTMENT& BOOKING HEAD",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
+  {id:"4",image:naina,name:"NAJAM RAINA",title:"VISA MARKETING AND BOOKING ASSISTANT",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
+  {id:"4",image:momin,name:"MOMIN KHALID ",title:" VISA APPOINTMENT& BOOKING HEAD",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
+  {id:"4",image:irum,name:"IRUM INAM",title:"VISA MARKETING & BOOKING ASSISTNAT",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
   {id:"5",image:rehman,name:"ABDDUL REHMAN ",title:"VISA APPOINTMENT AND BOOKING ASSISTANT",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row",boxColor:"bg-primary-orange-400"},
   {id:"6",image:jawad,name:"JAWAD ALI ",title:"VISA APPOINTMENT AND BOOKING ASSISTANT ",des:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe sint expedita suscipit nemo nihil cupiditate culpa temporibus, facere nisi.",className:"md:flex-row-reverse",boxColor:"bg-primary-orange-400"},
 ]
