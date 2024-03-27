@@ -56,7 +56,7 @@ const PaymentDetail:React.FC = () => {
   />
 <div className=' grid grid-cols-1 md:grid-cols-2 justify-items-center '>
 {accountDetails.map((account, index) => (
-    <div className='border-2 border-primary-orange-500 p-2 md:p-4 rounded-lg w-full md:w-4/6 space-y-3 mt-5 mb-5'>
+    <div className='border-2 border-primary-orange-500 p-2 md:p-4 rounded-lg w-full md:w-4/6 space-y-3 mt-5 mb-5' key={index}>
   <HeadingH5 className='underline' title={account.heading}/>
       <p className='text-[18px] font-semibold'>Account Title: <span className='text-primary-orange-500'>{account.title}</span></p>
       <p className='text-[18px] font-semibold'>Account Number: <span className='text-primary-orange-500'>{account.iban1}</span></p>
