@@ -4,6 +4,8 @@ import bankalflah from '../../../../public/assets/images/bankalflah.png'
 import bankfaisal from '../../../../public/assets/images/bankfaisal.png'
 
 import { HeadingH5 } from '@/components/Common/Heading'
+import { Alert } from 'antd'
+import Marquee from 'react-fast-marquee'
 
 const accountDetails = [
   {
@@ -42,9 +44,18 @@ const PaymentDetail:React.FC = () => {
   return (
     <>
 
-    <div className='container mt-10 md:mt-32 grid grid-cols-1 md:grid-cols-2 justify-items-center '>
-      
-  {accountDetails.map((account, index) => (
+    <div className='container mt-10 md:mt-32'>
+    <Alert
+    className='rounded-md p-4  font-bold'
+    banner
+    message={
+      <Marquee pauseOnHover gradient={false}>
+        I can be a React component, multiple React components, or just some text.
+      </Marquee>
+    }
+  />
+<div className=' grid grid-cols-1 md:grid-cols-2 justify-items-center '>
+{accountDetails.map((account, index) => (
     <div className='border-2 border-primary-orange-500 p-2 md:p-4 rounded-lg w-full md:w-4/6 space-y-3 mt-5 mb-5'>
   <HeadingH5 className='underline' title={account.heading}/>
       <p className='text-[18px] font-semibold'>Account Title: <span className='text-primary-orange-500'>{account.title}</span></p>
@@ -57,6 +68,8 @@ const PaymentDetail:React.FC = () => {
 
 </div>
   ))}
+</div>
+
 
 
     </div>

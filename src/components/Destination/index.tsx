@@ -5,7 +5,7 @@ import { HeadingH2, HeadingH3, HeadingH4, HeadingH5 } from "../Common/Heading";
 import { Para16 } from "../Common/Paragraph";
 import Slider from "../Carousel/Slider";
 import malaysia from '../../../public/assets/images/malaysia.jpg'
-import vitenam from '../../../public/assets/images/vitenam.jpg'
+import vietnam from '../../../public/assets/images/vitenam.jpg'
 import indonesia from '../../../public/assets/images/indonesia.jpg'
 import thailand from '../../../public/assets/images/static/thailand1.jpg'
 import dubai from '../../../public/assets/images/static/dubai1.jpg'
