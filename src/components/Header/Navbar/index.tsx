@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
           <div className="flex gap-2">
             <div className="flex items-center justify-center gap-2 md:gap-5">
               <Button
-                className="bg-transparent text-black group hover:text-white"
+                className="bg-transparent hover:bg-black text-black group hover:text-white"
                 onClick={() => toggleModal(0, true)}
                 title={
                   <IoSearchSharp
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
               </Modal>
             
               <Link
-                className="font-semibold bg-primary-orange-400 hover:bg-primary-orange-300 duration-300 transition text-white py-1 px-2 rounded-md"
+                className="font-semibold bg-black duration-300 transition text-white py-1 px-2 rounded-md"
                 href="/tracking"
               >
                 Track Your ID

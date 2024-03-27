@@ -17,9 +17,9 @@ const Theme = () => {
 
   // Define default colors
   const defaultColors = {
-    color1: '#FFE063', // Example default color for color1
-    color2: '#FFD735', // Example default color for color2
-    color3: '#FFD012', // Example default color for color3
+    color1: '#FFEF5E', // Example default color for color1
+    color2: '#EBBD45', // Example default color for color2
+    color3: '#D69A00', // Example default color for color3
     color4: '#FACC14', // Example default color for color4
     color5: '#F0C310', // Example default color for color5
     // Text color main
