@@ -69,6 +69,9 @@ const Address = () => {
           <div>
           <Link href={"tel:+922135244462"}>+92 2135244462</Link>
           </div>
+          <div>
+          <Link href={"tel:111 143 111"}>111 143 111 ( UAN )</Link>
+          </div>
           <HeadingH6 title={"Email"} />
           <div>
           <Link href={"mailto:Crownintltravels@gmail.com"}>Crownintltravels@gmail.com</Link>
