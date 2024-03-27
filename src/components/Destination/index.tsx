@@ -39,7 +39,7 @@ const Destination = () => {
                href:"/servicedetail/malaysia" , image:malaysia, flag:malaysiaflag ,visatype:"Official Drop Box Centre", title:"Malaysia Visa", description:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."
             },
             {
-              href:"/servicedetail/vitenam" , image:vitenam, flag:vitenamflag ,visatype:"Official Drop Box Centre", title:"Vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
+              href:"/servicedetail/vietnam" , image:vietnam, flag:vitenamflag ,visatype:"Official Drop Box Centre", title:"vietnam Visa", description:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."
            },
            {
             href:"/servicedetail/indonesia" , image:indonesia, flag:indonesiaflag ,visatype:"Official Drop Box Centre", title:"Indonesia Visa", description:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."

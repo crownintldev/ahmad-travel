@@ -5,7 +5,6 @@ import Link from "next/link";
 import React from "react";
 
 const addressinfo = [
-
   [
     { title: "Email", des1: "Crownintltravels@gmail.com", des2: "info@crownintltravels.com" },
     {
@@ -53,7 +52,7 @@ const Address = () => {
           <HeadingH6 title={"Location"} />
           <Link href={"https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7"}>https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7</Link>
         </div>
- 
+
     </div>
     <div className="border-4 border-dotted border-primary-orange-200 w-full rounded-md p-2 sm:p-4 md:p-6 space-y-3" >
         <div className="space-y-1">
