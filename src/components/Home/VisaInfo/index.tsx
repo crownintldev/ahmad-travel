@@ -52,7 +52,7 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
       {visaprocess && visaprocess.length > 0 && (
         <div className="container p-2 mt-10 ">
           <HeadingH3 title={heading} />
-          <hr className="w-16 border-2 border-primary-orange-300" />
+          <hr className="w-16 border-2 border-primary-orange-400" />
           <div
             ref={ref}
             className="keen-slider flex overflow-hidden mt-10 gap-3"
@@ -65,7 +65,7 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
                   key={index}
                 >
                   <CardContainer>
-                    <CardBody className=" bg-primary-orange-200 relative group/card border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+                    <CardBody className=" bg-primary-orange-400 relative group/card border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
                       <CardItem translateZ="100" className="w-full">
                         <div className="bg-white p-2 rounded-xl relative">
                           <Image
@@ -75,7 +75,7 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
                             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                             alt="thumbnail"
                           />
-                          <div className="absolute top-4 right-4 py-2 px-4 bg-white rounded-lg">
+                          <div className="absolute top-4 right-4 py-2 px-4 bg-white font-semibold rounded-lg">
                             <span className="sm:text-md text-[12px]">
                             {array.location}
                             </span>
