@@ -12,6 +12,8 @@ import { OurService } from "@/components/Home/OurService";
 import Testimonial from "@/components/Carousel/Testimonial";
 import { fileprocess, visacard } from "@/components/Constant";
 import { CanvasRevealEffectDemo2 } from "@/components/Home/Glitch";
+import VisaDetail from "@/components/Home/VisaDetail";
+
 
 export default function Home()
  {
@@ -21,15 +23,9 @@ export default function Home()
     {/* <Booking/> */}
     <Brand/>
     <Destination/>
-    <VisaInfo
-      heading="Visa Consultancy"
-      visaprocess={visacard}
-    />
-    <VisaInfo
-      heading="Visa Processing"
-      visaprocess={fileprocess}
-    />
-    {/* <OurService/> */}
+    <VisaDetail heading="Visa Consultancy"  visaprocess={visacard}/>
+    <VisaDetail heading="Visa Processing"  visaprocess={fileprocess}/>
+
     <CanvasRevealEffectDemo2/>
     <ChooseUs/>
     

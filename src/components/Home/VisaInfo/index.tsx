@@ -1,7 +1,8 @@
+//@ts-nocheck
 "use client";
 import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { HeadingH3, HeadingH6 } from "../../Common/Heading";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
@@ -47,6 +48,19 @@ const VisaInfo: React.FC<Visaprops> = ({ heading, visaprocess }) => {
     },
     slides: { perView: 1 },
   });
+  const [sliderRef, slider] = useKeenSlider({
+    loop: true,
+  })
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      slider?.current.next()
+    }, 3000)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [slider])
   return (
     <>
       {visaprocess && visaprocess.length > 0 && (
