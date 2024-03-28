@@ -432,7 +432,7 @@ const ChooseUs = () => {
           </div>
           <div className="col-span-2 relative w-full max-h-screen max-w-full">
 
-        <div className="w-full h-full overflow-hidden">
+        <div className="w-full h-full overflow-hidden hidden md:block">
         <World  data={sampleArcs} globeConfig={globeConfig} />
         </div>
           </div>
