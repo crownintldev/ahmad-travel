@@ -11,7 +11,7 @@ const ServiecForm = () => {
 <div className=" shadow-lg rounded-xl p-2 sm:p-3 lg:p-4 w-full text-center ">
         <HeadingH6 className='text-primary-orange-300' title={"Make Your Appointment"}/>
         <div className='text-center mt-5'> 
-        <Link href={"/appointment"} className=' bg-primary-orange-300 hover:bg-primary-orange-400 p-2  rounded-md text-white hover:scale-105 duration-300'>Click Here</Link>
+        <Link href={"/appointment"} className='  bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] hover:from-[#D69A00] hover:via-[#EBBD45] hover:to-[#FFEF5E] p-2  rounded-md text-black font-semibold hover:scale-105 duration-300'>Click Here</Link>
         </div>
         <div className="mt-3 text-center">
           
