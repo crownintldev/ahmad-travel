@@ -197,6 +197,8 @@ export const flagimg =[
 export const visacard =[
   {title:"Malaysia Visa",link:"/servicedetail/malaysia", image:malaysia1, flag:malaysiaflag,  location:"Visa Service Center", para:"Malaysia is a vibrant and diverse country located in Southeast Asia, known for its stunning natural landscapes, rich cultural heritage, and modern cities."},
   {title:"Thailand Visa",link:"/servicedetail/thailand", image:thailand1,flag:thailandflag,  location:"Visa Service Center", para:"Thailand is a stunning country located in Southeast Asia, renowned for its rich cultural heritage, ancient history, and breathtaking natural beauty."},
+  {title:"Canada File Processing",link:"/servicedetail/canada", image:canada,flag:canadaflag,  location:" File Processing", para:"The second-largest nation in the world, Canada, is a riveting tourist destination renowned for its breathtaking natural scenery,"},
+  {title:"UK File Processing",link:"/servicedetail/uk", image:uk, flag:ukflag,  location:" File Processing", para:"The United Kingdom, or UK as it is more frequently known, is an intriguing location that offers a combination of rich history,"},
   {title:"Indonesia Visa",link:"/servicedetail/indonesia", image:indonesia1,flag:indonesiaflag,  location:"Visa Service Center", para:"Indonesia is a vast archipelago nation located in Southeast Asia, comprised of thousands of islands, and home to a population of over 270 million people."},
   {title:"Vietnam Visa",link:"/servicedetail/vietnam", image:vietnam1, flag:vietnamflag,  location:"Visa Service Center", para:"Vietnam, located in Southeast Asia, is bordered by China to the north, Laos to the northwest, Cambodia to the southwest, and the South China Sea to the east."},
   {title:"Nepal Visa",link:"/servicedetail/nepal", image:nepal1, flag:nepalflag, location:"Visa Service Center", para:"Nepal is a country located in South Asia, bordered by China to the north and India to the south, east, and west."},
@@ -212,14 +214,14 @@ export const visacard =[
   {title:"Kenya Visa",link:"/servicedetail/kenya", image:kenya1, flag:kenyaflag, location:"Visa Service Center", para:"Kenya is a country located in East Africa, with a population of over 54 million people. The country is known for its"},
   {title:"Turkey Visa",link:"/servicedetail/turkey", image:turkey1,flag:turkeyflag,  location:"Visa Service Center", para:"Turkey is a transcontinental country that straddles both Europe and Asia, with a rich cultural heritage and a history that"},
   {title:"Dubai Visa",link:"/servicedetail/dubai", image:dubai1,flag:dubaiflag,  location:"Visa Service Center", para:"Dubai is a city and emirate in the United Arab Emirates (UAE) located on the southeastern coast of the Persian Gulf."},
-]
-
-export const fileprocess =[
   {title:"Schengen File Processing",link:"/servicedetail/schengen", image:philippines1,flag:luxemburgflag, location:" File Processing", para:"The Schengen Area is a zone consisting of 26 European countries that have abolished internal border controls and established a common visa policy."},
   {title:"USA File Processing",link:"/servicedetail/usa", image:usa,flag:usaflag,  location:" File Processing", para:"The United States of America, also known as the USA or just America, is a sizable and diversified nation that provides a wide range"},
-  {title:"Canada File Processing",link:"/servicedetail/canada", image:canada,flag:canadaflag,  location:" File Processing", para:"The second-largest nation in the world, Canada, is a riveting tourist destination renowned for its breathtaking natural scenery,"},
-  {title:"UK File Processing",link:"/servicedetail/uk", image:uk, flag:ukflag,  location:" File Processing", para:"The United Kingdom, or UK as it is more frequently known, is an intriguing location that offers a combination of rich history,"},
+
 ]
+
+// export const fileprocess =[
+
+// ]
 
 
 export const Brandimg =[

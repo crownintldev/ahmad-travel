@@ -68,21 +68,7 @@ const MainSlider = () => {
           <button onClick={prevSlide}>{"<"}</button>
           <button onClick={nextSlide}>{">"}</button>
         </div>
-        {/* <div className="thumbnail">
-          {slides.map((slide, index) => (
-            <div
-              key={slide.id}
-              className={`item ${index === activeSlide ? "active" : ""}`}
-              onClick={() => setActiveSlide(index)}
-            >
-              <Image
-                className="rounded-md"
-                src={slide.src}
-                alt={`Slide ${slide.id}`}
-              />
-            </div>
-          ))}
-        </div> */}
+       
       </div>
     </>
   );

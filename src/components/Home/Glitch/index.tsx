@@ -6,7 +6,7 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Services } from "@/components/Constant";
 
-export function CanvasRevealEffectDemo2() {
+export function TravelService() {
   return (
     <>
       <div className="w-full mt-10 md:mt-32">
@@ -15,7 +15,7 @@ export function CanvasRevealEffectDemo2() {
           <AnimatePresence>
             <div className="h-full w-full absolute inset-0">
               <CanvasRevealEffect
-                animationSpeed={3}
+                animationSpeed={2}
                 containerClassName="bg-black"
                 colors={[
                   [255, 239, 94],
@@ -25,10 +25,8 @@ export function CanvasRevealEffectDemo2() {
               />
             </div>
           </AnimatePresence>
-          <div className="relative z-20">
+          <div className="relative z-10">
           <HoverEffect items={Services} />
-
-          
           </div>
         </div>
       </div>

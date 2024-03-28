@@ -1,9 +1,7 @@
 //@ts-nocheck
+"use client"
 import React from 'react'
-import Logo from '../Common/Logo'
 import FooterLink from '../Common/FooterLink'
-import footer from '../../../public/assets/images/footer.jpg'
-import Image from 'next/image';
 import { Para14, Para16 } from '../Common/Paragraph';
 import { HeadingH3, HeadingH5, HeadingH6 } from '../Common/Heading';
 import Link from 'next/link';
@@ -11,6 +9,9 @@ import { BiLogoFacebook } from 'react-icons/bi';
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
 import { FaXTwitter } from 'react-icons/fa6';
 import Theme from '../Theme';
+import { AnimatePresence, motion } from "framer-motion";
+import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
+
 
 // Define your arrays for the footer
 const FooterAbout: FooterLinkItem[] = [
@@ -32,12 +33,52 @@ const Footer = () => {
     <p className='h-[0px] overflow-hidden'>
       <Theme/>
       </p>
-    <div className='bg-black text-primary-orange-300 shadow mt-10 md:mt-32 p-2 max-w-screen-md mx-auto rounded-t-lg text-center pb-5 '>
+ 
+    
+    <div className="max-w-screen-md mx-auto rounded-t-lg text-center mt-10 md:mt-32">
+        <div className=" group/canvas-card w-full  p-4 relative rounded-t-lg">
+        
+          <AnimatePresence>
+            <div className="h-full w-full absolute inset-0 rounded-t-lg">
+              <CanvasRevealEffect
+                animationSpeed={2}
+                containerClassName="bg-black"
+                colors={[
+                  [255, 239, 94],
+                  [235, 189, 69],
+                ]}
+                dotSize={1}
+              />
+            </div>
+          </AnimatePresence>
+          <div className="relative z-10">
+          <div className=' text-primary-orange-300 shadow p-2  '>
       <HeadingH5 className='mb-5' title={"For any Query & Complain!"}/>
       <Link className='p-2 px-10  bg-gradient-to-r from-[#FFEF5E] via-[#EBBD45] to-[#D69A00] hover:from-[#D69A00] hover:via-[#EBBD45] hover:to-[#FFEF5E] font-semibold text-[18px] rounded-md text-black' href={"tel:03025000666"}>Call Us</Link>
     </div>
-    
-<footer className='bg-black text-primary-orange-300 pb-5'>
+
+          </div>
+        </div>
+      </div>
+
+    <div className="w-full">
+        <div className=" group/canvas-card w-full  p-4 relative ">
+        
+          <AnimatePresence>
+            <div className="h-full w-full absolute inset-0">
+              <CanvasRevealEffect
+                animationSpeed={2}
+                containerClassName="bg-black"
+                colors={[
+                  [255, 239, 94],
+                  [235, 189, 69],
+                ]}
+                dotSize={1}
+              />
+            </div>
+          </AnimatePresence>
+          <div className="relative z-20">
+          <footer className=' text-primary-orange-300 pb-5'>
   <div className="container p-2 ">
   <HeadingH6 className='mt-5' title={"Crown International Travels (Pvt) Ltd"}/>
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-5 mt-5 gap-0 md:gap-2 justify-start sm:justify-items-center gap-y-3 '>
@@ -166,6 +207,10 @@ const Footer = () => {
   </div>
    
 </footer>
+
+          </div>
+        </div>
+      </div>
 
     </>
   )

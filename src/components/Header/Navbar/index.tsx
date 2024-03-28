@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
                 className="font-semibold bg-black  duration-300 transition text-primary-btn-color py-2 px-2 rounded-md"
                 href="/tracking"
               >
-                Track Your ID
+                Track Your Application
               </Link>
             </div>
             <div className="lg:hidden mt-[9px]">

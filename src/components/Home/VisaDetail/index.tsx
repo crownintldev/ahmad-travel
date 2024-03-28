@@ -37,7 +37,7 @@ const VisaDetail: React.FC<Visaprops> = ({ heading, visaprocess }) => {
   };
   const [swiperRef, setSwiperRef] = useState(null);
   return (
-    <div className="max-w-screen-2xl p-2 md:p-2 mx-auto mt-10 md:mt-32">
+    <div className="max-w-screen-xl p-2 md:p-2 mx-auto mt-10 md:mt-32">
         <div className="flex justify-between">
             <div>
             <HeadingH3 title={heading} />

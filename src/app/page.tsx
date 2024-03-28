@@ -10,8 +10,8 @@ import Faq from "@/components/Home/Faq";
 import VisaInfo from "@/components/Home/VisaInfo";
 import { OurService } from "@/components/Home/OurService";
 import Testimonial from "@/components/Carousel/Testimonial";
-import { fileprocess, visacard } from "@/components/Constant";
-import { CanvasRevealEffectDemo2 } from "@/components/Home/Glitch";
+import {  visacard } from "@/components/Constant";
+import { TravelService } from "@/components/Home/Glitch";
 import VisaDetail from "@/components/Home/VisaDetail";
 
 
@@ -24,9 +24,7 @@ export default function Home()
     <Brand/>
     <Destination/>
     <VisaDetail heading="Visa Consultancy"  visaprocess={visacard}/>
-    <VisaDetail heading="Visa Processing"  visaprocess={fileprocess}/>
-
-    <CanvasRevealEffectDemo2/>
+    <TravelService/>
     <ChooseUs/>
     
     <Testimonial/>

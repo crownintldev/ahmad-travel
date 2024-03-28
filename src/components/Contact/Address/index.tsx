@@ -1,6 +1,6 @@
 "use client"
-import { HeadingH4, HeadingH6 } from "@/components/Common/Heading";
-import { Para14 } from "@/components/Common/Paragraph";
+import { HeadingH4, HeadingH5, HeadingH6 } from "@/components/Common/Heading";
+import { Para14, Para16 } from "@/components/Common/Paragraph";
 import Link from "next/link";
 import React from "react";
 
@@ -29,19 +29,21 @@ const Address = () => {
     
     <div className="border-4 border-dotted border-primary-orange-200 w-full rounded-md p-2 sm:p-4 md:p-6 space-y-3" >
         <div className="space-y-1">
-        <HeadingH6 title={"Rawalpindi Head Office"} />
-          <Para14 title={"Office No. 406 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi, Punjab, Pakistan"}/>
+        <HeadingH5 title={"Rawalpindi Head Office"} />
+        <Para16 className="font-semibold" title={"Crown International Travels"} />
+          <Para14 title={"Office No. 406/7/8 , 4th Floor Rizwan Arcade I, Adam Jee Road Saddar, Rawalpindi, Punjab, Pakistan"}/>
 
           <HeadingH6 title={"Phone Number"} />
+          <div>
+          <Link href={"tel:111143111"}>111 143 111 ( UAN )</Link>
+          </div>
           <div>
           <Link href={"tel:+923135000666"}>+92 313 5000 666 ( UAN )</Link>
           </div>
           <div>
           <Link href={"tel:+92515511155/56-57"}>+92 51 5511 155 / 56-57</Link>
           </div>
-          <div>
-          <Link href={"tel:111143111"}>111 143 111 ( UAN )</Link>
-          </div>
+          
           <HeadingH6 title={"Email"} />
           <div>
           <Link href={"mailto:Crownintltravels@gmail.com"}>Crownintltravels@gmail.com</Link>
@@ -50,17 +52,21 @@ const Address = () => {
           <Link href={"mailto:info@crownintltravels.com"}>info@crownintltravels.com</Link>
           </div>
           <HeadingH6 title={"Location"} />
-          <Link href={"https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7"}>https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7</Link>
+          <Link className="text-12 sm:text-14" href={"https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7"}>https://maps.app.goo.gl/4N4kFDrmyYDrH6Ek7</Link>
         </div>
 
     </div>
     <div className="border-4 border-dotted border-primary-orange-200 w-full rounded-md p-2 sm:p-4 md:p-6 space-y-3" >
         <div className="space-y-1">
-        <HeadingH6 title={"Karachi Main Office"} />
+        <HeadingH5 title={"Karachi Main Office"} />
+        <Para16 className="font-semibold" title={"Crown International Travels"} />
           <Para14 title={"Plot # 38-C, Office No 1, Main Saba Avenue, Bader Commercial, Phase V, DHA, Karachi, Sindh, Pakistan"}/>
           <HeadingH6 title={"Phone Number"} />
           <div>
-          <Link href={"tel:031350006000"}>0313 50006000</Link>
+          <Link href={"tel:111 143 111"}>111 143 111 ( UAN )</Link>
+          </div>
+          <div>
+          <Link href={"tel:031350006000"}>+9213 50006000</Link>
           </div>
           <div>
           <Link href={"tel:+922135244461"}>+92 2135244461</Link>
@@ -68,9 +74,7 @@ const Address = () => {
           <div>
           <Link href={"tel:+922135244462"}>+92 2135244462</Link>
           </div>
-          <div>
-          <Link href={"tel:111 143 111"}>111 143 111 ( UAN )</Link>
-          </div>
+          
           <HeadingH6 title={"Email"} />
           <div>
           <Link href={"mailto:Crownintltravels@gmail.com"}>Crownintltravels@gmail.com</Link>
@@ -79,7 +83,7 @@ const Address = () => {
           <Link href={"mailto:info@crownintltravels.com"}>info@crownintltravels.com</Link>
           </div>
           <HeadingH6 title={"Location"} />
-          <Link href={"https://maps.app.goo.gl/csKKhU6c6Qy56hsC8"}>https://maps.app.goo.gl/csKKhU6c6Qy56hsC8</Link>
+          <Link className="text-12 sm:text-14" href={"https://maps.app.goo.gl/csKKhU6c6Qy56hsC8"}>https://maps.app.goo.gl/csKKhU6c6Qy56hsC8</Link>
         </div>
 
     </div>
